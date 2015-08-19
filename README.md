@@ -12,9 +12,17 @@ Ages
 ---
 We support the most important ages:
 
-- [**First Age**](http://arda-maps.org/ages/first/)
-- [**Second Age**](http://arda-maps.org/ages/second/)
-- [**Third Age**](http://arda-maps.org/ages/third/)
+[**First Age**](http://arda-maps.org/ages/first/) 
+
+![First Age](http://arda-maps.org/pics/welcome/firstage.png)
+
+[**Second Age**](http://arda-maps.org/ages/second/)
+
+![Second Age](http://arda-maps.org/pics/welcome/secondage.png)
+
+[**Third Age**](http://arda-maps.org/ages/third/)
+
+![Third Age](http://arda-maps.org/pics/welcome/thirdage.png)
 
 Family Tree
 ---
