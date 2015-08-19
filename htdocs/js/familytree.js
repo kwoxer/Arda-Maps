@@ -1,8 +1,7 @@
 var familytreeController = (function() {
-    var familytreesearchsuggestions = "#familytreesearchsuggestions";
-    var familytreesearchsuggestionsFamilycreatures = "#familytreesearchsuggestionsFamilycreatures";
+    var suggestions = "#familytreesearchsuggestions";
+    var suggestionsFamily = "#familytreesearchsuggestionsFamilycreatures";
     var showAll;
-    var zoomToTransition = 1000;
 
     $("#familytreecontentclose a").click(function() {
         $("#familytree").hide();
@@ -29,35 +28,22 @@ var familytreeController = (function() {
 
     $("#familytreesearch").on('input', function() {
         if($("#familytreesearch").val() == "") {
-            $(familytreesearchsuggestions).hide();
+            $(suggestions).hide();
         } else {
-            $(familytreesearchsuggestions).show();
-            orientdb.search4Creature("#familytreesearch", familytreesearchsuggestionsFamilycreatures);
+            $(suggestions).show();
+            orientdb.search4Creature("#familytreesearch", suggestionsFamily);
         }
     });
 
-    $("ul" + familytreesearchsuggestionsFamilycreatures).on('click', 'li', function() {
-        //if(showAll)  orientdb.clearAll();
-        var id = this.id.split("|")[0];
-        orientdb.getFamilytreeSingle(this.id, function() {
-            var n = this.mergeSingle().dataSet(familytree.initializeGraph).nodes[id];
-            if(n) {
-                orientdb.getInfo4CreatureByRID(id);
-                familytree.zoomTo(n);
-                familytree.focusNode(n).highlight().delay(2000).blur();
-            }
-        });
-        //showAll = false;
+    $("ul" + suggestionsFamily).on('click', 'li', function() {
+        if(showAll) orientdb.clearAll();
+        orientdb.getFamilytreeSingle2(this.id, familytree.initializeGraph);
+        showAll = false;
         $(this).addClass("active");
     });
 
     familytree.events.on("node_dblclick", function(d) {
-        //familytree.zoomTo(d);
-        // try to get the relationship tree for the selected node and asynchronously
-        // merge it into the current tree if successful
-        orientdb.getFamilytreeSingle(d.ID + '|' + d.class, function() {
-            this.mergeSingle().dataSet(familytree.initializeGraph)
-        });
+        orientdb.getFamilytreeSingle2(d.ID + '|' + d.class, familytree.initializeGraph);
     });
 
     familytree.events.on("node_click", function(d) {
@@ -68,7 +54,7 @@ var familytreeController = (function() {
         orientdb.deleteCreatureByRID(clickedNode, familytree.initializeGraph);
     });
 
-    $("ul" + familytreesearchsuggestionsFamilycreatures).on('mouseenter mouseleave', 'li', function() {
+    $("ul" + suggestionsFamily).on('mouseenter mouseleave', 'li', function() {
         $(this).toggleClass("highlight");
     });
 
@@ -88,13 +74,9 @@ var familytreeController = (function() {
             $("#familytreeinner a").attr("href", "/ages/third/");
         }
     });
+
     function getRelationships(id, mode) {
         if(showAll) familytree.cleanPresentation(mode);
         orientdb.getFamilytreeSingle2(id, familytree.updateGraph);
     }
-
-    infoState.events.on("widthChange", function(deltaW){
-        familytree.zoomTo();
-        familytree.focusNode().highlight().delay(2000).blur();
-    })
 })();

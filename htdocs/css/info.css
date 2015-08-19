@@ -28,9 +28,9 @@
     bottom: 15px;
 }
 #infobuttons ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
 }
 
 #infobutton,#timelinebutton {
@@ -133,7 +133,7 @@
     color: #F9D276;
 }
 
-.infoothernames ul, .infolocation ul, .inforelations ul, .infoarea ul{
+.infoothernames ul, .infolocation ul, .infoarea ul{
     margin-left: -40px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -190,7 +190,7 @@
 }
 
 #infoClosebutton:hover {
-    background-color: #bbb;
+   background-color: #bbb;
 }
 
 #infoSearch {
