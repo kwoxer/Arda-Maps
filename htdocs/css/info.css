@@ -1,0 +1,237 @@
+#info {
+    float: right;
+}
+
+#infoinner {
+    width: 0px;
+}
+
+#infocontent {
+    z-index: 23;
+    width: 350px;
+    position: absolute;
+    background: none repeat scroll 0% 0% #EEE;
+    box-shadow: -1px 0px 10px 0px rgba(10, 10, 10, 0.8);
+    min-height: 100%;
+}
+#infocontent a{
+    color: #21d;
+}
+#infocontent a:hover{
+    color: #399;
+}
+
+#infobuttons {
+    position: absolute;
+    font-weight: bold;
+    width: 80px;
+    bottom: 15px;
+}
+#infobuttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#infobutton,#timelinebutton {
+    transform: translateX(-101%);
+    -webkit-transform: translateX(-101%);
+    width: 50px;
+}
+
+#searchbutton {
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    z-index: 3;
+    transform: translateX(-140%);
+    margin-bottom: 7px;
+    text-align: center;
+    margin-top: -28px;
+}
+
+#searchbutton img {
+    margin-bottom: 2px;
+}
+
+#infobutton {
+    z-index: 2;
+    padding-right: 41px;
+    width: 20px;
+}
+
+#infoCreature,#infoLocation,#infoEvent {
+    margin: 15px;
+}
+
+#infoCreature .infoheader,#infoLocation .infoheader,#infoEvent .infoheader {
+    color: #333;
+    font-size: 26px;
+    margin-top: -5px;
+    text-align: center;
+    /*border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;*/
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    min-height: 20px;
+}
+
+#infoCreature .infosubname,#infoLocation .infosubname,#infoEvent .infosubname {
+    text-align: center;
+    margin-top: -5px;
+    min-height: 10px;
+}
+
+.infoelement {
+    margin-top: 10px;
+}
+
+.infosubheader {
+    font-size: 19px;
+    color: #333;
+    font-family: "yonkers", serif;
+    margin-left: -5px;
+}
+
+.infosubtext {
+    margin-left: 10px;
+}
+
+.infopicture img {
+    width: 350px;
+    height: 250px;
+    background: none repeat scroll 0% 0% #EEE;
+    box-shadow: 2px 2px 8px 1px rgba(10, 10, 10, 0.8);
+    min-height: 100%;
+}
+
+.infopicture {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.infopictureSource {
+    margin: -19px -5px;
+    position: absolute;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    /*text-shadow: #0B0A0C 3px 3px 5px;
+    text-shadow: -1px -1px 0 #888, 1px -1px 0 #888, -1px 1px 0 #888, 1px 1px 0 #888;*/
+    text-shadow: 0px 0px 7px #050505;
+}
+.infopictureSource a {
+    text-decoration: none;
+}
+.infopictureSource span {
+    cursor: pointer;
+    color: white;
+    font-size: 11px;
+}
+.infopictureSource span:hover {
+    color: #F9D276;
+}
+
+.infoothernames ul, .infolocation ul, .inforelations ul, .infoarea ul{
+    margin-left: -40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+
+.infolink {
+    position: absolute;
+    bottom: 2px;
+    font-size: 11px;
+    margin-left: -5px;
+    font-family: "Open Sans",sans-serif;
+}
+.infolink a{
+    text-decoration: none;
+}
+
+.infosex {
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+}
+
+.infotype {
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+}
+
+.infoage {
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+}
+
+#infoContentSearch {
+    position: absolute;
+    margin: 10px;
+    color: #eee;
+    font-family: 'coelac', "Open Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    width: 330px;
+    height: 21px;
+    border: 1px solid #CCC;
+    z-index: 20;
+}
+
+#infoClosebutton {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+#infoClosebutton:hover {
+    background-color: #bbb;
+}
+
+#infoSearch {
+    width: 330px;
+}
+
+#infoSearchSuggestions {
+    z-index: 2;
+    position: absolute;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+    background-color: #666;
+    -webkit-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
+}
+
+#infoSearchSuggestions ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #000;
+}
+#infoSearchSuggestions span {
+    margin-top: 10px;
+}
+
+#infoSearchSuggestions img {
+    vertical-align: middle;
+}
+
+#infoSearchSuggestions ul .highlight {
+    color: #359AF4;
+    cursor: pointer;
+}
+
+#infoSearchSuggestions ul .active {
+    color: #F9D276;
+}
+
+.creature{
+    background-color: #555;
+}

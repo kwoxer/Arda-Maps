@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "FordOfBruinen", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.035130835842336, -0.010399290521419 ] } },
+{ "type": "Feature", "properties": { "eventname": "SarnFord", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.030975876613487, -0.011505984503367 ] } },
+{ "type": "Feature", "properties": { "eventname": "FordsOfIsen", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.034374731946091, -0.015798637252377 ] } },
+{ "type": "Feature", "properties": { "eventname": "Ethring", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.03681423894463, -0.018405331332984 ] } },
+{ "type": "Feature", "properties": { "eventname": "OldFord", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.03711904860918, -0.010254072845591 ] } }
+]
+}

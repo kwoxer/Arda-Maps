@@ -1,0 +1,12 @@
+#regionbutton {
+    position: fixed;
+    left: 362px;
+    bottom: 15px;
+}
+#regionbutton:hover {
+    background: #F9D276 !important;
+}
+.regionbuttonactive{
+    background-color: #eee !important;
+    color: #222 !important;
+}

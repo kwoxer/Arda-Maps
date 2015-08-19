@@ -1,0 +1,28 @@
+Options -Indexes 
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} ^www\.arda-maps\.org
+RewriteRule ^(.*)$ http://arda-maps.org/$1 [R=301,QSA,L]
+
+RewriteCond %{REQUEST_URI} !^/(?:css|js|maps|pics|font|timeglider|json) [NC]
+RewriteRule (/(?:css|js|maps|pics|font|timeglider|json)/.*)$ $1 [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/(?:about|creator|delimitation|opensource|donate|ages|ages/first|ages/second|ages/third|familytree|illustrator|404)(\/)?$ [NC]
+RewriteRule ^ index.html [L]
+
+RewriteCond %{REQUEST_URI} ^/(?:go/donate) [NC]
+RewriteRule ^ https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A67BKC9W6ASRN [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{HTTP_HOST} !^localhost
+RewriteRule ^ - [R=404,L]
+
+ErrorDocument 404 http://arda-maps.org/404/
+
+</IfModule>

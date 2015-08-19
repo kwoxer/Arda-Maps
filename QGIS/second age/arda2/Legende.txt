@@ -1,0 +1,25 @@
+
+
+
+
+Flächen
+	area		Flächen, Täler		LAMMOTH, Tol Sirion
+	moor		Sumpf,Moor			Fen of Serech
+	forest		Wald				Taur..., Forest..., Woods ...
+	ocean		Ozean				Firth..., Sea..., Bay of Balar
+	lake		innerer See			Mithrim, Inland Sea of Helcar
+
+Erhebungen
+	mountains	Gebirge, Wall		Ered Luin, Andram
+	mount		Berg,Hügel			Mt... Amon...
+
+Pfade
+	pass		Pass				Cirith..., Pass of...
+	river		Fluss				Gelion, Mounts of Sirion, Falls of Sirion
+	road		Straße				Dwarf-Road
+
+Plätze
+	place		Sonstiger Ort		Losgar
+	city		Stadt, Ort			Gondolin, Barad Eithel
+	waterfall		Wasserfall			Dimrost, Lanthir Lamach, Eithel Ivrin
+	ford		Furt				Arossiach

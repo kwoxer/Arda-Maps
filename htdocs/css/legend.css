@@ -1,0 +1,74 @@
+
+#legends {
+    left: 297px;
+    bottom: 52px;
+    position: fixed;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+    box-shadow: -3px 0px 14px 0px rgba(10, 10, 10, 0.5);
+    z-index: 17;
+}
+
+#legendinner {
+    height: 0px;
+}
+
+#legendinnerinner table {
+    color: #ddd;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    /*height: 80px;*/
+    border-collapse: collapse;
+    border: 0;
+}
+
+#legendinnerinner tr{
+     line-height: 14px;
+}
+
+#legendinnerinner td:hover{
+    color: #F9D276;
+}
+
+#legendbutton {
+    position: fixed;
+    left: 297px;
+    bottom: 15px;
+}
+
+.legendelements {
+    list-style-type: none;
+}
+
+.legendicon {
+    float: left;
+    height: 12px;
+    width: 12px;
+    margin-right: 2px;
+}
+
+.legendtext {
+    margin-left: 2px;
+}
+
+.legendelementhidden {
+    color: #333;
+}
+
+#legendnames_EN{
+    position: absolute;
+    top: 50px;
+    left: 87px;
+}
+#legendnames_DE{
+    position: absolute;
+    top: 50px;
+    left: 73px;
+}
+#legendnames_EN:hover,#legendnames_DE:hover{
+    filter: brightness(125%);
+}
+
+.legendlanginactive{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}

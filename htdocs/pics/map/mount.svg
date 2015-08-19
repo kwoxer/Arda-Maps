@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generiert durch Microsoft Visio, SVG Export mount.svg Zeichenblatt-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="2.6922in" height="1.79591in"
+		viewBox="0 0 193.839 129.305" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
+	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5}
+		.st2 {fill:#fbfbfb;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st3 {fill:#0c0c0c;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Zeichenblatt-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(1.25,-7.58291)">
+			<title>Tabelle.1</title>
+			<path d="M0 129.31 A254.172 254.172 89.83 0 1 68.03 33.49 A92.84 92.84 0 0 1 92.13 51.35 A233.142 233.142 0 0 1 130.96
+						 8.83 A442.555 442.555 0 0 1 191.34 125.05" class="st1"/>
+		</g>
+		<g id="shape18-4" v:mID="18" v:groupContext="shape" transform="translate(113.038,-109.535)">
+			<title>Tabelle.18</title>
+			<path d="M0 129.15 A233.142 233.142 0 0 1 19.17 110.78 A160.752 160.752 0 0 1 31.9 129.31 A61.3596 61.3596 -180 0 0 0
+						 129.15 Z" class="st2"/>
+		</g>
+		<g id="shape20-6" v:mID="20" v:groupContext="shape" transform="translate(1.25,-0.375)">
+			<title>Tabelle.20</title>
+			<path d="M68.03 26.29 A254.172 254.172 -180 0 0 0 122.1 A501.609 501.609 -135 0 0 191.34 117.85 A442.555 442.555 -180
+						 0 0 143.69 20.15 A61.3596 61.3596 -180 0 0 111.79 19.99 L92.13 44.14 A92.84 92.84 -180 0 0 68.03 26.29 Z"
+					class="st3"/>
+		</g>
+	</g>
+</svg>

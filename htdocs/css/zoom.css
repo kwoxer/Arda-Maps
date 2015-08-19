@@ -1,0 +1,22 @@
+#zoomresetbutton {
+    position: absolute;
+    left: 18px;
+    width: 60px;
+}
+
+#zoomplusbutton {
+    left: 15px;
+    bottom: 34px;
+}
+
+#zoomminusbutton {
+    left: 15px;
+    bottom: 15px;
+}
+
+.buttonzoom {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    text-align: center;
+}

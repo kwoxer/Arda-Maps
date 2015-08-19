@@ -1,0 +1,25 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "Himring", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.019519196116753, -0.006295572279435 ] } },
+{ "type": "Feature", "properties": { "eventname": "Dolmed", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.020877173865348, -0.007429297449216 ] } },
+{ "type": "Feature", "properties": { "eventname": "Taras", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.015108775168507, -0.006596516111661 ] } },
+{ "type": "Feature", "properties": { "eventname": "HaudhEnNdengin", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.018171796573983, -0.00560448814756 ] } },
+{ "type": "Feature", "properties": { "eventname": "HaudhEnElleth", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017117573638431, -0.006644845066248 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonRudh", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017356652989368, -0.007080729841357 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonEthir", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.016721842603026, -0.007366502275994 ] } },
+{ "type": "Feature", "properties": { "eventname": "Ramdal", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.019160993848242, -0.008112991630735 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonEreb", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.019476735921223, -0.008210481013084 ] } },
+{ "type": "Feature", "properties": { "eventname": "Rerir", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.020706388327101, -0.006343406928012 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonDarthir", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.016875539671833, -0.006101909708797 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonObel", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017382720581931, -0.006716351654488 ] } },
+{ "type": "Feature", "properties": { "eventname": "Kalorme", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.046258752120918, -0.025243106579044 ] } },
+{ "type": "Feature", "properties": { "eventname": "Thangorodrim", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.018104956040308, -0.004636676098523 ] } },
+{ "type": "Feature", "properties": { "eventname": "Thangorodrim", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.018663144687838, -0.004706449679464 ] } },
+{ "type": "Feature", "properties": { "eventname": "Thangorodrim", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.018379066536863, -0.00478369900122 ] } },
+{ "type": "Feature", "properties": { "eventname": "Hyarmentir", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.004994877173748, -0.030007169718723 ] } },
+{ "type": "Feature", "properties": { "eventname": "Taniquetil", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.004949912683585, -0.02544811076891 ] } }
+]
+}

@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "SarnAthrad", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.02003642249756, -0.007772234827212 ] } },
+{ "type": "Feature", "properties": { "eventname": "Arossiach", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.018797706955246, -0.006495906814402 ] } },
+{ "type": "Feature", "properties": { "eventname": "FordOfBrithiach", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.017492582425736, -0.006467463430427 ] } }
+]
+}

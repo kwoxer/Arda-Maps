@@ -1,0 +1,37 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "CrossRoads", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.039072821368605, -0.018065242548262 ] } },
+{ "type": "Feature", "properties": { "eventname": "GoblinGate", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.036369332440988, -0.009773739308076 ] } },
+{ "type": "Feature", "properties": { "eventname": "Argonath", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.037653502241952, -0.016043529215289 ] } },
+{ "type": "Feature", "properties": { "eventname": "HennethAnnun", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.039180188890592, -0.017302598929395 ] } },
+{ "type": "Feature", "properties": { "eventname": "EaglesEyrie", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.036541546224156, -0.009778188551249 ] } },
+{ "type": "Feature", "properties": { "eventname": "TarlangsNeck", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.035821332925829, -0.017494910273005 ] } },
+{ "type": "Feature", "properties": { "eventname": "GlitteringCaves", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.034140606386344, -0.016222437387534 ] } },
+{ "type": "Feature", "properties": { "eventname": "HaudhInGwanur", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.039235933618429, -0.019959011699935 ] } },
+{ "type": "Feature", "properties": { "eventname": "Morgai", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.039720607790409, -0.017243809299322 ] } },
+{ "type": "Feature", "properties": { "eventname": "RedhornGate", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.035349098936103, -0.012299297995013 ] } },
+{ "type": "Feature", "properties": { "eventname": "CirithGorgor", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.039586016949868, -0.016548267429341 ] } },
+{ "type": "Feature", "properties": { "eventname": "BrandyHall", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.031116583921882, -0.010502641088492 ] } },
+{ "type": "Feature", "properties": { "eventname": "BagEnd", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.030480630466074, -0.010412776372602 ] } },
+{ "type": "Feature", "properties": { "eventname": "Rhosgobel", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.037450055314603, -0.010110608264679 ] } },
+{ "type": "Feature", "properties": { "eventname": "BeornsHall", "zoom": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.037115005387632, -0.009870422215733 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonDin", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.038857997473, -0.017781105340815 ] } },
+{ "type": "Feature", "properties": { "eventname": "Eilenach", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.038599588728195, -0.017781105340815 ] } },
+{ "type": "Feature", "properties": { "eventname": "Nardol", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.03825561417385, -0.017752012965572 ] } },
+{ "type": "Feature", "properties": { "eventname": "Erelas", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.037950999891894, -0.017656179258889 ] } },
+{ "type": "Feature", "properties": { "eventname": "MinRimmon", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.037613870602312, -0.017589437927449 ] } },
+{ "type": "Feature", "properties": { "eventname": "Calenhad", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.037298988423211, -0.017500449485529 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonAnwar", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.036931055442196, -0.017366966822649 ] } },
+{ "type": "Feature", "properties": { "eventname": "TomBombadil", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.0313447151572, -0.01044613029141 ] } },
+{ "type": "Feature", "properties": { "eventname": "TomBertWilliam", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.034233326990621, -0.010407785855586 ] } },
+{ "type": "Feature", "properties": { "eventname": "SlagHills", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.039566848425256, -0.016498821523206 ] } },
+{ "type": "Feature", "properties": { "eventname": "MorgulVale", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.039448757916826, -0.017804533163805 ] } },
+{ "type": "Feature", "properties": { "eventname": "PathsOfTheDead", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.035646915150177, -0.016684632181019 ] } },
+{ "type": "Feature", "properties": { "eventname": "DoorsOfDurin", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.035088807589016, -0.012568701830159 ] } },
+{ "type": "Feature", "properties": { "eventname": "CerinAmroth", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.036097787616155, -0.012955710174566 ] } },
+{ "type": "Feature", "properties": { "eventname": "ShelobsLair", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.039625254178492, -0.017740188154666 ] } }
+]
+}

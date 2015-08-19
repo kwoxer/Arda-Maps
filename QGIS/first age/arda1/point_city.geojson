@@ -1,0 +1,31 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "Gondolin", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.017618871019294, -0.00621629431958 ] } },
+{ "type": "Feature", "properties": { "eventname": "MethedEnGlad", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017601952569747, -0.007411622711974 ] } },
+{ "type": "Feature", "properties": { "eventname": "BaradNimras", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.015336123585493, -0.007863405695748 ] } },
+{ "type": "Feature", "properties": { "eventname": "BaradEithel", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017338121724367, -0.005579294167013 ] } },
+{ "type": "Feature", "properties": { "eventname": "EphelBrandir", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017402308654696, -0.00669937278113 ] } },
+{ "type": "Feature", "properties": { "eventname": "Nargothrond", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.016717411223017, -0.007427193961588 ] } },
+{ "type": "Feature", "properties": { "eventname": "BarErib", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017254851154793, -0.007558015120468 ] } },
+{ "type": "Feature", "properties": { "eventname": "HavensOfSirion", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.017230722787173, -0.008837356071855 ] } },
+{ "type": "Feature", "properties": { "eventname": "HurinsHouse", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.016880280920478, -0.00607587298541 ] } },
+{ "type": "Feature", "properties": { "eventname": "Menegroth", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.018358907938801, -0.006959015360705 ] } },
+{ "type": "Feature", "properties": { "eventname": "Brithombar", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.015365694643011, -0.007484169289776 ] } },
+{ "type": "Feature", "properties": { "eventname": "Vinyamar", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.015059468183385, -0.006592379758605 ] } },
+{ "type": "Feature", "properties": { "eventname": "Belegost", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.021121374825071, -0.008961087859322 ] } },
+{ "type": "Feature", "properties": { "eventname": "Nogrod", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.020882803736668, -0.00759610025991 ] } },
+{ "type": "Feature", "properties": { "eventname": "Eglarest", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.015926456372646, -0.007671277462415 ] } },
+{ "type": "Feature", "properties": { "eventname": "Utumno", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.022792780876819, -0.004415983527739 ] } },
+{ "type": "Feature", "properties": { "eventname": "Cuivienen", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.037170402900947, -0.009653766331621 ] } },
+{ "type": "Feature", "properties": { "eventname": "Valimar", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.002857606466727, -0.025324430966862 ] } },
+{ "type": "Feature", "properties": { "eventname": "MansionsOfAule", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.002725007568307, -0.028570773199001 ] } },
+{ "type": "Feature", "properties": { "eventname": "Formenos", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.004328171988683, -0.013997757892897 ] } },
+{ "type": "Feature", "properties": { "eventname": "HallsOfNienna", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.000790001386583, -0.023827648290142 ] } },
+{ "type": "Feature", "properties": { "eventname": "HallsOfMandos", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.001073173022933, -0.029255104653513 ] } },
+{ "type": "Feature", "properties": { "eventname": "Alqualonde", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.005680611522707, -0.023845346517414 ] } },
+{ "type": "Feature", "properties": { "eventname": "Avallone", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.006462283227214, -0.024644716449193 ] } }
+]
+}

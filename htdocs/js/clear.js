@@ -1,0 +1,16 @@
+$("#welcome").hide();
+$("#popup").hide();
+$("#popupcontent").children().hide();
+$("#illustrator").hide();
+$("#illustratorcontent").children().hide();
+$("#footerpopup").hide();
+$("#footerpopupcontent").children().hide();
+$("#familytree").hide();
+$("#familytreecontent").children().hide();
+$("#journeyinner").hide();
+$("#infoCreature").hide();
+$("#infoLocation").hide();
+$("#infoEvent").hide();
+$("#legendinner").hide();
+$("#preloader").hide();
+$("#journeyinnerinner").children().hide();

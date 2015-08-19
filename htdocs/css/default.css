@@ -1,0 +1,162 @@
+html, body {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+tspan {
+    white-space: pre;
+}
+
+text {
+    font-family: "nipcens";
+}
+text#names {
+    font-family: "yonkers";
+}
+
+@font-face {
+    font-family: nipcens;
+    src: url("../font/NipCens Handwriting Light.ttf");
+}
+
+@font-face {
+    font-family: coelac;
+    src: url("../font/Coelac.otf");
+}
+@font-face {
+    font-family: yonkers;
+    src: url("../font/UncialAntiqua-Regular.ttf");
+}
+
+.defaultButton {
+    cursor: pointer;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.imageButton {
+    height: 36px !important;
+    width: 36px !important;
+}
+
+.defaultButton:hover {
+    background-color: #F9D276 !important;
+    color: #222 !important;
+}
+
+.buttonlarge {
+    padding: 11px;
+    margin: 0px 0.5px 0.5px 0.5px;
+    font-size: 12px;
+    line-height: 14px;
+    height: 15px;
+}
+
+.buttonsmall {
+    padding: 5px;
+    margin: 0px;
+    font-size: 12px;
+    line-height: 8px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.defaultcursor {
+    cursor: default;
+}
+
+.menuelementhighlight {
+    /*background-color: #eee !important;*/
+    color: #F9D276 !important;
+}
+
+.buttonActive {
+    background-color: #eee !important;
+    color: #222 !important;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: -5px;
+    /*text-transform: uppercase;*/
+    position: relative;
+    color: #F9D276;
+    font-weight: 100;
+    font-family: "yonkers", "Myriad Pro", sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    /*text-transform: uppercase;*/
+    position: relative;
+    color: #F9D276;
+    font-weight: 100;
+    font-family: "yonkers", "Myriad Pro", sans-serif;
+}
+
+h3 {
+    font-size: 50px;
+    margin: -5px;
+    /*text-transform: uppercase;*/
+    position: relative;
+    color: #F9D276;
+    font-weight: 100;
+    font-family: "yonkers", "Myriad Pro", sans-serif;
+}
+
+a{
+    color: #F9D276;
+}
+
+a:hover{
+    color: #359AF4;
+}
+
+#copyright{
+    position: fixed;
+    left: 15px;
+    height: 14px;
+    bottom: 1px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 14px;
+    vertical-align: bottom;
+    text-shadow: -1px 1px 4px #000;
+    /*text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;*/
+}
+
+div.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
+
+#bottomButtons {
+    left: 15px;
+    bottom: 52px;
+    position: absolute;
+}

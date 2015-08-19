@@ -1,0 +1,118 @@
+#welcome {
+    position: absolute;
+    bottom: 115px;
+    vertical-align: middle;
+    width: 1000px;
+    background: none repeat scroll 0% 0% rgba(70, 70, 70, 0.9);
+    box-shadow: -3px 0px 14px 0px rgba(10, 10, 10, 0.8);
+    z-index: 16;
+    left: 50%;
+    top: 175px;
+    bottom: 120px;
+    transform: translateX(-50%);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.welcomecontentheader {
+    padding: 15px 0px;
+    text-align: center;
+}
+
+#welcomecontentclose {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    padding: 10px 4px 4px;
+    background: none repeat scroll 0% 0% #000;
+    line-height: 14px;
+    z-index: 10;
+}
+
+#welcomecontentclose a{
+    cursor: pointer;
+}
+
+.welcomecontentext {
+    margin: 10px;
+    color: #eee;
+    font-family: 'coelac', "Open Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.welcomecontentext img{
+    width: 15px;
+    height: 15px;
+}
+.welcomeBrowser{
+    display: inline;
+}
+
+.welcomecontentext span{
+    color: #F9D276;
+    margin-left: 20px;
+    float: left;
+    line-height: 170px;
+    font-size: 30px;
+    text-shadow: -1px -1px 4px #000,1px -1px 4px #000,-1px 1px 4px #000,1px 1px 4px #000;
+}
+
+.welcomeBackgroundimage{
+    background-size: 300px 170px;
+    width: 300px;
+    height: 170px;
+}
+
+#welcomeFirstage{
+    background-image: url("/pics/welcome/firstage.png");
+    box-shadow: -3px 0px 14px 0px rgba(10, 10, 10, 0.8);
+}
+
+#welcomeSecondage{
+    background-image: url("/pics/welcome/secondage.png");
+    box-shadow: -3px 0px 14px 0px rgba(10, 10, 10, 0.8);
+}
+
+#welcomeThirdage{
+    background-image: url("/pics/welcome/thirdage.png");
+    box-shadow: -3px 0px 14px 0px rgba(10, 10, 10, 0.8);
+}
+
+#welcomeJourney{
+    background-image: url("/pics/welcome/journey.png");
+    opacity: 0.5;
+}
+
+#welcomeTimeline{
+    background-image: url("/pics/welcome/timeline.png");
+    opacity: 0.5;
+}
+
+#welcomeAncestry{
+    background-image: url("/pics/welcome/ancestry.png");
+    box-shadow: -3px 0px 14px 0px rgba(10, 10, 10, 0.8);
+}
+
+#welcomeFirstage:hover,#welcomeSecondage:hover,#welcomeThirdage:hover,#welcomeAncestry:hover{
+    animation: image-fadein;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 30;
+}
+
+@-webkit-keyframes image-fadein {
+    0%   { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes image-fadein {
+    0%   { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@-o-keyframes image-fadein {
+    0%   { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@keyframes image-fadein {
+    0%   { opacity: 0.5; }
+    100% { opacity: 1; }
+}

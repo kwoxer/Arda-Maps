@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "IantIaur", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.018461026160828, -0.006593153126008 ] } }
+]
+}

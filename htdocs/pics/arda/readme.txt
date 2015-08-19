@@ -1,0 +1,1 @@
+Files and folders have been removed due to copyrights. You can find the locations JUST on the Arda Maps website.

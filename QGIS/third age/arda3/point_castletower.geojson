@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "WhiteTowers", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.028687762205439, -0.01050401083492 ] } },
+{ "type": "Feature", "properties": { "eventname": "TowerOfCirithUngol", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.039704314233387, -0.01771220716422 ] } },
+{ "type": "Feature", "properties": { "eventname": "BaradDur", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.040669642398705, -0.017360588079652 ] } },
+{ "type": "Feature", "properties": { "eventname": "Isengard", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.034262354379051, -0.015353717976212 ] } },
+{ "type": "Feature", "properties": { "eventname": "CarnDum", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.033714455060695, -0.007658873722881 ] } },
+{ "type": "Feature", "properties": { "eventname": "Dunharrow", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.035576991706809, -0.016642441836549 ] } },
+{ "type": "Feature", "properties": { "eventname": "Durthang", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.039338712906451, -0.01694778366942 ] } },
+{ "type": "Feature", "properties": { "eventname": "DolGuldur", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.037655631941752, -0.012825288155896 ] } },
+{ "type": "Feature", "properties": { "eventname": "MinasMorgul", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.039492199054739, -0.017806231834439 ] } }
+]
+}

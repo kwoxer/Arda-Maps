@@ -1,0 +1,58 @@
+#journey {
+    left: 425px;
+    bottom: 52px;
+    position: fixed;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+    box-shadow: -3px 0px 14px 0px rgba(10, 10, 10, 0.5);
+    z-index: 17;
+}
+
+#journeyinner {
+    height: 0px;
+}
+
+#journeyinnerinner table {
+    color: #ddd;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    height: 90%;
+    border-collapse: collapse;
+    border: 0;
+}
+#journeyinnerinner p {
+    color: #ddd;
+    font-size: 9px;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+#journeyinnerinner td:hover{
+    color: #F9D276;
+}
+
+#journeybutton {
+    position: fixed;
+    left: 425px;
+    bottom: 15px;
+}
+
+.journeyelements {
+    list-style-type: none;
+}
+
+.journeyicon {
+    float: left;
+    height: 12px;
+    width: 12px;
+    margin-right: 2px;
+}
+
+.journeytext {
+    margin-left: 2px;
+}
+
+.journeyelementactive {
+    color: #F9D276;
+}
+

@@ -1,0 +1,26 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "Weathertop", "zoom": 3, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.032714005648782, -0.010245635287639 ] } },
+{ "type": "Feature", "properties": { "eventname": "Methedras", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.03424413187723, -0.01464367681838 ] } },
+{ "type": "Feature", "properties": { "eventname": "Celebdil", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.035277594515926, -0.01239785599954 ] } },
+{ "type": "Feature", "properties": { "eventname": "Fanuidhol", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.035738885788371, -0.012184069664445 ] } },
+{ "type": "Feature", "properties": { "eventname": "Caradhras", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.035453178853817, -0.012115427913354 ] } },
+{ "type": "Feature", "properties": { "eventname": "Mindolluin", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.038880944978097, -0.018012877814346 ] } },
+{ "type": "Feature", "properties": { "eventname": "Erech", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.035558855547942, -0.017201451225365 ] } },
+{ "type": "Feature", "properties": { "eventname": "Thrihyrne", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.034342430645481, -0.015977226458082 ] } },
+{ "type": "Feature", "properties": { "eventname": "DolBaran", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.034280078370238, -0.015574624790856 ] } },
+{ "type": "Feature", "properties": { "eventname": "Irensaga", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.035685440489834, -0.01654037371234 ] } },
+{ "type": "Feature", "properties": { "eventname": "Dwimorberg", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.035598964381701, -0.016777533215128 ] } },
+{ "type": "Feature", "properties": { "eventname": "Starkhorn", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.035472086278989, -0.016660865388025 ] } },
+{ "type": "Feature", "properties": { "eventname": "RasMorthil", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.030464270628006, -0.019045174909237 ] } },
+{ "type": "Feature", "properties": { "eventname": "MountDoom", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.04028810775207, -0.017364241777332 ] } },
+{ "type": "Feature", "properties": { "eventname": "Carrock", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.036982969011717, -0.009883837874649 ] } },
+{ "type": "Feature", "properties": { "eventname": "Gundabad", "zoom": 4, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.035847266302927, -0.00795126750644 ] } },
+{ "type": "Feature", "properties": { "eventname": "LonelyMountain", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.039796744611681, -0.008836302264508 ] } },
+{ "type": "Feature", "properties": { "eventname": "Ravenhill", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.039734021964265, -0.00897136104342 ] } },
+{ "type": "Feature", "properties": { "eventname": "AmonHen", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.037643040632373, -0.016344461334728 ] } }
+]
+}

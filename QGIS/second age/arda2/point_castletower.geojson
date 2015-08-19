@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "BaradDur", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.028787049101095, -0.011628714217622 ] } },
+{ "type": "Feature", "properties": { "eventname": "ElwingsTower", "zoom": 5, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.011420390652899, -0.007216670231508 ] } },
+{ "type": "Feature", "properties": { "eventname": "TowerOfPearl", "zoom": 3, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.008334791624814, -0.02414135552601 ] } }
+]
+}

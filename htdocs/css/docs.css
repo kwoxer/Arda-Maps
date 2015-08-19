@@ -1,0 +1,126 @@
+
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top:12px;
+}
+
+
+
+pre {
+	background-color:#F0F0F0;
+	padding:16px;
+	border:1px solid #CCC;
+	margin:8px 24px;
+}
+
+p {
+	margin:12px 16px 18px 16px;
+}
+
+h1 {
+	margin:8px 16px;
+	font-size:18px;
+	color:#666;
+}
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+
+/* kitchen sink method boxes */
+
+.method {
+	padding:8px;
+	background-color:#fff;
+	margin:8px 32px;
+	border:1px solid #444;
+	
+}
+
+.method h4 {
+	font-family:Monaco, Courier, monospace;
+	color:#9b3c01;
+	font-size:20px;
+	font-weight:normal;
+	margin:0 0 8px 0;
+	padding:0;
+	width:50%;
+	float:left;
+}
+
+
+.method ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	clear:both;
+	margin-left:64px;
+	margin-top:8px;
+}
+
+.method ol, .method ul {
+	font-size:14px;
+	color:#444;
+	margin-left:18px;
+	width:66%;
+}
+
+
+.method p {
+	margin:4px 32px;
+	font-size:16px;
+	color:#444;
+	clear:both;
+}
+
+.method ul li {
+	display:inline;
+	cursor:pointer;
+	font-size:14px;
+	margin-right:8px;
+	background-color:#70bece;
+	padding:2px 6px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.method ul li:hover {
+	background-color:#d78c5c;
+}
+
+
+#map_modal_map2 {
+	border:4px solid black;
+	height:400px;
+	width:400px;
+}
+
+		
+.method p.scope-view {
+	margin-left:64px;
+	color:red;
+}
+
+		

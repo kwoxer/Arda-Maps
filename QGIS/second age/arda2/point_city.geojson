@@ -1,0 +1,33 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "MinasAnor", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.027667495155966, -0.011975718825317 ] } },
+{ "type": "Feature", "properties": { "eventname": "Osgiliath", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.027768069103507, -0.011906090707788 ] } },
+{ "type": "Feature", "properties": { "eventname": "MinasIthil", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.028020793381946, -0.011850646095681 ] } },
+{ "type": "Feature", "properties": { "eventname": "Avallone", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.006329467259322, -0.025195622694808 ] } },
+{ "type": "Feature", "properties": { "eventname": "Kortirion", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.00610774596862, -0.024942673623006 ] } },
+{ "type": "Feature", "properties": { "eventname": "Forlond", "zoom": 5, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.019610016555144, -0.006982887812633 ] } },
+{ "type": "Feature", "properties": { "eventname": "GreyHavens", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.020867442426647, -0.007233164808064 ] } },
+{ "type": "Feature", "properties": { "eventname": "HarlondLindon", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.020253954618295, -0.007615200926527 ] } },
+{ "type": "Feature", "properties": { "eventname": "Belegost", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.020897090456952, -0.008294703378346 ] } },
+{ "type": "Feature", "properties": { "eventname": "Bree", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.023039271529573, -0.007006663672983 ] } },
+{ "type": "Feature", "properties": { "eventname": "Rivendell", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.025429851390097, -0.007050086571511 ] } },
+{ "type": "Feature", "properties": { "eventname": "OstInEdhil", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.024498758089383, -0.00856212257843 ] } },
+{ "type": "Feature", "properties": { "eventname": "Vinyalonde", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.022568894455735, -0.00986558066299 ] } },
+{ "type": "Feature", "properties": { "eventname": "Dunharrow", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.025537062688836, -0.011176547146216 ] } },
+{ "type": "Feature", "properties": { "eventname": "Edhellond", "zoom": 5, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.025424975202301, -0.012479973958494 ] } },
+{ "type": "Feature", "properties": { "eventname": "Umbar", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.025847539054295, -0.015919411383554 ] } },
+{ "type": "Feature", "properties": { "eventname": "Romenna", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.014396937673798, -0.019761676060729 ] } },
+{ "type": "Feature", "properties": { "eventname": "Calmindon", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.014409786958745, -0.019684312677476 ] } },
+{ "type": "Feature", "properties": { "eventname": "Alqualonde", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.005749928516503, -0.023005153619407 ] } },
+{ "type": "Feature", "properties": { "eventname": "Eldalonde", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.012436759328648, -0.0201245672261 ] } },
+{ "type": "Feature", "properties": { "eventname": "Andunie", "zoom": 4, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.011729223945486, -0.019222793215359 ] } },
+{ "type": "Feature", "properties": { "eventname": "Ondosto", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.012803499106089, -0.019066889543211 ] } },
+{ "type": "Feature", "properties": { "eventname": "Nindamos", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.013860567456188, -0.020926515631198 ] } },
+{ "type": "Feature", "properties": { "eventname": "Armenelos", "zoom": 3, "size": 2 }, "geometry": { "type": "Point", "coordinates": [ 0.013887464669773, -0.019806517486182 ] } },
+{ "type": "Feature", "properties": { "eventname": "Valimar", "zoom": 3, "size": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.002924564778373, -0.025194767116632 ] } },
+{ "type": "Feature", "properties": { "eventname": "GreyHavens", "zoom": 4, "size": 1 }, "geometry": { "type": "Point", "coordinates": [ 0.020635348701551, -0.007073278019664 ] } }
+]
+}

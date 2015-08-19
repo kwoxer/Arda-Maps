@@ -1,0 +1,19 @@
+
+/* make legend modal wider to accomodate checkboxes */
+.timeglider-menu-modal.tg-legend {
+	width:200px;
+}
+
+
+.timeglider-menu-modal ul li.tg-legend-item {
+	padding-left:20px;
+	background-image:url("checkbox_unchecked.png");
+	background-repeat:no-repeat;
+	background-position:0 1px;
+}
+
+
+
+.timeglider-menu-modal ul li.tg-legend-item.tg-legend-icon-selected {
+	background-image:url("checkbox_checked.png");
+}

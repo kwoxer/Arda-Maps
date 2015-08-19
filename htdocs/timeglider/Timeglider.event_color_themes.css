@@ -1,0 +1,123 @@
+
+/* EVENT COLOR THEMES */
+
+.tg-theme-option.tg-evtheme-silver {color:#222;background-color:#CCC}
+.timeglider-timeline-event.tg-evtheme-silver .timeglider-event-title {color:#222}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-silver .timeglider-event-title{color:#222}
+.timeglider-timeline-event.tg-evtheme-silver.timeglider-event-spanning .timeglider-event-spanner{background-color:#CCC}
+.timeglider-timeline-event.tg-evtheme-silver.timeglider-event-spanning .timeglider-event-spanner span{color:#222}
+
+.tg-theme-option.tg-evtheme-charcoal {color:#CCC;background-color:#222}
+.timeglider-timeline-event.tg-evtheme-charcoal .timeglider-event-title {color:#666}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-charcoal .timeglider-event-title{color:#CCC}
+.timeglider-timeline-event.tg-evtheme-charcoal.timeglider-event-spanning .timeglider-event-spanner{background-color:#222}
+.timeglider-timeline-event.tg-evtheme-charcoal.timeglider-event-spanning .timeglider-event-spanner span{color:#CCC}
+
+.tg-theme-option.tg-evtheme-orchid {color:#660066;background-color:#f5a3f5}
+.timeglider-timeline-event.tg-evtheme-orchid .timeglider-event-title {color:#cc00cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-orchid .timeglider-event-title{color:#660066}
+.timeglider-timeline-event.tg-evtheme-orchid.timeglider-event-spanning .timeglider-event-spanner{background-color:#f5a3f5}
+.timeglider-timeline-event.tg-evtheme-orchid.timeglider-event-spanning .timeglider-event-spanner span{color:#660066}
+
+.tg-theme-option.tg-evtheme-purple {color:#f0c2f0;background-color:#910891}
+.timeglider-timeline-event.tg-evtheme-purple .timeglider-event-title {color:#cc00cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-purple .timeglider-event-title{color:#f0c2f0}
+.timeglider-timeline-event.tg-evtheme-purple.timeglider-event-spanning .timeglider-event-spanner{background-color:#910891}
+.timeglider-timeline-event.tg-evtheme-purple.timeglider-event-spanning .timeglider-event-spanner span{color:#f0c2f0}
+
+.tg-theme-option.tg-evtheme-violet {color:#220066;background-color:#bea3f5}
+.timeglider-timeline-event.tg-evtheme-violet .timeglider-event-title {color:#4400cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-violet .timeglider-event-title{color:#220066}
+.timeglider-timeline-event.tg-evtheme-violet.timeglider-event-spanning .timeglider-event-spanner{background-color:#bea3f5}
+.timeglider-timeline-event.tg-evtheme-violet.timeglider-event-spanning .timeglider-event-spanner span{color:#220066}
+
+.tg-theme-option.tg-evtheme-indigo {color:#d1c2f0;background-color:#360891}
+.timeglider-timeline-event.tg-evtheme-indigo .timeglider-event-title {color:#4400cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-indigo .timeglider-event-title{color:#d1c2f0}
+.timeglider-timeline-event.tg-evtheme-indigo.timeglider-event-spanning .timeglider-event-spanner{background-color:#360891}
+.timeglider-timeline-event.tg-evtheme-indigo.timeglider-event-spanning .timeglider-event-spanner span{color:#d1c2f0}
+
+.tg-theme-option.tg-evtheme-lavender {color:#002266;background-color:#a3bef5}
+.timeglider-timeline-event.tg-evtheme-lavender .timeglider-event-title {color:#0044cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-lavender .timeglider-event-title{color:#002266}
+.timeglider-timeline-event.tg-evtheme-lavender.timeglider-event-spanning .timeglider-event-spanner{background-color:#a3bef5}
+.timeglider-timeline-event.tg-evtheme-lavender.timeglider-event-spanning .timeglider-event-spanner span{color:#002266}
+
+.tg-theme-option.tg-evtheme-dk_navy {color:#c2d1f0;background-color:#083691}
+.timeglider-timeline-event.tg-evtheme-dk_navy .timeglider-event-title {color:#0044cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-dk_navy .timeglider-event-title{color:#c2d1f0}
+.timeglider-timeline-event.tg-evtheme-dk_navy.timeglider-event-spanning .timeglider-event-spanner{background-color:#083691}
+.timeglider-timeline-event.tg-evtheme-dk_navy.timeglider-event-spanning .timeglider-event-spanner span{color:#c2d1f0}
+
+.tg-theme-option.tg-evtheme-sky_blue {color:#004466;background-color:#a3daf5}
+.timeglider-timeline-event.tg-evtheme-sky_blue .timeglider-event-title {color:#0088cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-sky_blue .timeglider-event-title{color:#004466}
+.timeglider-timeline-event.tg-evtheme-sky_blue.timeglider-event-spanning .timeglider-event-spanner{background-color:#a3daf5}
+.timeglider-timeline-event.tg-evtheme-sky_blue.timeglider-event-spanning .timeglider-event-spanner span{color:#004466}
+.tg-theme-option.tg-evtheme-ocean {color:#c2e0f0;background-color:#086391}
+.timeglider-timeline-event.tg-evtheme-ocean .timeglider-event-title {color:#0088cc}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-ocean .timeglider-event-title{color:#c2e0f0}
+.timeglider-timeline-event.tg-evtheme-ocean.timeglider-event-spanning .timeglider-event-spanner{background-color:#086391}
+.timeglider-timeline-event.tg-evtheme-ocean.timeglider-event-spanning .timeglider-event-spanner span{color:#c2e0f0}
+.tg-theme-option.tg-evtheme-turquoise {color:#006655;background-color:#a3f5e7}
+.timeglider-timeline-event.tg-evtheme-turquoise .timeglider-event-title {color:#00ccaa}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-turquoise .timeglider-event-title{color:#006655}
+.timeglider-timeline-event.tg-evtheme-turquoise.timeglider-event-spanning .timeglider-event-spanner{background-color:#a3f5e7}
+.timeglider-timeline-event.tg-evtheme-turquoise.timeglider-event-spanning .timeglider-event-spanner span{color:#006655}
+.tg-theme-option.tg-evtheme-teal {color:#c2f0e8;background-color:#08917a}
+.timeglider-timeline-event.tg-evtheme-teal .timeglider-event-title {color:#00ccaa}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-teal .timeglider-event-title{color:#c2f0e8}
+.timeglider-timeline-event.tg-evtheme-teal.timeglider-event-spanning .timeglider-event-spanner{background-color:#08917a}
+.timeglider-timeline-event.tg-evtheme-teal.timeglider-event-spanning .timeglider-event-spanner span{color:#c2f0e8}
+.tg-theme-option.tg-evtheme-keylime {color:#006622;background-color:#a3f5be}
+.timeglider-timeline-event.tg-evtheme-keylime .timeglider-event-title {color:#00cc44}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-keylime .timeglider-event-title{color:#006622}
+.timeglider-timeline-event.tg-evtheme-keylime.timeglider-event-spanning .timeglider-event-spanner{background-color:#a3f5be}
+.timeglider-timeline-event.tg-evtheme-keylime.timeglider-event-spanning .timeglider-event-spanner span{color:#006622}
+.tg-theme-option.tg-evtheme-pine {color:#c2f0d1;background-color:#089136}
+.timeglider-timeline-event.tg-evtheme-pine .timeglider-event-title {color:#00cc44}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-pine .timeglider-event-title{color:#c2f0d1}
+.timeglider-timeline-event.tg-evtheme-pine.timeglider-event-spanning .timeglider-event-spanner{background-color:#089136}
+.timeglider-timeline-event.tg-evtheme-pine.timeglider-event-spanning .timeglider-event-spanner span{color:#c2f0d1}
+.tg-theme-option.tg-evtheme-pale_green {color:#336600;background-color:#ccf5a3}
+.timeglider-timeline-event.tg-evtheme-pale_green .timeglider-event-title {color:#66cc00}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-pale_green .timeglider-event-title{color:#336600}
+.timeglider-timeline-event.tg-evtheme-pale_green.timeglider-event-spanning .timeglider-event-spanner{background-color:#ccf5a3}
+.timeglider-timeline-event.tg-evtheme-pale_green.timeglider-event-spanning .timeglider-event-spanner span{color:#336600}
+.tg-theme-option.tg-evtheme-green {color:#d9f0c2;background-color:#4d9108}
+.timeglider-timeline-event.tg-evtheme-green .timeglider-event-title {color:#66cc00}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-green .timeglider-event-title{color:#d9f0c2}
+.timeglider-timeline-event.tg-evtheme-green.timeglider-event-spanning .timeglider-event-spanner{background-color:#4d9108}
+.timeglider-timeline-event.tg-evtheme-green.timeglider-event-spanning .timeglider-event-spanner span{color:#d9f0c2}
+
+.tg-theme-option.tg-evtheme-yellow {color:#666600;background-color:#f5f5a3}
+.timeglider-timeline-event.tg-evtheme-yellow .timeglider-event-title {color:#818100}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-yellow .timeglider-event-title{color:#666600}
+.timeglider-timeline-event.tg-evtheme-yellow.timeglider-event-spanning .timeglider-event-spanner{background-color:#f5f5a3}
+.timeglider-timeline-event.tg-evtheme-yellow.timeglider-event-spanning .timeglider-event-spanner span{color:#666600}
+
+.tg-theme-option.tg-evtheme-golden {color:#f0f0c2;background-color:#B2A800}
+.timeglider-timeline-event.tg-evtheme-golden .timeglider-event-title {color:#cccc00}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-golden .timeglider-event-title{color:#f0f0c2}
+.timeglider-timeline-event.tg-evtheme-golden.timeglider-event-spanning .timeglider-event-spanner{background-color:#B2A800}
+.timeglider-timeline-event.tg-evtheme-golden.timeglider-event-spanning .timeglider-event-spanner span{color:#f0f0c2}
+.tg-theme-option.tg-evtheme-creamsicle {color:#664d00;background-color:#f5e0a3}
+.timeglider-timeline-event.tg-evtheme-creamsicle .timeglider-event-title {color:#cc9900}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-creamsicle .timeglider-event-title{color:#664d00}
+.timeglider-timeline-event.tg-evtheme-creamsicle.timeglider-event-spanning .timeglider-event-spanner{background-color:#f5e0a3}
+.timeglider-timeline-event.tg-evtheme-creamsicle.timeglider-event-spanning .timeglider-event-spanner span{color:#664d00}
+.tg-theme-option.tg-evtheme-orange {color:#f0e4c2;background-color:#C75B00}
+.timeglider-timeline-event.tg-evtheme-orange .timeglider-event-title {color:#cc9900}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-orange .timeglider-event-title{color:#f0e4c2}
+.timeglider-timeline-event.tg-evtheme-orange.timeglider-event-spanning .timeglider-event-spanner{background-color:#C75B00}
+.timeglider-timeline-event.tg-evtheme-orange.timeglider-event-spanning .timeglider-event-spanner span{color:#f0e4c2}
+.tg-theme-option.tg-evtheme-pink {color:#660900;background-color:#f5aaa3}
+.timeglider-timeline-event.tg-evtheme-pink .timeglider-event-title {color:#cc1100}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-pink .timeglider-event-title{color:#660900}
+.timeglider-timeline-event.tg-evtheme-pink.timeglider-event-spanning .timeglider-event-spanner{background-color:#f5aaa3}
+.timeglider-timeline-event.tg-evtheme-pink.timeglider-event-spanning .timeglider-event-spanner span{color:#660900}
+.tg-theme-option.tg-evtheme-red {color:#f0c6c2;background-color:#911308}
+.timeglider-timeline-event.tg-evtheme-red .timeglider-event-title {color:#cc1100}
+.timeglider-timeline-event.timeglider-event-spanning.tg-evtheme-red .timeglider-event-title{color:#f0c6c2}
+.timeglider-timeline-event.tg-evtheme-red.timeglider-event-spanning .timeglider-event-spanner{background-color:#911308}
+.timeglider-timeline-event.tg-evtheme-red.timeglider-event-spanning .timeglider-event-spanner span{color:#f0c6c2}

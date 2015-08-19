@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "RivilsWell", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.017945087076838, -0.005958627884495 ] } },
+{ "type": "Feature", "properties": { "eventname": "EithelSirion", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.017291574872078, -0.005544263709299 ] } },
+{ "type": "Feature", "properties": { "eventname": "HouseOfRansom", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.017336005731178, -0.007093278102313 ] } },
+{ "type": "Feature", "properties": { "eventname": "BayOfBalar", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.016420280163797, -0.008931443724126 ] } },
+{ "type": "Feature", "properties": { "eventname": "AnnonInGelydh", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.01613368784889, -0.005780699856033 ] } },
+{ "type": "Feature", "properties": { "eventname": "Androth", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.016144948764944, -0.005836430614641 ] } },
+{ "type": "Feature", "properties": { "eventname": "Losgar", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.015490775770806, -0.005886992175966 ] } },
+{ "type": "Feature", "properties": { "eventname": "Ilmarin", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.004829621761385, -0.025351170687795 ] } },
+{ "type": "Feature", "properties": { "eventname": "Tirion", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.00469614763071, -0.024912033423612 ] } },
+{ "type": "Feature", "properties": { "eventname": "Laurelin", "zoom": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.00280464959103, -0.024868893994637 ] } },
+{ "type": "Feature", "properties": { "eventname": "Telperion", "zoom": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.00261586850013, -0.024960334835541 ] } },
+{ "type": "Feature", "properties": { "eventname": "Mahanaxar", "zoom": 3 }, "geometry": { "type": "Point", "coordinates": [ 0.002766303431941, -0.025101920653716 ] } },
+{ "type": "Feature", "properties": { "eventname": "CabedEnAras", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.017156966027115, -0.00677355412261 ] } }
+]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generiert durch Microsoft Visio, SVG Export ford.svg Zeichenblatt-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.838906in" height="0.669992in"
+		viewBox="0 0 60.4012 48.2394" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#31859b;stroke:#b7dde8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Zeichenblatt-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(0.375,-0.383052)">
+			<title>Tabelle.1</title>
+			<path d="M0.05 21.03 C0.07 20.1 0.5 20.18 0.85 20.18 C3.4 20.14 2.58 15.69 4.06 14.22 C5.08 13.21 7.19 13.62 8.86 13.37
+						 C11.36 13.01 12.9 11.19 14.47 9.55 C16.48 7.44 18.55 5.61 21.11 4.02 C24.32 2.02 28.3 0.4 32.09 0.76 C35.46
+						 1.07 38.68 2.95 42.27 4.02 C46.23 5.19 50.64 5.39 54.06 7.42 C56.9 9.11 59.07 12.06 59.55 16.07 C59.81 18.17
+						 59.6 20.56 58.64 22.16 C57.6 23.88 55.69 24.68 54.29 26.13 C52.78 27.69 51.87 30 50.97 32.37 C49.43 36.39
+						 47.91 40.59 45.59 43.7 C43.78 46.13 41.49 47.9 38.96 48.24 C36.46 48.57 33.74 47.52 31.17 46.26 C28.93 45.15
+						 26.8 43.88 24.54 43 C19.16 40.89 13.01 40.96 8.63 37.18 C5.13 34.16 2.76 28.68 0.85 24.85 C0.33 23.8 -0.16
+						 22.87 0.05 21.03 Z" class="st1"/>
+		</g>
+	</g>
+</svg>

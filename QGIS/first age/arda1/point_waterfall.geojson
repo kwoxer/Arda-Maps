@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "eventname": "EithelIvrin", "zoom": 4 }, "geometry": { "type": "Point", "coordinates": [ 0.016585975422842, -0.006407147889529 ] } },
+{ "type": "Feature", "properties": { "eventname": "Dimrost", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.017212433332581, -0.006667487662317 ] } },
+{ "type": "Feature", "properties": { "eventname": "FallsOfSirion", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.017443591914984, -0.007635000118769 ] } },
+{ "type": "Feature", "properties": { "eventname": "LanthirLamath", "zoom": 5 }, "geometry": { "type": "Point", "coordinates": [ 0.021002275723475, -0.009129664525814 ] } }
+]
+}
