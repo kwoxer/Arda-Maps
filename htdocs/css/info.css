@@ -28,9 +28,9 @@
     bottom: 15px;
 }
 #infobuttons ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #infobutton,#timelinebutton {
@@ -190,7 +190,7 @@
 }
 
 #infoClosebutton:hover {
-   background-color: #bbb;
+    background-color: #bbb;
 }
 
 #infoSearch {

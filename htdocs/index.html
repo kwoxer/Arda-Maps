@@ -1,1155 +1,1155 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head profile="http://dublincore.org/documents/2008/08/04/dc-html/">
-        <title>Arda Maps Beta - An interactive Tolkien Experience</title>
-        <meta name="description" content="Arda Maps is a complete new interactive experience. It is visualizing the most important Tolkien ages all on one site. Driven by the community!">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
-        <meta name="DC.title" content="Arda Maps Beta - An interactive Tolkien Experience">
-        <meta name="DC.description" content="Arda Maps is a complete new interactive experience. It is visualizing the most important Tolkien ages all on one site.">
-        <meta name="DC.keywords" content="arda,maps,middle-earth,map,interactive,lotr,the hobbit,lord of the rings,tolkien">
-        <link rel="schema.ABOUT" href="http://arda-maps.org/about/">
-        <meta name="ABOUT.title" content="About - Arda Maps">
-        <meta name="ABOUT.description" content="Arda Maps is an Open Source project that is visualizing all data of the Tolkien universe.">
-        <meta name="ABOUT.keywords" content="about,project">
-        <link rel="schema.CREATOR" href="http://arda-maps.org/creator/">
-        <meta name="CREATOR.title" content="The Creator - Arda Maps">
-        <meta name="CREATOR.description" content="Arda Maps is created by Curtis Mosters and will soon be open for anyone else!">
-        <meta name="CREATOR.keywords" content="creator,project.open source">
-        <meta name="author" content="Curtis Mosters">
-        <meta name="site_name" content="Arda Maps">
-        <meta name="type" content="science fiction">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="english">
-        <link rel="stylesheet" href="css/default.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/welcome.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/arda-svg.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/loading.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/legend.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/journey.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/version.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/zoom.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/info.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/timeline.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/popup.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/footerpopup.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/illustrator.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/scalebar.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/arda-bg.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/region.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/familytree.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-        <link rel="stylesheet" href="timeglider/Timeglider.css" type="text/css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="timeglider/timeglider.datepicker.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="icon" href="http://arda-maps.org/favicon.ico" type="image/x-icon">
-        <script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
-        <script src="js/libs/d3.min.js" type="text/javascript"></script>
-        <script src="js/libs/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/libs/topojson.min.js" type="text/javascript"></script>
-        <script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
-    </head>
+<head profile="http://dublincore.org/documents/2008/08/04/dc-html/">
+    <title>Arda Maps Beta - An interactive Tolkien Experience</title>
+    <meta name="description" content="Arda Maps is a complete new interactive experience. It is visualizing the most important Tolkien ages all on one site. Driven by the community!">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.title" content="Arda Maps Beta - An interactive Tolkien Experience">
+    <meta name="DC.description" content="Arda Maps is a complete new interactive experience. It is visualizing the most important Tolkien ages all on one site.">
+    <meta name="DC.keywords" content="arda,maps,middle-earth,map,interactive,lotr,the hobbit,lord of the rings,tolkien">
+    <link rel="schema.ABOUT" href="http://arda-maps.org/about/">
+    <meta name="ABOUT.title" content="About - Arda Maps">
+    <meta name="ABOUT.description" content="Arda Maps is an Open Source project that is visualizing all data of the Tolkien universe.">
+    <meta name="ABOUT.keywords" content="about,project">
+    <link rel="schema.CREATOR" href="http://arda-maps.org/creator/">
+    <meta name="CREATOR.title" content="The Creator - Arda Maps">
+    <meta name="CREATOR.description" content="Arda Maps is created by Curtis Mosters and will soon be open for anyone else!">
+    <meta name="CREATOR.keywords" content="creator,project.open source">
+    <meta name="author" content="Curtis Mosters">
+    <meta name="site_name" content="Arda Maps">
+    <meta name="type" content="science fiction">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="english">
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/welcome.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/arda-svg.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/loading.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/legend.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/journey.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/version.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/zoom.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/info.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/timeline.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/popup.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/footerpopup.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/illustrator.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/scalebar.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/arda-bg.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/region.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/familytree.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="timeglider/Timeglider.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="timeglider/timeglider.datepicker.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="icon" href="http://arda-maps.org/favicon.ico" type="image/x-icon">
+    <script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/libs/d3.min.js" type="text/javascript"></script>
+    <script src="js/libs/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/topojson.min.js" type="text/javascript"></script>
+    <script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
+</head>
 <body>
-    <div id="fb-root"></div>
-    <script type="text/javascript">(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=151852984909033";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-64043649-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <div id="menu" class="unselectable">
-        <ul id="sdt_menu" class="sdt_menu">
-            <li>
-                <a id="menu_main" href="/">
-                    <img src="pics/menu/1.png" style="width: 0px; height: 0px;" alt="Menu Main">
-                    <span class="sdt_active"></span>
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=151852984909033";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64043649-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<div id="menu" class="unselectable">
+    <ul id="sdt_menu" class="sdt_menu">
+        <li>
+            <a id="menu_main" href="/">
+                <img src="pics/menu/1.png" style="width: 0px; height: 0px;" alt="Menu Main">
+                <span class="sdt_active"></span>
                     <span class="sdt_wrap">
                         <span class="sdt_link">Arda Maps</span>
                         <span class="sdt_descr">Beta Version</span>
                     </span>
-                </a>
-                <div class="sdt_box">
-                    <a id="menu1about" href="/about/">About</a>
-                    <a id="menu1creator" href="/creator/">The Creator</a>
-                    <a id="menu1delimitation" href="/delimitation/">Delimitation</a>
-                    <a id="menu1opensource" href="/opensource/">Open Source</a>
-                    <a id="menu1donateshare" href="/donate/">Donate &amp; Share</a>
-                </div>
-            </li>
-            <li>
-                <a id="menu2ages" href="/ages/">
-                    <img src="pics/menu/2.png" style="width: 0px; height: 0px;" alt="Menu Ages">
-                    <span class="sdt_active"></span>
+            </a>
+            <div class="sdt_box">
+                <a id="menu1about" href="/about/">About</a>
+                <a id="menu1creator" href="/creator/">The Creator</a>
+                <a id="menu1delimitation" href="/delimitation/">Delimitation</a>
+                <a id="menu1opensource" href="/opensource/">Open Source</a>
+                <a id="menu1donateshare" href="/donate/">Donate &amp; Share</a>
+            </div>
+        </li>
+        <li>
+            <a id="menu2ages" href="/ages/">
+                <img src="pics/menu/2.png" style="width: 0px; height: 0px;" alt="Menu Ages">
+                <span class="sdt_active"></span>
                     <span class="sdt_wrap">
                         <span class="sdt_link">Ages</span>
                         <span class="sdt_descr">Ages of Arda</span>
                     </span>
-                </a>
-                <div class="sdt_box">
-                    <a id="menu2firstage" href="/ages/first/">First Age</a>
-                    <a id="menu2secondage" href="/ages/second/">Second Age</a>
-                    <a id="menu2thirdage" href="/ages/third/">Third Age</a>
-                </div>
-            </li>
-            <li>
-                <a id="menu4familytree" href="/familytree/">
-                    <img src="pics/menu/4.png" style="width: 0px; height: 0px;" alt="Menu Familytree">
-                    <span class="sdt_active"></span>
+            </a>
+            <div class="sdt_box">
+                <a id="menu2firstage" href="/ages/first/">First Age</a>
+                <a id="menu2secondage" href="/ages/second/">Second Age</a>
+                <a id="menu2thirdage" href="/ages/third/">Third Age</a>
+            </div>
+        </li>
+        <li>
+            <a id="menu4familytree" href="/familytree/">
+                <img src="pics/menu/4.png" style="width: 0px; height: 0px;" alt="Menu Familytree">
+                <span class="sdt_active"></span>
                     <span class="sdt_wrap">
                         <span class="sdt_link">Ancestry</span>
                         <span class="sdt_descr">Relationships</span>
                     </span>
-                </a>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="welcome">
+    <div id="welcomeinner">
+        <a href="#">
+            <img id="welcomecontentclose" src="pics/popup/close.png" alt="Close Button">
+        </a>
+        <div id="welcomecontent">
+            <div id="welcomecontentDisclaimer">
+                <div class="welcomecontentheader">
+                    <h1>Arda Maps</h1>
+                </div>
+                <div class="welcomecontentext">
+                    <p>Welcome to Arda Maps. This project comes up with the 3 most important ages...</p>
+                    <a href="/ages/first/" title="Show the map of the first age">
+                        <span id="welcomeFirstage" class="welcomeBackgroundimage unselectable">First Age</span>
+                    </a>
+                    <a href="/ages/second/" title="Show the map of the second age">
+                        <span id="welcomeSecondage" class="welcomeBackgroundimage unselectable">Second Age</span>
+                    </a>
+                    <a href="/ages/third/" title="Show the map of the third age">
+                        <span id="welcomeThirdage" class="welcomeBackgroundimage unselectable">Third Age</span>
+                    </a>
+                    <p style="margin-top:210px">...and there is even much more on top of these high-detailed maps.</p>
+                    <span id="welcomeJourney" class="welcomeBackgroundimage unselectable defaultcursor" title="No direct link right now...">Journeys & Regions</span>
+                    <span id="welcomeTimeline" class="welcomeBackgroundimage unselectable defaultcursor" title="No direct link right now...">Timelines</span>
+                    <a href="/familytree/" title="Show the family tree">
+                        <span id="welcomeAncestry" class="welcomeBackgroundimage unselectable">Family Tree</span>
+                    </a>
+                    <p style="margin-top:210px">For ideas and feedback feel free to join our <a href="/forum/">Forum</a>.</p>
+                    <p class="welcomeBrowser">Best performance with Chrome (36+)</p> <img src="/pics/welcome/chrome.png" alt="Chrome" title="Chrome">
+                    <p class="welcomeBrowser">and all implemented features successfully tested with Firefox (16+)</p> <img src="/pics/welcome/firefox.png" alt="Firefox" title="Firefox">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup">
+    <div id="popupinner">
+        <a href="#">
+            <img id="popupcontentclose" src="pics/popup/close.png" alt="Close Button">
+        </a>
+        <div id="popupcontent">
+            <div id="popupcontentAbout">
+                <div class="popupcontentheader">
+                    <h3>Arda Maps - Beta</h3>
+                </div>
+                <div class="popupcontentext">
+                    <p>Arda Maps is a non-profit, (soon) Open Source, community driven and educational project.</p>
+                    <p>This project is not associated with Middle-earth Enterprises nor the Tolkien Estates.</p>
+                    <p>We come up with 3 <strong>Tolkien ages</strong>, 900 <strong>characters</strong>, 800 <strong>places</strong> over 2000 <strong>timeline events</strong> and more then 400 <strong>pictures</strong> to a complete new presentation level of detail.</p>
+                    <p>The aim is that Tolkien readers can use this website to explore the fictive universe, Tolkien lovely filled with life. So we created the maps of the most important ages. These maps can be zoomed, dragged and each one shows some of the most important journeys, timeline events and much more!</p>
+                    <p>All maps are based on the <a href="http://en.wikipedia.org/wiki/The_Atlas_of_Middle-earth">The Atlas of Middle-earth</a> from <a href="http://en.wikipedia.org/wiki/Karen_Wynn_Fonstad">Karen Wynn Fonstad</a> but extended with own ideas and small changes based on different other official maps.</p>
+                    <p>Besides you can also use different ways to search for more information. We also offer a <a href="/familytree/">family tree</a> of all the different characters and their relations (grey:"has a child", red:"spouse", blue:"is sibling of").</p>
+                    <p>If you have any idea or feedback, just let me know:</p>
+                    <ul>
+                        <li>Forum: <a href="/forum/">Forum</a></li>
+                        <li>Skype: <a href="skype:kwoxer?add">kwoxer</a></li>
+                        <li>E-Mail: <a href="mailto:admin@kwoxer.de">admin@kwoxer.de</a></li>
+                    </ul>
+                    <p>Please keep in mind that Arda Maps is still in Beta state. There are still many changes coming... =)</p>
+                </div>
+            </div>
+            <div id="popupcontentCreator">
+                <div class="popupcontentheader">
+                    <h3>The Creator</h3>
+                </div>
+                <div class="popupcontentext">
+                    <img src="pics/arda/illustrator/curtismosters.png" width="200" height="200" alt="Curtis Mosters">
+                    <p>This project is created by <a href="http://www.kwoxer.de">Curtis Mosters</a> who is writing his master-thesis at the Brandenburg University of Applied Sciences in Germany.</p>
+                    <p>As a big Tolkien fan in my mind his books are really outstanding. But when I was e.g. some times ago reading the Silmarillion I was often asking myself: "Where is this place?" and "How big might be a specific difference between two places?". So I was searching around if there is any website which is showing the whole maps that can be zoomed without loosing any small lovely detail. But unfortunately there was nothing like that in the web except lots of static drawings and most of them were in low qualy as well.</p>
+                    <p>This was the moment where I actually was the first time thinking about creating something like Arda Maps.</p>
+                    <p>I also want to thank Prof. <a href="http://informatik.fh-brandenburg.de/alexander-urban.html">Alexander Urban</a>  who made this project possible and who helped a lot with his media and design background knowledge.</p>
+                    <p>Special Thanks are going to <strong style="color: #999">Sabrina Wiese</strong>. She helped very much in creating the concept of Arda Maps and supported me where it was possible. Without her this website and many more beautiful things would have never happened to me. I thank you so much for every second you spent with me. This page is dedicated to you.</p>
+                </div>
+            </div>
+            <div id="popupcontentDelimitation">
+                <div class="popupcontentheader">
+                    <h3>Delimitation</h3>
+                </div>
+                <div class="popupcontentext">
+                    <p>Arda Maps is in contextual terms based on the <a href="http://tolkiengateway.net/wiki/Main_Page">Tolkien Gateway</a>.</p>
+                    <p>This Wiki is used because it's the most complete English Wiki about the whole Tolkien universe. It also has a well-defined structure and was most recommended by the Tolkien community when I started Arda Maps.</p>
+                    <p>Arda Maps can contain mistakes like wrong dates or any other information. This might be due to the manual copying process of the data. As it will be Open Source anyone will be able to fix issues in the future like in a usual Wiki. Meanwhile you can send issues and bugs on our <a href="/forum/">Forum</a>. Thank you very much.</p>
+                    <p>We are also NOT showing ALL information because our aim is to visualise data especially the maps, timelines and relationships. So in order to go deeper we really recommend reading all the different Tolkien books and refering to the great Tolkien Gateway.</p>
+                </div>
+            </div>
+            <div id="popupcontentOpensource">
+                <div class="popupcontentheader">
+                    <h3>Open Source</h3>
+                </div>
+                <div class="popupcontentext">
+                    <p>Arda Maps is NOT YET Open Source but will finally be community driven like Tolkien Gateway is.</p>
+                    <p>Before reaching the Open Source state - so everyone can send in pull requests - the structure needs to be massively improved and cleared.</p>
+                    <p>After all these points are defined, the whole source code and database will be available for anyone for free.</p>
+                    <p>Arda Maps is using the following main technologies:</p>
+                    <ul>
+                        <li>QGIS | georeferencing and map creation in general</li>
+                        <li>D3.js with topojson | visualising map and family tree</li>
+                        <li>OrientDB | graph database</li>
+                    </ul>
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Arda Maps</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://arda-maps.org/" property="cc:attributionName" rel="cc:attributionURL">Curtis Mosters</a> is licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons 4.0 International Licence</a>.
+                </div>
+            </div>
+            <div id="popupcontentDonateshare">
+                <div class="popupcontentheader">
+                    <h3>Donate and Share</h3>
+                </div>
+                <div class="popupcontentext">
+                    <p>Arda Maps is a non-profit project and driven by YOU, the community!</p>
+                    <p>We have the intention to help readers so that those can find the information they need. Keeping this website alive costs some bucks. We really appreciate if you like Arda Maps, please consider a <a href="/go/donate/">donation</a>. This ONLY helps to improve the server and paying costs.</p>
+                    <p>Also feel free to share this project anywhere you like.</p>
+                    <p>Thanks in advance!</p>
+                </div>
+            </div>
+            <div id="popupcontentAges">
+                <div class="popupcontentheader">
+                    <h3>Ages of Arda</h3>
+                </div>
+                <div class="popupcontentext">
+                    <p> Arda Maps is created to offer high-detailed maps about the most important ages of Middle-earth for free. It might never be complete due to missing official map pieces or sometimes unclear definitions made by J.R.R. Tolkien. There are way more Ages mentioned by Tolkien but most of them are having very less data to show like 'Years of the Trees' or the 'Forth Age'.</p>
+                    <p>Until there is not enough data about them we are here just showing these 3 main ages right now:</p>
+                    <ul>
+                        <li><a href="/ages/first/">First Age</a> (Túrin, Tuor, Beren)</li>
+                        <li><a href="/ages/second/">Second Age</a> (Númenor)</li>
+                        <li><a href="/ages/third/">Third Age</a> (Hobbit, Lord of the Rings)</li>
+                    </ul>
+                    <p>The ages are fully zoom- &amp; drag-able. And much more...</p>
+                </div>
+            </div>
+            <div id="popupcontent404">
+                <div class="popupcontentheader">
+                    <h3>Ooops - no content here</h3>
+                </div>
+                <div class="popupcontentext">
+                    <p>We are really sorry but the page your requested page does not exist.</p>
+                    <p>If you came via direct link please report this as an <a href="mailto:admin@kwoxer.de?subject=Found an issue on Arda Maps&amp;body=...more details on your issue (copyright;map data;design...)">issue</a>. Thank you. =)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="illustrator">
+<div id="illustratorinner">
+<a href="#">
+    <img id="illustratorcontentclose" src="pics/popup/close.png" alt="Close Button">
+</a>
+<div id="illustratorcontent">
+<div id="illustratorcontentAdlpictures">
+    <div class="illustratorcontentheader">
+        <h3>Adlpictures</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Adlpictures</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.></p>
+        <p>Details of the copyright holder: </p>
+        <ul class="listplacing">
+            <li>Name: Adlpictures</li>
+            <li>Website: <a href="http://adlpictures.deviantart.com/">Adlpictures's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentAlais">
+    <div class="illustratorcontentheader">
+        <h3>Alaïs</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Alaïs</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.></p>
+        <p>Details of the copyright holder: </p>
+        <ul class="listplacing">
+            <li>Name: Alaïs</li>
+            <li>Website: <a href="http://alaisl.deviantart.com/">Alaïs's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentAnkeEissmann">
+    <div class="illustratorcontentheader">
+        <h3>Anke Eissmann</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Anke Eissmann</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Anke Eissmann</li>
+            <li>Website: <a href="http://www.anke.edoras-art.de">Anke Eissmann's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentAnnaKulisz">
+    <div class="illustratorcontentheader">
+        <h3>Anna Kulisz</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Anna Kulisz</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Anna Kulisz</li>
+            <li>Website: <a href="http://alasseaearello.deviantart.com/">Anna Kulisz's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentEbeKastein">
+    <div class="illustratorcontentheader">
+        <h3>Ebe Kastein</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Ebe Kastein</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Ebe Kastein</li>
+            <li>Website: <a href="http://ebe-kastein.deviantart.com/">Ebe Kastein's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentFrancescoAmadio">
+    <div class="illustratorcontentheader">
+        <h3>Francesco Amadio</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Francesco Amadio</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Francesco Amadio</li>
+            <li>Website: <a href="http://tolmancotton.deviantart.com/">Francesco Amadio's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentGrantGould">
+    <div class="illustratorcontentheader">
+        <h3>Grant Gould</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Grant Gould</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Grant Gould</li>
+            <li>Website: <a href="http://www.grantgould.com">Grant Gould's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentJacekKopalski">
+    <div class="illustratorcontentheader">
+        <h3>Jacek Kopalski</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Jacek Kopalski</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Jacek Kopalski</li>
+            <li>Website: <a href="http://www.jacekkopalski.com">Jacek Kopalski's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentJankaLateckova">
+    <div class="illustratorcontentheader">
+        <h3>Janka Latečková</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Janka Latečková</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Janka Latečková</li>
+            <li>Website: <a href="http://jankolas.deviantart.com/">Janka Latečková's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentJanPospisil">
+    <div class="illustratorcontentheader">
+        <h3>Jan Pospíšil</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Jan Pospíšil</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Jan Pospíšil</li>
+            <li>Website: <a href="http://merlkir.deviantart.com/">Jan Pospíšil's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentJennyDolfen">
+    <div class="illustratorcontentheader">
+        <h3>Jenny Dolfen</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Jenny Dolfen</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Jenny Dolfen</li>
+            <li>Website: <a href="http://www.goldseven.de">Jenny Dolfen's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentJoonaKujanen">
+    <div class="illustratorcontentheader">
+        <h3>Joona Kujanen</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Joona Kujanen</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Joona Kujanen</li>
+            <li>Website: <a href="http://tulikoura.deviantart.com/">Joona Kujanen's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentKasiopea">
+    <div class="illustratorcontentheader">
+        <h3>Katarzyna Karina Chmiel-Gugulska (Kasiopea)</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Katarzyna Karina Chmiel-Gugulska</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Katarzyna Karina Chmiel-Gugulska</li>
+            <li>Website: <a href="http://www.kasiopea.art.pl">Katarzyna Karina Chmiel-Gugulska's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentKarolinaWegrzyn">
+    <div class="illustratorcontentheader">
+        <h3>Karolina Węgrzyn</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Karolina Węgrzyn</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Karolina Węgrzyn</li>
+            <li>Website: <a href="http://www.sirielle.com">Karolina Węgrzyn's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentLeoneFabio">
+    <div class="illustratorcontentheader">
+        <h3>Leone Fabio</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Leone Fabio</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Leone Fabio</li>
+            <li>Website: <a href="https://www.facebook.com/IllustratorFabioLeone">Leone Fabio's facebook page</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentLigaKlavina">
+    <div class="illustratorcontentheader">
+        <h3>Līga Kļaviņa</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Līga Kļaviņa</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Līga Kļaviņa</li>
+            <li>Website: <a href="http://liga-marta.deviantart.com/">Līga Kļaviņa's facebook page</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentLorraineBrevig">
+    <div class="illustratorcontentheader">
+        <h3>Lorraine Brevig</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Lorraine Brevig</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Lorraine Brevig</li>
+            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Lorraine_Brevig">Lorraine Brevig's TG images</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentLuisFBejarano">
+    <div class="illustratorcontentheader">
+        <h3>Luis F. Bejarano</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Luis F. Bejarano</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Luis F. Bejarano</li>
+            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Luis_F._Bejarano">Luis F. Bejarano's TG images</a></li>
+            <li>Website: <a href="http://tolkien.luisbejarano.com/">Luis F. Bejarano's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentMareishon">
+    <div class="illustratorcontentheader">
+        <h3>Mareishon</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Mareishon</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Mareishon</li>
+            <li>Website: <a href="http://mareishon.deviantart.com/">Mareishon's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentMaryaFilatova">
+    <div class="illustratorcontentheader">
+        <h3>Marya Filatova</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Marya Filatova</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Marya Filatova</li>
+            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Marya_Filatova">Marya Filatova's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentMatejCadil">
+    <div class="illustratorcontentheader">
+        <h3>Matěj Čadil</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Matěj Čadil</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <p>Matěj Čadil is a graphic designer and illustrator from the Czech Republic who loves to depict lesser-known parts of Tolkien's world.</p>
+        <ul class="listplacing">
+            <li>Name: Matěj Čadil</li>
+            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Mat%C4%9Bj_%C4%8Cadil">Matěj Čadil's TG website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentMattStewart">
+    <div class="illustratorcontentheader">
+        <h3>Matt Stewart</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Matt Stewart</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Matt Stewart</li>
+            <li>Website: <a href="http://www.matthew-stewart.com">Matt Stewart's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentNolanos">
+    <div class="illustratorcontentheader">
+        <h3>Nolanos</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Nolanos</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Nolanos</li>
+            <li>Website: <a href="http://nolanos.deviantart.com/">Nolanos's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentOlandaFongSurdenas">
+    <div class="illustratorcontentheader">
+        <h3>Olanda Fong-Surdenas</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Olanda Fong-Surdenas</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Olanda Fong-Surdenas</li>
+            <li>Website: <a href="http://wynahiros.deviantart.com/">Olanda Fong-Surdenas's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentPeterXavierPrice">
+    <div class="illustratorcontentheader">
+        <h3>Peter Xavier Price</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Peter Xavier Price</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Peter Xavier Price</li>
+            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Peter_Xavier_Price">Peter Xavier Price's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentRalphDamiani">
+    <div class="illustratorcontentheader">
+        <h3>Ralph Damiani</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Ralph Damiani</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Ralph Damiani</li>
+            <li>Website: <a href="http://www.ralphdamiani.com">Ralph_Damiani's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentRichardSvensson">
+    <div class="illustratorcontentheader">
+        <h3>Richard Svensson</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Richard Svensson</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Richard Svensson</li>
+            <li>Website: <a href="http://loneanimator.deviantart.com">Richard Svensson's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentSarkaSkorpikova">
+    <div class="illustratorcontentheader">
+        <h3>Šárka Škorpíková</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Šárka Škorpíková</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <p> My name is Šárka Škorpíková, born in 1994 and I am a biology student and hobbyist illustrator from the Czech Republic.</p>
+        <ul class="listplacing">
+            <li>Name: Šárka Škorpíková</li>
+            <li>Website: <a href="http://robleskazeppelin.deviantart.com/">Šárka Škorpíková's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentShyangell">
+    <div class="illustratorcontentheader">
+        <h3>Shyangell</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Shyangell</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Shyangell</li>
+            <li>Website: <a href="http://shyangell.deviantart.com/">Shyangell's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentSimonaBrunildeJero">
+    <div class="illustratorcontentheader">
+        <h3>Simona Brunilde Jero</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Simona Brunilde Jero</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Simona Brunilde Jero</li>
+            <li>Website: <a href="http://brunild.deviantart.com/">Simona Brunilde Jero's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentSoniAlcornHender">
+    <div class="illustratorcontentheader">
+        <h3>Soni Alcorn-Hender</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <img src="pics/arda/illustrator/sonialcornhender.png" width="170" height="200" alt="Soni Alcorn-Hender">
+        <p>This work is copyrighted and owned by <strong>Soni Alcorn-Hender</strong> (Bohemian Weasel). However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <p>Soni is an English artist living and working in Portugal, with a degree in illustration from the Glasgow School of Art.</p>
+        <ul class="listplacing">
+            <li>Name: Soni Alcorn-Hender</li>
+            <li>Website: <a href="http://bohemianweasel.com">Soni Alcorn-Hender's website</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentTedNasmith">
+    <div class="illustratorcontentheader">
+        <h3>Ted Nasmith</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <img src="pics/arda/illustrator/tednasmith.jpg" width="170" height="200" alt="Ted Nasmith">
+        <p>The artwork incorporated herein is copyrighted by <strong>Ted Nasmith</strong>. Mr. Nasmith's permission has been granted to use these images. Arda Maps is a not-for-profit project.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Ted Nasmith's official website: <a href="http://www.tednasmith.com">www.tednasmith.com</a></li>
+        </ul>
+    </div>
+</div>
+<div id="illustratorcontentUllaThynell">
+    <div class="illustratorcontentheader">
+        <h3>Ulla Thynell</h3>
+    </div>
+    <div class="illustratorcontentext">
+        <p>This work is copyrighted and owned by <strong>Ulla Thynell</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+        <p>Details of the copyright holder:</p>
+        <ul class="listplacing">
+            <li>Name: Ulla Thynell</li>
+            <li>Website: <a href="http://www.ullathynell.com">Ulla Thynell's website</a></li>
+            <li>Website: <a href="http://society6.com/ullathynell">Ulla Thynell's Prints shop</a></li>
+            <li>Website: <a href="http://www.facebook.com/ullaillustration">Ulla Thynell's Facebook page</a></li>
+            <li>Website: <a href="http://ullathynell.tumblr.com/">Ulla Thynell's Tumblr art blog</a></li>
+            <li>Website: <a href="http://ullakko.deviantart.com">Ulla Thynell's DeviantART gallery</a></li>
+            <li>Permission for use on Arda Maps</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div id="illustratorfooter">
+    <div id="illustratorfooterHeader">
+        Complete image portfolio
+    </div>
+    <div id="illustratorfooterCreatures">
+        <div class="illustratorfooterImagesHeader">Creatures:</div>
+        <div id="illustratorfooterImagesCreatures"></div>
+    </div>
+    <div id="illustratorfooterCreaturesFamilytree">
+        <div class="illustratorfooterImagesHeader">Creatures (Family Tree / Ancestry):</div>
+        <div id="illustratorfooterImagesCreaturesFamilytree"></div>
+    </div>
+    <div id="illustratorfooterLocations">
+        <div class="illustratorfooterImagesHeader">Locations:</div>
+        <div id="illustratorfooterImagesLocations"></div>
+    </div>
+    <div id="illustratorfooterEvents">
+        <div class="illustratorfooterImagesHeader">Events:</div>
+        <div id="illustratorfooterImagesEvents"></div>
+    </div>
+</div>
+</div>
+</div>
+<div id="preloader">
+    <div id="preloadercontent" class="center">
+        Loading map...
+        <img src="pics/map/preloader.gif" title="Reloading..." alt="Preloader">
+    </div>
+</div>
+<div id="version">
+    <div id="versioncontent" class="center unselectable defaultcursor">
+        <a href="/forum/viewtopic.php?t=12" title="To the forum post">
+            <span>v.3.a</span>
+            <span class="small">Beta</span>
+        </a>
+    </div>
+    <div class="fb-like" data-href="https://www.facebook.com/ardamaps" data-width="60" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    <div id="donate"> <a href="/go/donate"><img src="pics/donate.png" title="Donate" alt="Donate"></a></div>
+</div>
+<div id="familytree">
+    <div id="familytreeinner">
+        <a href="#">
+            <img id="familytreecontentclose" src="pics/popup/close.png" alt="Close Button" title="Close Family Tree">
+        </a>
+        <div id="familytreecontent">
+            <div id="familytreecontentheader">
+                <h2>Family Tree</h2>
+            </div>
+            <div id="familytreecontentraces">
+                leftclick - more info about a node<br>
+                shift + leftclick - fixing a node<br>
+                doubleclick - add node relations<br>
+                rightclick - delete a node
+            </div>
+            <div id="familytreecontentsearch">
+                <input id="familytreesearch" type="text" placeholder="type in a name..." value="" name="who-input">
+                <div id="familytreesearchsuggestions">
+                    <ul id="familytreesearchsuggestionsFamilycreatures"><li></li></ul>
+                </div>
+            </div>
+            <div id="familytreecontentsvg">
+            </div>
+            <div id='familytreeShowallbutton' class="clickable defaultButton buttonlarge unselectable">
+                Show All
+            </div>
+            <div id='familytreeHideallbutton' class="clickable defaultButton buttonlarge unselectable">
+                Hide All
+            </div>
+            <div id='familytreeUnfixallbutton' class="clickable defaultButton buttonlarge unselectable">
+                Unfix All
+            </div>
+        </div>
+    </div>
+</div>
+<div id="info">
+    <div id="infoinner">
+        <div id="infocontent" class="unselectable">
+            <div id="infoContentSearch">
+                <input id="infoSearch" type="text" placeholder="Creature,Location..." value="" name="what-input">
+                <img id="infoClosebutton" src="pics/popup/close_search.png" title="Close search" alt="Close button">
+                <div id="infoSearchSuggestions">
+                    <ul id="familytreesearchsuggestionsCreatures"><li></li></ul>
+                    <ul id="familytreesearchsuggestionsLocations"><li></li></ul>
+                </div>
+            </div>
+            <div id="infoCreature">
+                <div class="infoheader"></div>
+                <div class="infosubname"></div>
+                <div class="infopicture"><img src="" onerror="this.src='/pics/arda/creature/UnknownPicture.jpg'" alt="Picture"></div>
+                <div class="infopictureSource"><a href="#"><span></span></a></div>
+                <div class="infosex"><img src="" onerror="this.src='/pics/unclear.png'" alt="Sex"></div>
+                <div class="infoothernames infoelement">
+                    <div class="infosubheader">Other names</div>
+                    <div class="infosubtext"></div>
+                </div>
+                <div class="inforace infoelement">
+                    <div class="infosubheader">Race</div>
+                    <div class="infosubtext"></div>
+                </div>
+                <div class="infolife infoelement">
+                    <div class="infosubheader">Lifetime</div>
+                    <div class="infosubtext"></div>
+                </div>
+                <div class="inforelations infoelement">
+                    <div class="infosubheader">Relations</div>
+                    <div class="infosubtext"></div>
+                </div>
+                <div class="infolocation infoelement">
+                    <div class="infosubheader">Location</div>
+                    <div class="infosubtext"></div>
+                </div>
+                <div class="infolink infoelement">
+                </div>
+            </div>
+            <div id="infoLocation">
+                <div class="infoheader"></div>
+                <div class="infosubname"></div>
+                <div class="infopicture"><img src="" onerror="this.src='/pics/arda/location/UnknownPicture.jpg'" alt="Picture"></div>
+                <div class="infopictureSource"><a href="#"><span></span></a></div>
+                <div class="infotype"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Type"></div>
+                <div class="infoage"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Age"></div>
+                <div class="infoothernames infoelement">
+                    <div class="infosubheader">Other names</div>
+                    <div class="infosubtext"></div>
+                </div>
+                <div class="infoarea infoelement">
+                    <div class="infosubheader">Located in</div>
+                    <div class="infosubtext"></div>
+                </div>
+                <div class="infolink infoelement">
+                </div>
+            </div>
+            <div id="infoEvent">
+                <div class="infoheader"></div>
+                <div class="infopicture"><img src="" onerror="this.src='/pics/arda/event/UnknownPicture.jpg'" alt="Picture"></div>
+                <div class="infopictureSource"><a href="#"><span></span></a></div>
+                <div class="infodescription infoelement">
+                    <div class="infosubheader">Description</div>
+                    <div class="infosubtext"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="infobuttons">
+        <ul>
+            <li id="timelinebutton" class="defaultButton buttonlarge unselectable">
+                TIMELINE
+            </li>
+            <li id="infobutton" class="defaultButton buttonlarge unselectable">
+                INFO
+            </li>
+            <li id="searchbutton" class="defaultButton buttonlarge unselectable">
+                <img src="pics/search.png" alt="search" width="10" height="10">
             </li>
         </ul>
     </div>
-    <div id="welcome">
-        <div id="welcomeinner">
-            <a href="#">
-                <img id="welcomecontentclose" src="pics/popup/close.png" alt="Close Button">
-            </a>
-            <div id="welcomecontent">
-                <div id="welcomecontentDisclaimer">
-                    <div class="welcomecontentheader">
-                        <h1>Arda Maps</h1>
-                    </div>
-                    <div class="welcomecontentext">
-                        <p>Welcome to Arda Maps. This project comes up with the 3 most important ages...</p>
-                            <a href="/ages/first/" title="Show the map of the first age">
-                                <span id="welcomeFirstage" class="welcomeBackgroundimage unselectable">First Age</span>
-                            </a>
-                            <a href="/ages/second/" title="Show the map of the second age">
-                                <span id="welcomeSecondage" class="welcomeBackgroundimage unselectable">Second Age</span>
-                            </a>
-                            <a href="/ages/third/" title="Show the map of the third age">
-                                <span id="welcomeThirdage" class="welcomeBackgroundimage unselectable">Third Age</span>
-                            </a>
-                            <p style="margin-top:210px">...and there is even much more on top of these high-detailed maps.</p>
-                            <span id="welcomeJourney" class="welcomeBackgroundimage unselectable defaultcursor" title="No direct link right now...">Journeys & Regions</span>
-                            <span id="welcomeTimeline" class="welcomeBackgroundimage unselectable defaultcursor" title="No direct link right now...">Timelines</span>
-                            <a href="/familytree/" title="Show the family tree">
-                                <span id="welcomeAncestry" class="welcomeBackgroundimage unselectable">Family Tree</span>
-                            </a>
-                            <p style="margin-top:210px">For ideas and feedback feel free to join our <a href="/forum/">Forum</a>.</p>
-                        <p class="welcomeBrowser">Best performance with Chrome (36+)</p> <img src="/pics/welcome/chrome.png" alt="Chrome" title="Chrome">
-                        <p class="welcomeBrowser">and all implemented features successfully tested with Firefox (16+)</p> <img src="/pics/welcome/firefox.png" alt="Firefox" title="Firefox">
-                    </div>
-                </div>
+</div>
+<div id="timeline">
+    <div id="timelineinner">
+        <div id="timelinecontent">
+            <div id="timelinearea">
+                Loading Map...
             </div>
         </div>
     </div>
-    <div id="popup">
-        <div id="popupinner">
-            <a href="#">
-                <img id="popupcontentclose" src="pics/popup/close.png" alt="Close Button">
-            </a>
-            <div id="popupcontent">
-                <div id="popupcontentAbout">
-                    <div class="popupcontentheader">
-                        <h3>Arda Maps - Beta</h3>
-                    </div>
-                    <div class="popupcontentext">
-                        <p>Arda Maps is a non-profit, (soon) Open Source, community driven and educational project.</p>
-                        <p>This project is not associated with Middle-earth Enterprises nor the Tolkien Estates.</p>
-                        <p>We come up with 3 <strong>Tolkien ages</strong>, 900 <strong>characters</strong>, 800 <strong>places</strong> over 2000 <strong>timeline events</strong> and more then 400 <strong>pictures</strong> to a complete new presentation level of detail.</p>
-                        <p>The aim is that Tolkien readers can use this website to explore the fictive universe, Tolkien lovely filled with life. So we created the maps of the most important ages. These maps can be zoomed, dragged and each one shows some of the most important journeys, timeline events and much more!</p>
-                        <p>All maps are based on the <a href="http://en.wikipedia.org/wiki/The_Atlas_of_Middle-earth">The Atlas of Middle-earth</a> from <a href="http://en.wikipedia.org/wiki/Karen_Wynn_Fonstad">Karen Wynn Fonstad</a> but extended with own ideas and small changes based on different other official maps.</p>
-                        <p>Besides you can also use different ways to search for more information. We also offer a <a href="/familytree/">family tree</a> of all the different characters and their relations (grey:"has a child", red:"spouse", blue:"is sibling of").</p>
-                        <p>If you have any idea or feedback, just let me know:</p>
-                        <ul>
-                            <li>Forum: <a href="/forum/">Forum</a></li>
-                            <li>Skype: <a href="skype:kwoxer?add">kwoxer</a></li>
-                            <li>E-Mail: <a href="mailto:admin@kwoxer.de">admin@kwoxer.de</a></li>
-                        </ul>
-                        <p>Please keep in mind that Arda Maps is still in Beta state. There are still many changes coming... =)</p>
-                    </div>
-                </div>
-                <div id="popupcontentCreator">
-                    <div class="popupcontentheader">
-                        <h3>The Creator</h3>
-                    </div>
-                    <div class="popupcontentext">
-                        <img src="pics/arda/illustrator/curtismosters.png" width="200" height="200" alt="Curtis Mosters">
-                        <p>This project is created by <a href="http://www.kwoxer.de">Curtis Mosters</a> who is writing his master-thesis at the Brandenburg University of Applied Sciences in Germany.</p>
-                        <p>As a big Tolkien fan in my mind his books are really outstanding. But when I was e.g. some times ago reading the Silmarillion I was often asking myself: "Where is this place?" and "How big might be a specific difference between two places?". So I was searching around if there is any website which is showing the whole maps that can be zoomed without loosing any small lovely detail. But unfortunately there was nothing like that in the web except lots of static drawings and most of them were in low qualy as well.</p>
-                        <p>This was the moment where I actually was the first time thinking about creating something like Arda Maps.</p>
-                        <p>I also want to thank Prof. <a href="http://informatik.fh-brandenburg.de/alexander-urban.html">Alexander Urban</a>  who made this project possible and who helped a lot with his media and design background knowledge.</p>
-                        <p>Special Thanks are going to <strong style="color: #999">Sabrina Wiese</strong>. She helped very much in creating the concept of Arda Maps and supported me where it was possible. Without her this website and many more beautiful things would have never happened to me. I thank you so much for every second you spent with me. This page is dedicated to you.</p>
-                    </div>
-                </div>
-                <div id="popupcontentDelimitation">
-                    <div class="popupcontentheader">
-                        <h3>Delimitation</h3>
-                    </div>
-                    <div class="popupcontentext">
-                        <p>Arda Maps is in contextual terms based on the <a href="http://tolkiengateway.net/wiki/Main_Page">Tolkien Gateway</a>.</p>
-                        <p>This Wiki is used because it's the most complete English Wiki about the whole Tolkien universe. It also has a well-defined structure and was most recommended by the Tolkien community when I started Arda Maps.</p>
-                        <p>Arda Maps can contain mistakes like wrong dates or any other information. This might be due to the manual copying process of the data. As it will be Open Source anyone will be able to fix issues in the future like in a usual Wiki. Meanwhile you can send issues and bugs on our <a href="/forum/">Forum</a>. Thank you very much.</p>
-                        <p>We are also NOT showing ALL information because our aim is to visualise data especially the maps, timelines and relationships. So in order to go deeper we really recommend reading all the different Tolkien books and refering to the great Tolkien Gateway.</p>
-                    </div>
-                </div>
-                <div id="popupcontentOpensource">
-                    <div class="popupcontentheader">
-                        <h3>Open Source</h3>
-                    </div>
-                    <div class="popupcontentext">
-                        <p>Arda Maps is NOT YET Open Source but will finally be community driven like Tolkien Gateway is.</p>
-                        <p>Before reaching the Open Source state - so everyone can send in pull requests - the structure needs to be massively improved and cleared.</p>
-                        <p>After all these points are defined, the whole source code and database will be available for anyone for free.</p>
-                        <p>Arda Maps is using the following main technologies:</p>
-                        <ul>
-                            <li>QGIS | georeferencing and map creation in general</li>
-                            <li>D3.js with topojson | visualising map and family tree</li>
-                            <li>OrientDB | graph database</li>
-                        </ul>
-                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Arda Maps</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://arda-maps.org/" property="cc:attributionName" rel="cc:attributionURL">Curtis Mosters</a> is licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons 4.0 International Licence</a>.
-                    </div>
-                </div>
-                <div id="popupcontentDonateshare">
-                    <div class="popupcontentheader">
-                        <h3>Donate and Share</h3>
-                    </div>
-                    <div class="popupcontentext">
-                        <p>Arda Maps is a non-profit project and driven by YOU, the community!</p>
-                        <p>We have the intention to help readers so that those can find the information they need. Keeping this website alive costs some bucks. We really appreciate if you like Arda Maps, please consider a <a href="/go/donate/">donation</a>. This ONLY helps to improve the server and paying costs.</p>
-                        <p>Also feel free to share this project anywhere you like.</p>
-                        <p>Thanks in advance!</p>
-                    </div>
-                </div>
-                <div id="popupcontentAges">
-                    <div class="popupcontentheader">
-                        <h3>Ages of Arda</h3>
-                    </div>
-                    <div class="popupcontentext">
-                        <p> Arda Maps is created to offer high-detailed maps about the most important ages of Middle-earth for free. It might never be complete due to missing official map pieces or sometimes unclear definitions made by J.R.R. Tolkien. There are way more Ages mentioned by Tolkien but most of them are having very less data to show like 'Years of the Trees' or the 'Forth Age'.</p>
-                        <p>Until there is not enough data about them we are here just showing these 3 main ages right now:</p>
-                        <ul>
-                            <li><a href="/ages/first/">First Age</a> (Túrin, Tuor, Beren)</li>
-                            <li><a href="/ages/second/">Second Age</a> (Númenor)</li>
-                            <li><a href="/ages/third/">Third Age</a> (Hobbit, Lord of the Rings)</li>
-                        </ul>
-                        <p>The ages are fully zoom- &amp; drag-able. And much more...</p>
-                    </div>
-                </div>
-                <div id="popupcontent404">
-                    <div class="popupcontentheader">
-                        <h3>Ooops - no content here</h3>
-                    </div>
-                    <div class="popupcontentext">
-                        <p>We are really sorry but the page your requested page does not exist.</p>
-                        <p>If you came via direct link please report this as an <a href="mailto:admin@kwoxer.de?subject=Found an issue on Arda Maps&amp;body=...more details on your issue (copyright;map data;design...)">issue</a>. Thank you. =)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+</div>
+<div id="arda"></div>
+<div id="bottomButtons">
+    <div id='zoomplusbutton' class="clickable defaultButton buttonsmall buttonzoom unselectable">
+        +
     </div>
-    <div id="illustrator">
-        <div id="illustratorinner">
-            <a href="#">
-                <img id="illustratorcontentclose" src="pics/popup/close.png" alt="Close Button">
-            </a>
-            <div id="illustratorcontent">
-                <div id="illustratorcontentAdlpictures">
-                    <div class="illustratorcontentheader">
-                        <h3>Adlpictures</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Adlpictures</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.></p>
-                        <p>Details of the copyright holder: </p>
-                        <ul class="listplacing">
-                            <li>Name: Adlpictures</li>
-                            <li>Website: <a href="http://adlpictures.deviantart.com/">Adlpictures's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentAlais">
-                    <div class="illustratorcontentheader">
-                        <h3>Alaïs</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Alaïs</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.></p>
-                        <p>Details of the copyright holder: </p>
-                        <ul class="listplacing">
-                            <li>Name: Alaïs</li>
-                            <li>Website: <a href="http://alaisl.deviantart.com/">Alaïs's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentAnkeEissmann">
-                    <div class="illustratorcontentheader">
-                        <h3>Anke Eissmann</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Anke Eissmann</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Anke Eissmann</li>
-                            <li>Website: <a href="http://www.anke.edoras-art.de">Anke Eissmann's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentAnnaKulisz">
-                    <div class="illustratorcontentheader">
-                        <h3>Anna Kulisz</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Anna Kulisz</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Anna Kulisz</li>
-                            <li>Website: <a href="http://alasseaearello.deviantart.com/">Anna Kulisz's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentEbeKastein">
-                    <div class="illustratorcontentheader">
-                        <h3>Ebe Kastein</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Ebe Kastein</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Ebe Kastein</li>
-                            <li>Website: <a href="http://ebe-kastein.deviantart.com/">Ebe Kastein's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentFrancescoAmadio">
-                    <div class="illustratorcontentheader">
-                        <h3>Francesco Amadio</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Francesco Amadio</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Francesco Amadio</li>
-                            <li>Website: <a href="http://tolmancotton.deviantart.com/">Francesco Amadio's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentGrantGould">
-                    <div class="illustratorcontentheader">
-                        <h3>Grant Gould</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Grant Gould</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Grant Gould</li>
-                            <li>Website: <a href="http://www.grantgould.com">Grant Gould's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentJacekKopalski">
-                    <div class="illustratorcontentheader">
-                        <h3>Jacek Kopalski</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Jacek Kopalski</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Jacek Kopalski</li>
-                            <li>Website: <a href="http://www.jacekkopalski.com">Jacek Kopalski's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentJankaLateckova">
-                    <div class="illustratorcontentheader">
-                        <h3>Janka Latečková</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Janka Latečková</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Janka Latečková</li>
-                            <li>Website: <a href="http://jankolas.deviantart.com/">Janka Latečková's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentJanPospisil">
-                    <div class="illustratorcontentheader">
-                        <h3>Jan Pospíšil</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Jan Pospíšil</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Jan Pospíšil</li>
-                            <li>Website: <a href="http://merlkir.deviantart.com/">Jan Pospíšil's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentJennyDolfen">
-                    <div class="illustratorcontentheader">
-                        <h3>Jenny Dolfen</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Jenny Dolfen</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Jenny Dolfen</li>
-                            <li>Website: <a href="http://www.goldseven.de">Jenny Dolfen's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentJoonaKujanen">
-                    <div class="illustratorcontentheader">
-                        <h3>Joona Kujanen</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Joona Kujanen</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Joona Kujanen</li>
-                            <li>Website: <a href="http://tulikoura.deviantart.com/">Joona Kujanen's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentKasiopea">
-                    <div class="illustratorcontentheader">
-                        <h3>Katarzyna Karina Chmiel-Gugulska (Kasiopea)</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Katarzyna Karina Chmiel-Gugulska</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Katarzyna Karina Chmiel-Gugulska</li>
-                            <li>Website: <a href="http://www.kasiopea.art.pl">Katarzyna Karina Chmiel-Gugulska's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentKarolinaWegrzyn">
-                    <div class="illustratorcontentheader">
-                        <h3>Karolina Węgrzyn</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Karolina Węgrzyn</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Karolina Węgrzyn</li>
-                            <li>Website: <a href="http://www.sirielle.com">Karolina Węgrzyn's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentLeoneFabio">
-                    <div class="illustratorcontentheader">
-                        <h3>Leone Fabio</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Leone Fabio</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Leone Fabio</li>
-                            <li>Website: <a href="https://www.facebook.com/IllustratorFabioLeone">Leone Fabio's facebook page</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentLigaKlavina">
-                    <div class="illustratorcontentheader">
-                        <h3>Līga Kļaviņa</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Līga Kļaviņa</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Līga Kļaviņa</li>
-                            <li>Website: <a href="http://liga-marta.deviantart.com/">Līga Kļaviņa's facebook page</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentLorraineBrevig">
-                    <div class="illustratorcontentheader">
-                        <h3>Lorraine Brevig</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Lorraine Brevig</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Lorraine Brevig</li>
-                            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Lorraine_Brevig">Lorraine Brevig's TG images</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentLuisFBejarano">
-                    <div class="illustratorcontentheader">
-                        <h3>Luis F. Bejarano</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Luis F. Bejarano</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Luis F. Bejarano</li>
-                            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Luis_F._Bejarano">Luis F. Bejarano's TG images</a></li>
-                            <li>Website: <a href="http://tolkien.luisbejarano.com/">Luis F. Bejarano's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentMareishon">
-                    <div class="illustratorcontentheader">
-                        <h3>Mareishon</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Mareishon</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Mareishon</li>
-                            <li>Website: <a href="http://mareishon.deviantart.com/">Mareishon's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentMaryaFilatova">
-                    <div class="illustratorcontentheader">
-                        <h3>Marya Filatova</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Marya Filatova</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Marya Filatova</li>
-                            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Marya_Filatova">Marya Filatova's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentMatejCadil">
-                    <div class="illustratorcontentheader">
-                        <h3>Matěj Čadil</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Matěj Čadil</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <p>Matěj Čadil is a graphic designer and illustrator from the Czech Republic who loves to depict lesser-known parts of Tolkien's world.</p>
-                        <ul class="listplacing">
-                            <li>Name: Matěj Čadil</li>
-                            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Mat%C4%9Bj_%C4%8Cadil">Matěj Čadil's TG website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentMattStewart">
-                    <div class="illustratorcontentheader">
-                        <h3>Matt Stewart</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Matt Stewart</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Matt Stewart</li>
-                            <li>Website: <a href="http://www.matthew-stewart.com">Matt Stewart's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentNolanos">
-                    <div class="illustratorcontentheader">
-                        <h3>Nolanos</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Nolanos</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Nolanos</li>
-                            <li>Website: <a href="http://nolanos.deviantart.com/">Nolanos's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentOlandaFongSurdenas">
-                    <div class="illustratorcontentheader">
-                        <h3>Olanda Fong-Surdenas</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Olanda Fong-Surdenas</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Olanda Fong-Surdenas</li>
-                            <li>Website: <a href="http://wynahiros.deviantart.com/">Olanda Fong-Surdenas's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentPeterXavierPrice">
-                    <div class="illustratorcontentheader">
-                        <h3>Peter Xavier Price</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Peter Xavier Price</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Peter Xavier Price</li>
-                            <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Peter_Xavier_Price">Peter Xavier Price's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentRalphDamiani">
-                    <div class="illustratorcontentheader">
-                        <h3>Ralph Damiani</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Ralph Damiani</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Ralph Damiani</li>
-                            <li>Website: <a href="http://www.ralphdamiani.com">Ralph_Damiani's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentRichardSvensson">
-                    <div class="illustratorcontentheader">
-                        <h3>Richard Svensson</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Richard Svensson</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Richard Svensson</li>
-                            <li>Website: <a href="http://loneanimator.deviantart.com">Richard Svensson's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentSarkaSkorpikova">
-                    <div class="illustratorcontentheader">
-                        <h3>Šárka Škorpíková</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Šárka Škorpíková</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <p> My name is Šárka Škorpíková, born in 1994 and I am a biology student and hobbyist illustrator from the Czech Republic.</p>
-                        <ul class="listplacing">
-                            <li>Name: Šárka Škorpíková</li>
-                            <li>Website: <a href="http://robleskazeppelin.deviantart.com/">Šárka Škorpíková's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentShyangell">
-                    <div class="illustratorcontentheader">
-                        <h3>Shyangell</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Shyangell</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Shyangell</li>
-                            <li>Website: <a href="http://shyangell.deviantart.com/">Shyangell's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentSimonaBrunildeJero">
-                    <div class="illustratorcontentheader">
-                        <h3>Simona Brunilde Jero</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Simona Brunilde Jero</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Simona Brunilde Jero</li>
-                            <li>Website: <a href="http://brunild.deviantart.com/">Simona Brunilde Jero's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentSoniAlcornHender">
-                    <div class="illustratorcontentheader">
-                        <h3>Soni Alcorn-Hender</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <img src="pics/arda/illustrator/sonialcornhender.png" width="170" height="200" alt="Soni Alcorn-Hender">
-                        <p>This work is copyrighted and owned by <strong>Soni Alcorn-Hender</strong> (Bohemian Weasel). However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <p>Soni is an English artist living and working in Portugal, with a degree in illustration from the Glasgow School of Art.</p>
-                        <ul class="listplacing">
-                            <li>Name: Soni Alcorn-Hender</li>
-                            <li>Website: <a href="http://bohemianweasel.com">Soni Alcorn-Hender's website</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentTedNasmith">
-                    <div class="illustratorcontentheader">
-                        <h3>Ted Nasmith</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <img src="pics/arda/illustrator/tednasmith.jpg" width="170" height="200" alt="Ted Nasmith">
-                        <p>The artwork incorporated herein is copyrighted by <strong>Ted Nasmith</strong>. Mr. Nasmith's permission has been granted to use these images. Arda Maps is a not-for-profit project.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Ted Nasmith's official website: <a href="http://www.tednasmith.com">www.tednasmith.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="illustratorcontentUllaThynell">
-                    <div class="illustratorcontentheader">
-                        <h3>Ulla Thynell</h3>
-                    </div>
-                    <div class="illustratorcontentext">
-                        <p>This work is copyrighted and owned by <strong>Ulla Thynell</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                        <p>Details of the copyright holder:</p>
-                        <ul class="listplacing">
-                            <li>Name: Ulla Thynell</li>
-                            <li>Website: <a href="http://www.ullathynell.com">Ulla Thynell's website</a></li>
-                            <li>Website: <a href="http://society6.com/ullathynell">Ulla Thynell's Prints shop</a></li>
-                            <li>Website: <a href="http://www.facebook.com/ullaillustration">Ulla Thynell's Facebook page</a></li>
-                            <li>Website: <a href="http://ullathynell.tumblr.com/">Ulla Thynell's Tumblr art blog</a></li>
-                            <li>Website: <a href="http://ullakko.deviantart.com">Ulla Thynell's DeviantART gallery</a></li>
-                            <li>Permission for use on Arda Maps</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="illustratorfooter">
-                <div id="illustratorfooterHeader">
-                    Complete image portfolio
-                </div>
-                <div id="illustratorfooterCreatures">
-                    <div class="illustratorfooterImagesHeader">Creatures:</div>
-                    <div id="illustratorfooterImagesCreatures"></div>
-                </div>
-                <div id="illustratorfooterCreaturesFamilytree">
-                    <div class="illustratorfooterImagesHeader">Creatures (Family Tree / Ancestry):</div>
-                    <div id="illustratorfooterImagesCreaturesFamilytree"></div>
-                </div>
-                <div id="illustratorfooterLocations">
-                    <div class="illustratorfooterImagesHeader">Locations:</div>
-                    <div id="illustratorfooterImagesLocations"></div>
-                </div>
-                <div id="illustratorfooterEvents">
-                    <div class="illustratorfooterImagesHeader">Events:</div>
-                    <div id="illustratorfooterImagesEvents"></div>
-                </div>
-            </div>
-        </div>
+    <div id='zoomminusbutton' class="clickable defaultButton buttonsmall buttonzoom unselectable">
+        -
     </div>
-    <div id="preloader">
-        <div id="preloadercontent" class="center">
-            Loading map...
-            <img src="pics/map/preloader.gif" title="Reloading..." alt="Preloader">
-        </div>
+    <div id='zoomresetbutton' class="clickable defaultButton buttonlarge unselectable">
+        Reset Map
     </div>
-    <div id="version">
-        <div id="versioncontent" class="center unselectable defaultcursor">
-            <a href="/forum/viewtopic.php?t=12" title="To the forum post">
-                <span>v.3.a</span>
-                <span class="small">Beta</span>
-            </a>
-        </div>
-        <div class="fb-like" data-href="https://www.facebook.com/ardamaps" data-width="60" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        <div id="donate"> <a href="/go/donate"><img src="pics/donate.png" title="Donate" alt="Donate"></a></div>
+    <div id='legendbutton' class="clickable defaultButton buttonlarge unselectable">
+        Legend
     </div>
-    <div id="familytree">
-        <div id="familytreeinner">
-            <a href="#">
-                <img id="familytreecontentclose" src="pics/popup/close.png" alt="Close Button" title="Close Family Tree">
-            </a>
-            <div id="familytreecontent">
-                <div id="familytreecontentheader">
-                    <h2>Family Tree</h2>
-                </div>
-                <div id="familytreecontentraces">
-                    leftclick - more info about a node<br>
-                    shift + leftclick - fixing a node<br>
-                    doubleclick - add node relations<br>
-                    rightclick - delete a node
-                </div>
-                <div id="familytreecontentsearch">
-                    <input id="familytreesearch" type="text" placeholder="type in a name..." value="" name="who-input">
-                    <div id="familytreesearchsuggestions">
-                        <ul id="familytreesearchsuggestionsFamilycreatures"><li></li></ul>
-                    </div>
-                </div>
-                <div id="familytreecontentsvg">
-                </div>
-                <div id='familytreeShowallbutton' class="clickable defaultButton buttonlarge unselectable">
-                    Show All
-                </div>
-                <div id='familytreeHideallbutton' class="clickable defaultButton buttonlarge unselectable">
-                    Hide All
-                </div>
-                <div id='familytreeUnfixallbutton' class="clickable defaultButton buttonlarge unselectable">
-                    Unfix All
-                </div>
-            </div>
-        </div>
+    <div id='journeybutton' class="clickable defaultButton buttonlarge unselectable">
+        Journey
     </div>
-    <div id="info">
-        <div id="infoinner">
-            <div id="infocontent" class="unselectable">
-                <div id="infoContentSearch">
-                    <input id="infoSearch" type="text" placeholder="Creature,Location..." value="" name="what-input">
-                    <img id="infoClosebutton" src="pics/popup/close_search.png" title="Close search" alt="Close button">
-                    <div id="infoSearchSuggestions">
-                        <ul id="familytreesearchsuggestionsCreatures"><li></li></ul>
-                        <ul id="familytreesearchsuggestionsLocations"><li></li></ul>
-                    </div>
-                </div>
-                <div id="infoCreature">
-                    <div class="infoheader"></div>
-                    <div class="infosubname"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/creature/UnknownPicture.jpg'" alt="Picture"></div>
-                    <div class="infopictureSource"><a href="#"><span></span></a></div>
-                    <div class="infosex"><img src="" onerror="this.src='/pics/unclear.png'" alt="Sex"></div>
-                    <div class="infoothernames infoelement">
-                        <div class="infosubheader">Other names</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                    <div class="inforace infoelement">
-                        <div class="infosubheader">Race</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                    <div class="infolife infoelement">
-                        <div class="infosubheader">Lifetime</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                    <div class="inforelations infoelement">
-                        <div class="infosubheader">Relations</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                    <div class="infolocation infoelement">
-                        <div class="infosubheader">Location</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                    <div class="infolink infoelement">
-                    </div>
-                </div>
-                <div id="infoLocation">
-                    <div class="infoheader"></div>
-                    <div class="infosubname"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/location/UnknownPicture.jpg'" alt="Picture"></div>
-                    <div class="infopictureSource"><a href="#"><span></span></a></div>
-                    <div class="infotype"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Type"></div>
-                    <div class="infoage"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Age"></div>
-                    <div class="infoothernames infoelement">
-                        <div class="infosubheader">Other names</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                    <div class="infoarea infoelement">
-                        <div class="infosubheader">Located in</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                    <div class="infolink infoelement">
-                    </div>
-                </div>
-                <div id="infoEvent">
-                    <div class="infoheader"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/event/UnknownPicture.jpg'" alt="Picture"></div>
-                    <div class="infopictureSource"><a href="#"><span></span></a></div>
-                    <div class="infodescription infoelement">
-                        <div class="infosubheader">Description</div>
-                        <div class="infosubtext"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="infobuttons">
-            <ul>
-                <li id="timelinebutton" class="defaultButton buttonlarge unselectable">
-                    TIMELINE
-                </li>
-                <li id="infobutton" class="defaultButton buttonlarge unselectable">
-                    INFO
-                </li>
-                <li id="searchbutton" class="defaultButton buttonlarge unselectable">
-                    <img src="pics/search.png" alt="search" width="10" height="10">
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="timeline">
-        <div id="timelineinner">
-            <div id="timelinecontent">
-                <div id="timelinearea">
-                    Loading Map...
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="arda"></div>
-    <div id="bottomButtons">
-        <div id='zoomplusbutton' class="clickable defaultButton buttonsmall buttonzoom unselectable">
-            +
-        </div>
-        <div id='zoomminusbutton' class="clickable defaultButton buttonsmall buttonzoom unselectable">
-            -
-        </div>
-        <div id='zoomresetbutton' class="clickable defaultButton buttonlarge unselectable">
-            Reset Map
-        </div>
-        <div id='legendbutton' class="clickable defaultButton buttonlarge unselectable">
-            Legend
-        </div>
-        <div id='journeybutton' class="clickable defaultButton buttonlarge unselectable">
-            Journey
-        </div>
-        <div id='scalebar' class="unselectable">
+    <div id='scalebar' class="unselectable">
         <div id="scalebarslider" style="height: 3px; padding:1px; margin:0 5px 0 5px;"></div>
-            <div id='scalebarheader'>Scalebar (miles)</div>
-            <div id='scalebarsmooth' title="smooth has bad effects on slow machines!">smooth</div>
-            <div id='scalebarleft'>0 </div>
-            <div id='scalebarcenter'></div>
-            <div id='scalebarright'></div>
-        </div>
-        <div id='arda-bg' class="clickable defaultButton imagebutton">
+        <div id='scalebarheader'>Scalebar (miles)</div>
+        <div id='scalebarsmooth' title="smooth has bad effects on slow machines!">smooth</div>
+        <div id='scalebarleft'>0 </div>
+        <div id='scalebarcenter'></div>
+        <div id='scalebarright'></div>
+    </div>
+    <div id='arda-bg' class="clickable defaultButton imagebutton">
         <span style="margin-top: 20px; position: absolute; margin-left: 5px;" title="Show Earth" alt="Switching views">Earth</span>
         <img src="pics/Earth.png" title="Show Earth" alt="Switching views">
-        </div>
-        <div id='regionbutton' class="clickable defaultButton buttonlarge unselectable">
-            Region
-        </div>
-        <div id="legends">
-            <div id='legendinner'>
-                <img id="legendnames_EN" class="clickable" src="pics/en.png">
-                <img id="legendnames_DE" class="clickable" src="pics/de.png">
-                <div id='legendinnerinner' class="unselectable">
-                    <table>
-                        <colgroup>
-                            <col width="100">
-                            <col width="60">
-                        </colgroup>
-                        <tr>
-                            <td id="legendoutline" class="clickable"><span class=" legendicon"></span>Outline</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td id="legendocean" class="clickable"><span class=" legendicon"></span>Ocean</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td id="legendforest" class="clickable"><span class=" legendicon"></span>Forest</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td id="legendnames" class="clickable"><span class=" legendicon"></span>Label</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td id="legendmountainhigh" class="clickable"><span class=" legendicon"></span>Peaks</td>
-                            <td id="legendcastletower" class="clickable"><span class=" legendicon"></span>Tower</td>
-                        </tr>
-                        <tr>
-                            <td id="legendmountainlow" class="clickable"><span class=" legendicon"></span>Mountain Range</td>
-                            <td id="legendcity" class="clickable"><span class=" legendicon"></span>City</td>
-                        </tr>
-                        <tr>
-                            <td id="legendhighland" class="clickable"><span class=" legendicon"></span>Highland</td>
-                            <td id="legendplace" class="clickable"><span class=" legendicon"></span>Place</td>
-                        </tr>
-                        <tr>
-                            <td id="legendlake" class="clickable"><span class=" legendicon"></span>Lake</td>
-                            <td id="legendbridge" class="clickable"><span class=" legendicon"></span>Bridge</td>
-                        </tr>
-                        <tr>
-                            <td id="legendroad" class="clickable"><span class=" legendicon"></span>Road</td>
-                            <td id="legendmount" class="clickable"><span class=" legendicon"></span>Mount</td>
-                        </tr>
-                        <tr>
-                            <td id="legendriver" class="clickable"><span class=" legendicon"></span>River</td>
-                            <td id="legendford" class="clickable"><span class=" legendicon"></span>Ford</td>
-                        </tr>
-                        <tr>
-                            <td id="legendmoor" class="clickable"><span class=" legendicon"></span>Moor</td>
-                            <td id="legendwaterfall" class="clickable"><span class=" legendicon"></span>Waterfall</td>
-                        </tr>
-                    </table>
-                </div>
+    </div>
+    <div id='regionbutton' class="clickable defaultButton buttonlarge unselectable">
+        Region
+    </div>
+    <div id="legends">
+        <div id='legendinner'>
+            <img id="legendnames_EN" class="clickable" src="pics/en.png">
+            <img id="legendnames_DE" class="clickable" src="pics/de.png">
+            <div id='legendinnerinner' class="unselectable">
+                <table>
+                    <colgroup>
+                        <col width="100">
+                        <col width="60">
+                    </colgroup>
+                    <tr>
+                        <td id="legendoutline" class="clickable"><span class=" legendicon"></span>Outline</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="legendocean" class="clickable"><span class=" legendicon"></span>Ocean</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="legendforest" class="clickable"><span class=" legendicon"></span>Forest</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="legendnames" class="clickable"><span class=" legendicon"></span>Label</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="legendmountainhigh" class="clickable"><span class=" legendicon"></span>Peaks</td>
+                        <td id="legendcastletower" class="clickable"><span class=" legendicon"></span>Tower</td>
+                    </tr>
+                    <tr>
+                        <td id="legendmountainlow" class="clickable"><span class=" legendicon"></span>Mountain Range</td>
+                        <td id="legendcity" class="clickable"><span class=" legendicon"></span>City</td>
+                    </tr>
+                    <tr>
+                        <td id="legendhighland" class="clickable"><span class=" legendicon"></span>Highland</td>
+                        <td id="legendplace" class="clickable"><span class=" legendicon"></span>Place</td>
+                    </tr>
+                    <tr>
+                        <td id="legendlake" class="clickable"><span class=" legendicon"></span>Lake</td>
+                        <td id="legendbridge" class="clickable"><span class=" legendicon"></span>Bridge</td>
+                    </tr>
+                    <tr>
+                        <td id="legendroad" class="clickable"><span class=" legendicon"></span>Road</td>
+                        <td id="legendmount" class="clickable"><span class=" legendicon"></span>Mount</td>
+                    </tr>
+                    <tr>
+                        <td id="legendriver" class="clickable"><span class=" legendicon"></span>River</td>
+                        <td id="legendford" class="clickable"><span class=" legendicon"></span>Ford</td>
+                    </tr>
+                    <tr>
+                        <td id="legendmoor" class="clickable"><span class=" legendicon"></span>Moor</td>
+                        <td id="legendwaterfall" class="clickable"><span class=" legendicon"></span>Waterfall</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div id="journey">
-        <div id='journeyinner'>
-            <div id='journeyinnerinner' class="unselectable">
-                <div id='journeyFirstAge' class="unselectable">
-                    <table>
-                        <colgroup>
-                            <col width="160">
-                        </colgroup>
-                        <tr>
-                            <td id="journey-tuor" class="clickable"><span class=" journeyicon"></span>Tuor</td>
-                        </tr>
-                        <tr>
-                            <td id="journey-beren1" class="clickable"><span class=" journeyicon"></span>Beren (460-465)</td>
-                        </tr>
-                        <tr>
-                            <td id="journey-beren2" class="clickable"><span class=" journeyicon"></span>Beren (465-466)</td>
-                        </tr>
-                        <tr>
-                            <td id="journey-turin1" class="clickable"><span class=" journeyicon"></span>Túrin (473-495)</td>
-                        </tr>
-                        <tr>
-                            <td id="journey-turin2" class="clickable"><span class=" journeyicon"></span>Túrin (495-499)</td>
-                        </tr>
-                    </table>
-                    <p>*coloured green offer more info</p>
-                </div>
-                <div id='journeySecondAge' class="unselectable">
-                    No journey till now...
-                </div>
-                <div id='journeyThirdAge' class="unselectable">
-                    <table>
-                        <colgroup>
-                            <col width="90">
-                            <col width="150">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th>The Hobbit</th>
-                            <th>Lord of the Rings</th>
-                        </tr>
-                        </thead>
-                        <tr>
-                            <td id="journey-bilbo" class="clickable"><span class=" journeyicon"></span>Bilbo</td>
-                            <td id="journey-frodo" class="clickable"><span class=" journeyicon"></span>Frodo &amp; Sam</td>
-                        </tr>
-                        <tr>
-                            <td id="journey-thorin" class="clickable"><span class=" journeyicon"></span>Thorin</td>
-                            <td id="journey-aragorn" class="clickable"><span class=" journeyicon"></span>Aragon</td>
-                        </tr>
-                        <tr>
-                            <td id="journey-dwarfs" class="clickable"><span class=" journeyicon"></span>Other Dwarfs</td>
-                            <td id="journey-gandalf-lotr" class="clickable"><span class=" journeyicon"></span>Gandalf</td>
-                        </tr>
-                        <tr>
-                            <td id="journey-gandalf-hobbit" class="clickable"><span class=" journeyicon"></span>Gandalf</td>
-                            <td id="journey-legogimli" class="clickable"><span class=" journeyicon"></span>Legolas &amp; Gimli</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td id="journey-merry" class="clickable"><span class=" journeyicon"></span>Merry</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td id="journey-pippin" class="clickable"><span class=" journeyicon"></span>Pippin</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td id="journey-boromir" class="clickable"><span class=" journeyicon"></span>Boromir</td>
-                        </tr>
-                    </table>
-                    <p>*coloured green offer more info</p>
-                </div>
+<div id="journey">
+    <div id='journeyinner'>
+        <div id='journeyinnerinner' class="unselectable">
+            <div id='journeyFirstAge' class="unselectable">
+                <table>
+                    <colgroup>
+                        <col width="160">
+                    </colgroup>
+                    <tr>
+                        <td id="journey-tuor" class="clickable"><span class=" journeyicon"></span>Tuor</td>
+                    </tr>
+                    <tr>
+                        <td id="journey-beren1" class="clickable"><span class=" journeyicon"></span>Beren (460-465)</td>
+                    </tr>
+                    <tr>
+                        <td id="journey-beren2" class="clickable"><span class=" journeyicon"></span>Beren (465-466)</td>
+                    </tr>
+                    <tr>
+                        <td id="journey-turin1" class="clickable"><span class=" journeyicon"></span>Túrin (473-495)</td>
+                    </tr>
+                    <tr>
+                        <td id="journey-turin2" class="clickable"><span class=" journeyicon"></span>Túrin (495-499)</td>
+                    </tr>
+                </table>
+                <p>*coloured green offer more info</p>
+            </div>
+            <div id='journeySecondAge' class="unselectable">
+                No journey till now...
+            </div>
+            <div id='journeyThirdAge' class="unselectable">
+                <table>
+                    <colgroup>
+                        <col width="90">
+                        <col width="150">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>The Hobbit</th>
+                        <th>Lord of the Rings</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td id="journey-bilbo" class="clickable"><span class=" journeyicon"></span>Bilbo</td>
+                        <td id="journey-frodo" class="clickable"><span class=" journeyicon"></span>Frodo &amp; Sam</td>
+                    </tr>
+                    <tr>
+                        <td id="journey-thorin" class="clickable"><span class=" journeyicon"></span>Thorin</td>
+                        <td id="journey-aragorn" class="clickable"><span class=" journeyicon"></span>Aragon</td>
+                    </tr>
+                    <tr>
+                        <td id="journey-dwarfs" class="clickable"><span class=" journeyicon"></span>Other Dwarfs</td>
+                        <td id="journey-gandalf-lotr" class="clickable"><span class=" journeyicon"></span>Gandalf</td>
+                    </tr>
+                    <tr>
+                        <td id="journey-gandalf-hobbit" class="clickable"><span class=" journeyicon"></span>Gandalf</td>
+                        <td id="journey-legogimli" class="clickable"><span class=" journeyicon"></span>Legolas &amp; Gimli</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="journey-merry" class="clickable"><span class=" journeyicon"></span>Merry</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="journey-pippin" class="clickable"><span class=" journeyicon"></span>Pippin</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="journey-boromir" class="clickable"><span class=" journeyicon"></span>Boromir</td>
+                    </tr>
+                </table>
+                <p>*coloured green offer more info</p>
             </div>
         </div>
     </div>
+</div>
 
-    <div id='copyright' class="unselectable defaultcursor">
-        Copyright © 2015 Arda Maps. All rights reserved. Arda Maps is not associated with Middle-earth Enterprises nor the Tolkien Estates.
-    </div>
-    <a id='forum' class="footerpopupbutton" href="/forum/">Forum</a>
-    <a id='disclaimer' class="footerpopupbutton" href="#">Disclaimer</a>
-    <a id='reportissue' class="footerpopupbutton" href="mailto:admin@kwoxer.de?subject=Found an issue on Arda Maps&amp;body=...more details on your issue (copyright;map data;design...)">Report an issue</a>
-    <div id="footerpopup">
-        <div id="footerpopupinner">
-            <a href="#">
-                <img id="footerpopupcontentclose" src="pics/popup/close.png" alt="Close Button">
-            </a>
-            <div id="footerpopupcontent">
-                <div id="footerpopupcontentDisclaimer">
-                    <div class="footerpopupcontentheader">
-                        <h3>Disclaimer</h3>
-                    </div>
-                    <div class="footerpopupcontentext">
-                        <h4>1. Limitation of liability for internal content</h4>
-                        <p>The content of our website has been compiled with meticulous care and to the best of our knowledge. However, we cannot assume any liability for the up-to-dateness, completeness or accuracy of any of the pages.</p>
-                        <p>Pursuant to section 7, para. 1 of the TMG (Telemediengesetz – Tele Media Act by German law), we as service providers are liable for our own content on these pages in accordance with general laws. However, pursuant to sections 8 to 10 of the TMG, we as service providers are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of the law, we will immediately remove the content in question. Any liability concerning this matter can only be assumed from the point in time at which the infringement becomes known to us. Anyway please report any issue that occurs.</p>
-                        <h4>2. Limitation of liability for external links</h4>
-                        <p>Our website contains links to the websites of third parties (“external links”). As the content of these websites is not under our control, we cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognisable to us. As soon as an infringement of the law becomes known to us, we will immediately remove the link in question.</p>
-                        <h4>3. Copyright</h4>
-                        <p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.</p>
-                        <p>Any image is copyrighted by its corresponding owner. Arda Maps does not own any rights on the imbedded pictures. Any further usage needs to be confered right to use by the corresponding copyright owner. If there is infringed any copyright or the copyright has changed you are expected to report that to Arda Maps.</p>
-                        <p>Used map data is based on the The Atlas of Middle-earth and copyrighted by the by Houghton Miffline Harcourt and Tolkien Estates respectively.</p>
-                        <p>Characters and locations are copyrighted by the Tolkien Estates and Middle-earth Enterprises respectively.</p>
-                        <h4>4. Google Analytics</h4>
-                        <p>This website uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses "cookies", which are text files placed on your computer, to help the website analyze how users use the site. The information generated by the cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States. Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google's behalf. Google will not associate your IP address with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser, however please note that if you do this you may not be able to use the full functionality of this website. By using this website, you consent to the processing of data about you by Google in the manner and for the purposes set out above.</p>
-                    </div>
+<div id='copyright' class="unselectable defaultcursor">
+    Copyright © 2015 Arda Maps. All rights reserved. Arda Maps is not associated with Middle-earth Enterprises nor the Tolkien Estates.
+</div>
+<a id='forum' class="footerpopupbutton" href="/forum/">Forum</a>
+<a id='disclaimer' class="footerpopupbutton" href="#">Disclaimer</a>
+<a id='reportissue' class="footerpopupbutton" href="mailto:admin@kwoxer.de?subject=Found an issue on Arda Maps&amp;body=...more details on your issue (copyright;map data;design...)">Report an issue</a>
+<div id="footerpopup">
+    <div id="footerpopupinner">
+        <a href="#">
+            <img id="footerpopupcontentclose" src="pics/popup/close.png" alt="Close Button">
+        </a>
+        <div id="footerpopupcontent">
+            <div id="footerpopupcontentDisclaimer">
+                <div class="footerpopupcontentheader">
+                    <h3>Disclaimer</h3>
+                </div>
+                <div class="footerpopupcontentext">
+                    <h4>1. Limitation of liability for internal content</h4>
+                    <p>The content of our website has been compiled with meticulous care and to the best of our knowledge. However, we cannot assume any liability for the up-to-dateness, completeness or accuracy of any of the pages.</p>
+                    <p>Pursuant to section 7, para. 1 of the TMG (Telemediengesetz – Tele Media Act by German law), we as service providers are liable for our own content on these pages in accordance with general laws. However, pursuant to sections 8 to 10 of the TMG, we as service providers are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of the law, we will immediately remove the content in question. Any liability concerning this matter can only be assumed from the point in time at which the infringement becomes known to us. Anyway please report any issue that occurs.</p>
+                    <h4>2. Limitation of liability for external links</h4>
+                    <p>Our website contains links to the websites of third parties (“external links”). As the content of these websites is not under our control, we cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognisable to us. As soon as an infringement of the law becomes known to us, we will immediately remove the link in question.</p>
+                    <h4>3. Copyright</h4>
+                    <p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.</p>
+                    <p>Any image is copyrighted by its corresponding owner. Arda Maps does not own any rights on the imbedded pictures. Any further usage needs to be confered right to use by the corresponding copyright owner. If there is infringed any copyright or the copyright has changed you are expected to report that to Arda Maps.</p>
+                    <p>Used map data is based on the The Atlas of Middle-earth and copyrighted by the by Houghton Miffline Harcourt and Tolkien Estates respectively.</p>
+                    <p>Characters and locations are copyrighted by the Tolkien Estates and Middle-earth Enterprises respectively.</p>
+                    <h4>4. Google Analytics</h4>
+                    <p>This website uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses "cookies", which are text files placed on your computer, to help the website analyze how users use the site. The information generated by the cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States. Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google's behalf. Google will not associate your IP address with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser, however please note that if you do this you may not be able to use the full functionality of this website. By using this website, you consent to the processing of data about you by Google in the manner and for the purposes set out above.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="loadingprocess">
-        <div id="loadingprocessinner">
-            <div id="loadingprocesscontent">
-                <div id="loadingprocesscontentDisclaimer">
-                    <div class="loadingprocesscontentheader">
-                        <h3>Arda Maps loading...</h3>
-                    </div>
-                    <div class="loadingprocesscontentext">
-                        <p>The content of Arda Maps is now loading.</p>
-                        <p>This can take some time...</p>
-                    </div>
+</div>
+<div id="loadingprocess">
+    <div id="loadingprocessinner">
+        <div id="loadingprocesscontent">
+            <div id="loadingprocesscontentDisclaimer">
+                <div class="loadingprocesscontentheader">
+                    <h3>Arda Maps loading...</h3>
+                </div>
+                <div class="loadingprocesscontentext">
+                    <p>The content of Arda Maps is now loading.</p>
+                    <p>This can take some time...</p>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/clear.js" type="text/javascript"></script>
-    <script src="js/libs/json2.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/jquery-ui-1.10.3.custom.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/underscore-min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/backbone-min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/ba-debug.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/ba-tinyPubSub.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/jquery.mousewheel.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/jquery.ui.ipad.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/globalize.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/timeglider-1.0.3.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/jquery.jscrollpane.min.js" type="text/javascript"></script>
-    <script src="js/db.js" type="text/javascript"></script>
-    <script src="js/welcome.js" type="text/javascript"></script>
-    <script src="js/info.js" type="text/javascript"></script>
-    <script src="js/orientdb.js" type="text/javascript"></script>
-    <script src="js/popup.js" type="text/javascript"></script>
-    <script src="js/footerpopup.js" type="text/javascript"></script>
-    <script src="js/illustrator.js" type="text/javascript"></script>
-    <script src="js/legend.js" type="text/javascript"></script>
-    <script src="js/journey.js" type="text/javascript"></script>
-    <script src="js/timeline.js" type="text/javascript"></script>
-    <script src="js/scalebar.js" type="text/javascript"></script>
-    <script src="js/arda-bg.js" type="text/javascript"></script>
-    <script src="js/region.js" type="text/javascript"></script>
-    <script src="js/ardamap-d3.js" type="text/javascript"></script>
-    <script src="js/menu.js" type="text/javascript"></script>
-    <script src="js/linking.js" type="text/javascript"></script>
-    <script src="js/familytree-d3.js" type="text/javascript"></script>
-    <script src="js/familytree.js" type="text/javascript"></script>
-    <script src="js/loading.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $("body").on("contextmenu", "img", function(e) {
-            return false;
-        });
-    </script>
+</div>
+<script src="js/clear.js" type="text/javascript"></script>
+<script src="js/libs/json2.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/jquery-ui-1.10.3.custom.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/backbone-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/ba-debug.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/ba-tinyPubSub.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/jquery.mousewheel.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/jquery.ui.ipad.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/globalize.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/timeglider-1.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script src="js/db.js" type="text/javascript"></script>
+<script src="js/welcome.js" type="text/javascript"></script>
+<script src="js/info.js" type="text/javascript"></script>
+<script src="js/orientdb.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
+<script src="js/footerpopup.js" type="text/javascript"></script>
+<script src="js/illustrator.js" type="text/javascript"></script>
+<script src="js/legend.js" type="text/javascript"></script>
+<script src="js/journey.js" type="text/javascript"></script>
+<script src="js/timeline.js" type="text/javascript"></script>
+<script src="js/scalebar.js" type="text/javascript"></script>
+<script src="js/arda-bg.js" type="text/javascript"></script>
+<script src="js/region.js" type="text/javascript"></script>
+<script src="js/ardamap-d3.js" type="text/javascript"></script>
+<script src="js/menu.js" type="text/javascript"></script>
+<script src="js/linking.js" type="text/javascript"></script>
+<script src="js/familytree-d3.js" type="text/javascript"></script>
+<script src="js/familytree.js" type="text/javascript"></script>
+<script src="js/loading.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("body").on("contextmenu", "img", function(e) {
+        return false;
+    });
+</script>
 </body>
 </html>
