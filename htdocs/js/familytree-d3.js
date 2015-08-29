@@ -9,7 +9,7 @@ var familytree = (function() {
             return (m[d] = "url(#end" + d + ")", m)
         }, {}),
         phasesAlpha = (function(){
-            var p = [0.08, 0.04, 0.02, 0],i = 0;
+            var p = [0.04, 0],i = 0;
             return function (alpha){
                 // resets if alpha is falsey or > p[0]
                 i = alpha ? (alpha > p[0] ? 0 : i) : 0;
