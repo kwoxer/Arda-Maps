@@ -256,7 +256,7 @@ var ardamap = (function () {
                 .attr("width", "1")
                 .attr("height", "1")
                 .append("image")
-                .attr("xlink:href", "pics/map/ages/firstage.png")
+                .attr("xlink:href", "pics/map/ages/firstage.jpg")
                 .attr("width", 20000)
                 .attr("height", 4500)
                 .attr("x", -5790)
