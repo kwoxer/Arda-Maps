@@ -1,8 +1,6 @@
 var familytreeController = (function() {
     var suggestions = "#familytreesearchsuggestions";
     var suggestionsFamily = "#familytreesearchsuggestionsFamilycreatures";
-    var showAll;
-    var zoomToTransition = 1000;
 
     $("#familytreecontentclose a").click(function() {
         /** TODO?
@@ -15,8 +13,7 @@ var familytreeController = (function() {
     });
 
     $("#familytreeShowallbutton").click(function() {
-        showAll = true;
-        orientdb.getFamilytreeAll2(familytree.initializeGraph);
+        orientdb.getFamilytreeAll(familytree.initializeGraph);
     });
 
     $("#familytreeHideallbutton").click(function() {
@@ -41,7 +38,6 @@ var familytreeController = (function() {
     });
 
     $("ul" + suggestionsFamily).on('click', 'li', function() {
-        //if(showAll)  orientdb.clearAll();
         var id = this.id.split("|")[0];
         orientdb.stageFamilytreeSingle(this.id, function() {
             var n = this.mergeSingle().dataSet(familytree.initializeGraph).nodes[id],
@@ -56,16 +52,14 @@ var familytreeController = (function() {
                 familytree.on([stopEvent, eventID].join("."), function() {
                     familytree.focusNode(n).highlight().delay(2000).blur();
                     familytree.on("." + eventID, null);
-                    console.log(familytree.on([stopEvent, eventID].join(".")))
+                    //console.log(familytree.on([stopEvent, eventID].join(".")))
                 })
             }
         });
-        //showAll = false;
         $(this).addClass("active");
     });
 
     familytree.on("node_dblclick", function(d) {
-        //familytree.zoomTo(d);
         // try to get the relationship tree for the selected node and asynchronously
         // merge it into the current tree if successful
         orientdb.stageFamilytreeSingle(d.ID + '|' + d.class, function() {
@@ -101,10 +95,6 @@ var familytreeController = (function() {
             $("#familytreeinner a").attr("href", "/ages/third/");
         }
     });
-    function getRelationships(id, mode) {
-        if(showAll) familytree.cleanPresentation(mode);
-        orientdb.getFamilytreeSingle2(id, familytree.updateGraph);
-    }
 
     familytree.on("graph_init", function(){
         infoState.on("widthChange", function(deltaW){

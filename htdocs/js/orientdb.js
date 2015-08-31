@@ -133,19 +133,7 @@ var orientdb = (function() {
     // Data Interface
     return {
         treeData: treeData,
-        getFamilytreeAll           : function() {
-            $.ajax({
-                url    : urlOrientDB + "getFamilytreeAll/",
-                headers: {
-                    "Authorization": "Basic " + btoa("arda" + ":" + "arda")
-                },
-                success: function(result) {
-                    var jsonResult = result.result;
-                    familytree.createGraph(jsonResult);
-                }
-            });
-        },
-        getFamilytreeAll2          : function(onSuccess) {
+        getFamilytreeAll          : function(onSuccess) {
             if(treeData.getAll(onSuccess)) return treeData.dataSet(onSuccess);
             $.ajax({
                 url    : urlOrientDB + "getFamilytreeAll/",
@@ -154,38 +142,6 @@ var orientdb = (function() {
                 },
                 success: function(result) {
                     treeData.JSON(result.result).setAll().dataSet(onSuccess);
-                }
-            });
-        },
-        getFamilytreeSingle        : function(rid) {
-            var infos = rid.split('|');
-            $.ajax({
-                url    : urlOrientDB + "getFamilytreeSingle/" + infos[0].substring(1, infos[0].length),
-                headers: {
-                    "Authorization": "Basic " + btoa("arda" + ":" + "arda")
-                },
-                success: function(result) {
-                    var jsonResult = result.result;
-                    if(familytree.getAlreadyThere()) {
-                        familytree.updateGraph(jsonResult);
-                    } else {
-                        familytree.createGraph(jsonResult);
-                    }
-                }
-            });
-        },
-        getFamilytreeSingle2       : function(rid, onSuccess) {
-            var infos = rid.split('|');
-            if(treeData.loadedSingle(infos[0])) return treeData.mergeSingle().dataSet(onSuccess);
-            $.ajax({
-                url    : urlOrientDB + "getFamilytreeSingle/" + infos[0].substring(1, infos[0].length),
-                headers: {
-                    "Authorization": "Basic " + btoa("arda" + ":" + "arda")
-                },
-                success: function(result) {
-                    treeData.loadedSingle(infos[0], result.result);
-                    treeData.mergeSingle().dataSet(onSuccess);
-                    console.log(relationships(result.result))
                 }
             });
         },
@@ -221,18 +177,6 @@ var orientdb = (function() {
                 success: function(result) {
                     result.rid = rid;
                     orientdb.showInfo4Creature(result);
-                }
-            });
-        },
-        getInfo4CreatureByRID2      : function(rid, onSuccess) {
-            $.ajax({
-                url    : urlOrientDB + "getInfo4CreatureByRID/" + rid.substring(1, rid.length),
-                headers: {
-                    "Authorization": "Basic " + btoa("arda" + ":" + "arda")
-                },
-                success: function(result) {
-                    result.rid = rid;
-                    onSuccess(result);
                 }
             });
         },
@@ -328,7 +272,6 @@ var orientdb = (function() {
                     if(res[0].illustrator[0] != null) {
                         $("#infoEvent > .infopictureSource span").html("&#169; " + res[0].illustrator);
                     }
-                    //$("#infoEvent > .infopictureSource span").html(res[0].illustrator);
                     $('#infoEvent > .infodescription > .infosubtext').html(res[0].description);
                 }
             });
@@ -511,16 +454,13 @@ var orientdb = (function() {
             });
         }
     };
-    function relationshipsText(r){
-        return r.reduce(function(s, d, i){
-            return (s + [(i ? "\n" : ""), d.sourceName, d.relation, d.targetName].join(" "))
-        }, "")
-    }
+
     function relationships(r){
         return r.map(function(d){
             return ([d.sourceName, d.relation, d.targetName].join(" "))
         })
     }
+
     function list(base, rows){
         var ul = d3.select(base).selectAll("ul")
                 .data([rows]),
@@ -531,9 +471,11 @@ var orientdb = (function() {
         li.text(ID)
 
     }
+
     function clone(o) {
         return o ? JSON.parse(JSON.stringify(o)) : null;
     }
+
     function ID(d){return d}
 
 })();

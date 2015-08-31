@@ -39,7 +39,7 @@ var familytree = (function() {
                 if (!dataSet) return force.nodes().length ? {nodes: force.nodes(), links: force.links()} : null;
                 force
                     .nodes(dataSet.nodes)
-                    .links(dataSet.links)
+                    .links(dataSet.links);
 
                 svg.onZoom(zoomed);
 
@@ -51,7 +51,7 @@ var familytree = (function() {
                         //left click only
                         e.stopPropagation();
                         d.fixed = e.shiftKey || e.touches && (e.touches.length > 1);
-                        events.node_click(d)
+                        events.node_click(d);
                     }
                 });
                 hookDrag(force.drag(), "dragend.force", function(d) {
@@ -60,7 +60,6 @@ var familytree = (function() {
                     d.fixed = e.shiftKey || d.fixed;
                 });
 
-                //DEFs
                 var varsvgMarker = svg.selectAll("defs")
                     .data([["end"]])
                     .enter().append("defs")
@@ -78,7 +77,7 @@ var familytree = (function() {
                 links.enter().append("g").attr("class", "links");
 
                 link = links.selectAll("line").data(id);
-                link.enter().append("line")/*.attr("class", "link")*/;
+                link.enter().append("line");
                 link.exit().remove();
                 link.attr("class", function(d) {
                     if(d.relation == "BEGETS") {
@@ -161,9 +160,7 @@ var familytree = (function() {
                         return d.name;
                     });
 
-                force
-                    .start()
-                //.alpha(0.4);
+                force.start();
 
                 function hookDrag(target, event, hook) {
                     //hook force.drag behaviour
@@ -197,7 +194,7 @@ var familytree = (function() {
 
                 return this;
 
-            };  //data
+            }
 
             var zoomTo = svg.zoomTo.bind(null, 1000);
             fdg.zoomTo = (function() {
@@ -295,7 +292,6 @@ var familytree = (function() {
             .style({"font-size": "8px", "fill": "#ccc",stroke: "none"});
     }
     function createMarker(svg) {
-        //http://stackoverflow.com/questions/15495762/linking-nodes-of-variable-radius-with-arrows
         var obj = [38, 43, 50, 54, 60, 65, 70, 80, 85];
         for(var i = 0; i < obj.length; i++) {
             svg.append("svg:marker")
@@ -356,8 +352,8 @@ var familytree = (function() {
         zoomTo: function(){
             fdg.zoomTo.apply(this, arguments)
         },
-        focusNode: fdg.focusNode,
-        events         : events,
+        focusNode       : fdg.focusNode,
+        events          : events,
         data: function() {
             return fdg.data();
         }
@@ -366,19 +362,19 @@ var familytree = (function() {
     function zoomableSVG(size, selector, z) {
         //delivers an svg background with zoom/drag context in the selector element
         //if height or width is NaN, assume it is percentage and ignore margin
-        var margin   = size.margin || {top: 0, right: 0, bottom: 0, left: 0},
+        var margin = size.margin || {top: 0, right: 0, bottom: 0, left: 0},
             percentW = isNaN(size.width), percentH = isNaN(size.height),
-            w        = percentW ? size.width : size.width - margin.left - margin.right,
-            h        = percentH ? size.height : size.height - margin.top - margin.bottom,
-            zoomStart   = function() {
+            w = percentW ? size.width : size.width - margin.left - margin.right,
+            h = percentH ? size.height : size.height - margin.top - margin.bottom,
+            zoomStart = function() {
                 return this
             },
-            zoomed   = function() {
+            zoomed = function() {
                 return this
             },
             container,
 
-            zoom     = zoom || d3.behavior.zoom().scaleExtent(z && z.extent || [0.4, 4])
+            zoom = zoom || d3.behavior.zoom().scaleExtent(z && z.extent || [0.4, 4])
                 .on("zoom", function(d, i, j) {
                     onZoom.call(this, d, i, j);
                     zoomed.call(this, d, i, j);
@@ -392,8 +388,8 @@ var familytree = (function() {
         svg.enter().append("svg");
         svg.attr({width: size.width, height: size.height});
 
-        var g       = svg.selectAll("#zoom").data(id),
-            gEnter  = g.enter().append("g")
+        var g = svg.selectAll("#zoom").data(id),
+            gEnter = g.enter().append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
                 .call(zoom)
                 .attr({class: "outline", id: "zoom"}),
@@ -441,7 +437,7 @@ var familytree = (function() {
                 }
             }
             return container;
-        }
+        };
 
         g.onZoom = function(cb) {
             zoomed = cb;
@@ -464,7 +460,7 @@ var familytree = (function() {
 
     function id(d) {
         return d;
-    };
+    }
 })();
 
 d3.selection.prototype.moveToFront = function() {
@@ -472,4 +468,3 @@ d3.selection.prototype.moveToFront = function() {
         this.parentNode.appendChild(this);
     });
 };
-

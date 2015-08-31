@@ -26,8 +26,7 @@ infoState = (function() {
                 $("#infobutton").css("z-index", "8");
                 $("#searchbutton").css("z-index", "9");
                 $("#illustrator").css("z-index", "19");
-            };
-            //console.log(events.widthChange + width() + w) //(width() - w);
+            }
             events.widthChange(width() - w);
         });
     }
@@ -96,6 +95,7 @@ infoState = (function() {
     $("#infoClosebutton").click(function() {
         $("#infoContentSearch").hide();
     });
+
     return d3.rebind.bind(null, {
         width: width,
         show : function(yes) {
