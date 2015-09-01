@@ -14,7 +14,7 @@
 .illustratorcontentheader {
     padding: 15px 0px;
     text-align: center;
-    font-family: "yonkers", "Myriad Pro", sans-serif;
+    font-family: "uncialantiqua", "Myriad Pro", sans-serif;
 }
 
 #illustratorcontentclose {
@@ -62,7 +62,7 @@
 #illustratorfooterHeader{
     text-align: center;
     color: #eee;
-    font-family: 'yonkers', "Open Sans", sans-serif;
+    font-family: 'uncialantiqua', "Open Sans", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 25px;

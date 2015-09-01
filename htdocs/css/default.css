@@ -14,7 +14,7 @@ text {
     font-family: "nipcens";
 }
 text#names {
-    font-family: "yonkers";
+    font-family: "uncialantiqua";
 }
 
 @font-face {
@@ -27,7 +27,7 @@ text#names {
     src: url("../font/Coelac.otf");
 }
 @font-face {
-    font-family: yonkers;
+    font-family: uncialantiqua;
     src: url("../font/UncialAntiqua-Regular.ttf");
 }
 
@@ -104,7 +104,7 @@ h1 {
     position: relative;
     color: #F9D276;
     font-weight: 100;
-    font-family: "yonkers", "Myriad Pro", sans-serif;
+    font-family: "uncialantiqua", "Myriad Pro", sans-serif;
 }
 
 h2 {
@@ -113,7 +113,7 @@ h2 {
     position: relative;
     color: #F9D276;
     font-weight: 100;
-    font-family: "yonkers", "Myriad Pro", sans-serif;
+    font-family: "uncialantiqua", "Myriad Pro", sans-serif;
 }
 
 h3 {
@@ -123,7 +123,7 @@ h3 {
     position: relative;
     color: #F9D276;
     font-weight: 100;
-    font-family: "yonkers", "Myriad Pro", sans-serif;
+    font-family: "uncialantiqua", "Myriad Pro", sans-serif;
 }
 
 a{
