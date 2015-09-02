@@ -268,7 +268,7 @@ var familytree = (function() {
                 if(phasesAlpha(e.alpha)) events.force_stage(e.alpha);
             }
         })().zoomTime(1000);
-    events.on("force_stage.debug", function(a){console.log(a)});
+    //events.on("force_stage.debug", function(a){console.log(a)});
 
     function mouseover() {
         highlight(d3.select(this))
@@ -280,7 +280,7 @@ var familytree = (function() {
     function highlight(selection){
         var s = svg.scale(), transition = selection.select("text").transition()
             .duration(750)
-            .style({"font-size": (s > 1 ? 15 : (15/s).toFixed()) + "px","fill": "black"});
+            .style({"font-size": (s > 1 ? 15 : (15/s).toFixed()) + "px","fill": "#F9D276"});
         selection.moveToFront();
         return transition;
     }
@@ -288,7 +288,7 @@ var familytree = (function() {
         selection.select("text").transition()
             .duration(750)
             .delay(delay || 0)
-            .style({"font-size": "8px", "fill": "#ccc",stroke: "none"});
+            .style({"font-size": "8px", "fill": "#ccc", stroke: "none"});
     }
     function createMarker(svg) {
         var obj = [38, 43, 50, 54, 60, 65, 70, 80, 85];

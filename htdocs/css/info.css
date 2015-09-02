@@ -13,6 +13,10 @@
     background: none repeat scroll 0% 0% #EEE;
     box-shadow: -1px 0px 10px 0px rgba(10, 10, 10, 0.8);
     min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0px;
+    bottom: 0px;
 }
 #infocontent a{
     color: #21d;
@@ -141,10 +145,10 @@
 }
 
 .infolink {
-    position: absolute;
+    position: relative;
     bottom: 2px;
     font-size: 11px;
-    margin-left: -5px;
+    margin: 10px 0 -10px -5px;
     font-family: "Open Sans",sans-serif;
 }
 .infolink a{

@@ -236,14 +236,17 @@ var orientdb = (function() {
                     break;
             }
             $('#infoCreature > .inforace > .infosubtext').html(res[0].race);
-            $('#infoCreature > .infolife > .infosubtext').html(res[0].born);
-            $('#infoCreature > .infolife > .infosubtext').html(" until " + res[0].died);
-            $('#infoCreature > .infolife > .infosubtext').html(" until " + res[0].died);
+
+            var birth = res[0].born == "" ? "unknown" : res[0].born;
+            var death = res[0].died == "" ? "unknown" : res[0].died;
+            $('#infoCreature > .infolife > .infosubtext').html(
+                "<img src='/pics/lifetime_death.png'>" + birth + "<br>" + "<img src='/pics/lifetime_death.png'>" + death
+            );
 
             var rel = d3.select("#infoCreature > .inforelations > .infosubtext");
             rel.selectAll("ul").data([[""]]).exit().remove();
             orientdb.stageFamilytreeSingle(result.rid, function() {
-                list(rel.node(), relationships(this.fetchedSingle))
+                list(rel.node(), relationships(this.fetchedSingle));
             });
 
             var loc = d3.select("#infoCreature > .infolocation > .infosubtext");
@@ -267,7 +270,7 @@ var orientdb = (function() {
                     $("#infoEvent").show();
                     var res = result.result;
                     $("#infoEvent > .infoheader").html(res[0].name);
-                    $("#infoEvent > .infopicture img").attr("src", "/pics/arda/event/" + res[0].uniquename + ".jpg ");
+                    $("#infoEvent > .infopicture img").attr("src", "/pics/arda/event/" + res[0].uniquename + ".jpg");
                     $(".infopictureSource span").text("");
                     if(res[0].illustrator[0] != null) {
                         $("#infoEvent > .infopictureSource span").html("&#169; " + res[0].illustrator);
@@ -457,19 +460,25 @@ var orientdb = (function() {
 
     function relationships(r){
         return r.map(function(d){
-            return ([d.sourceName, d.relation, d.targetName].join(" "))
-        })
+            return ([d.sourceName, relationshipColor(d.relation), d.targetName].join(" "))
+        });
+    }
+
+    function relationshipColor(rel){
+        return {
+            "BEGETS"            : "<img title='begets' src='/pics/relations_BEGETS.png'>",
+            "HASSIBLING"        : "<img title='has sibling' src='/pics/relations_HASSIBLING.png'>",
+            "LOVES"             : "<img title='loves' src='/pics/relations_LOVES.png'>"
+        }[rel] || "[unknown relation]";
     }
 
     function list(base, rows){
         var ul = d3.select(base).selectAll("ul")
-                .data([rows]),
-            ulEnter = ul.enter().append("ul"),
+                .data([rows]).enter().append("ul"),
             li = ul.selectAll("li").data(ID);
         li.enter().append("li");
         li.exit().remove();
-        li.text(ID)
-
+        li.html(ID);
     }
 
     function clone(o) {
