@@ -12,7 +12,7 @@ The aim is that Tolkien readers can use this website to explore the fictive univ
 
 Ages
 ---
-We support the most important ages in a really high resulation. You just need to load it once and you have all the data you need. There is no need of downloading any map source later:
+We support the most important ages in a pretty high resolution (54x zoom). You just need to load it once and you have all the data you need. There is no need of downloading any map source later:
 
 [**First Age (topographical view)**](http://arda-maps.org/ages/first/) 
 
@@ -26,7 +26,7 @@ We support the most important ages in a really high resulation. You just need to
 
 ![Third Age](http://arda-maps.org/pics/welcome/thirdage.png)
 
-To see the satellite view of the sepcific Age, simply click the *Earth* image on the bottom.
+To see the satellite view of the specific Age, simply click the *Earth* image on the bottom.
 
 Family Tree
 ---
