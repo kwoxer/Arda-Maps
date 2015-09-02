@@ -29,6 +29,10 @@
     z-index: 10;
 }
 
+#welcomecontentclose:hover {
+    opacity: 0.5;
+}
+
 #welcomecontentclose a{
     cursor: pointer;
 }

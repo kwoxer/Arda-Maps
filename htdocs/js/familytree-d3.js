@@ -19,7 +19,6 @@ var familytree = (function() {
             };
         })(), // fire the force_stage event when alpha reaches each value
 
-
         fdg = (function() {
             var force = d3.layout.force()
                     .size([width, height])

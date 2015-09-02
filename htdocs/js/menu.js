@@ -7,9 +7,7 @@ $("#menu_main").click(function () {
     highlightsRemoveFromAges();
     ardamap.setAgeName("");
     ardamap.clearMap();
-    //$('meta[name=keywords]').attr('content', 'arda, maps,middle-earth,map,interactive,lotr,the hobbit,lord of the rings,tolkien');
-    //$('meta[name=description]').attr('content', 'Arda Maps is a complete new interactive experience. It is visualizing the Tolkien ages all on one site.');
-    document.title = "Arda Maps Beta - An interactive Tolkien Experience";
+    document.title = "Arda Maps - interactive Tolkien Maps";
 });
 
 function closeOtherWindows(){
@@ -33,8 +31,6 @@ function triggerClickAbout(){
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentAbout").show();
-    //$('meta[name=keywords]').attr('content', 'about,project');
-    //$('meta[name=description]').attr('content', 'Arda Maps is an Open Source project that is trying to visualize all data in the Tolkien universe.');
     document.title = "About - Arda Maps";
 }
 
@@ -49,8 +45,6 @@ function triggerClickCreator(){
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentCreator").show();
-    //$('meta[name=keywords]').attr('content', 'creator,intention,project');
-    //$('meta[name=description]').attr('content', 'Arda Maps was created to support Tolkien reader.');
     document.title = "The Creator - Arda Maps";
 }
 
@@ -65,8 +59,6 @@ function triggerClickDelimitation(){
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentDelimitation").show();
-    //$('meta[name=keywords]').attr('content', 'delimitation,project');
-    //$('meta[name=description]').attr('content', 'Arda Maps is not complete.');
     document.title = "Delimitations - Arda Maps";
 }
 $("#menu1opensource").click(function () {
@@ -80,8 +72,6 @@ function triggerClickOpensource(){
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentOpensource").show();
-    //$('meta[name=keywords]').attr('content', 'open source,project');
-    //$('meta[name=description]').attr('content', 'Arda Maps is Open Source.');
     document.title = "Open Source - Arda Maps";
 }
 
@@ -96,8 +86,6 @@ function triggerClickDonate(){
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentDonateshare").show();
-    //$('meta[name=keywords]').attr('content', 'donate,share,project');
-    //$('meta[name=description]').attr('content', 'Arda Maps is driven by the community.');
     document.title = "Donate & Share - Arda Maps";
 }
 
@@ -123,8 +111,6 @@ $("#menu2ages").click(function () {
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentAges").show();
-    //$('meta[name=keywords]').attr('content', 'ages');
-    //$('meta[name=description]').attr('content', 'Arda Maps includes 3 of the most important ages.');
     document.title = "Ages - Arda Maps";
 });
 
@@ -144,8 +130,6 @@ function triggerClickFirstage(){
     ardamap.loadMap("arda_first_age");
     ardamap.initialize(0.5);
     $('#zoomresetbutton').click();
-    //$('meta[name=keywords]').attr('content', 'ages,first');
-    //$('meta[name=description]').attr('content', 'The First age is where the gods created most of the structures.');
     document.title = "First Age - Arda Maps";
 }
 
@@ -165,8 +149,6 @@ function triggerClickSecondage(){
     ardamap.loadMap("arda_second_age");
     ardamap.initialize(0.2);
     $('#zoomresetbutton').click();
-    //$('meta[name=keywords]').attr('content', 'ages,second');
-    //$('meta[name=description]').attr('content', 'The Second age is where Numenor is created and destroyed.');
     document.title = "Second Age - Arda Maps";
 }
 
@@ -186,8 +168,6 @@ function triggerClickThirdage(){
     ardamap.loadMap("arda_third_age");
     ardamap.initialize(0.4);
     $('#zoomresetbutton').click();
-    //$('meta[name=keywords]').attr('content', 'ages,third');
-    //$('meta[name=description]').attr('content', 'The Third age is where The Hobbit and Lord of the Rings take part.');
     document.title = "Third Age - Arda Maps";
 }
 
@@ -203,8 +183,6 @@ $("#menu4familytree").click(function () {
 });
 
 function triggerClickFamilytree(){
-    //$("ul#familytreesearchsuggestionsFamilycreatures" ).hide();
-
     $(familytreesearchsuggestions).hide();
     $("#familytree").show();
     $("#familytreecontent").children().show();
@@ -243,7 +221,6 @@ $('#sdt_menu > li').bind('mouseenter', function () {
         var $sub_menu = $elem.find('.sdt_box');
         if ($sub_menu.length)
             $sub_menu.hide().css('left', '0px');
-
         $elem.find('.sdt_active')
             .stop(true)
             .animate({'height': '0px'}, 300)

@@ -32,6 +32,10 @@
     z-index: 10;
 }
 
+#familytreecontentclose:hover {
+    opacity: 0.5;
+}
+
 #familytreecontentclose a{
     cursor: pointer;
 }

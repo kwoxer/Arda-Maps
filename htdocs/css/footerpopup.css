@@ -26,6 +26,10 @@
     z-index: 10;
 }
 
+#footerpopupcontentclose:hover {
+    opacity: 0.5;
+}
+
 #footerpopupcontentclose a{
     cursor: pointer;
 }

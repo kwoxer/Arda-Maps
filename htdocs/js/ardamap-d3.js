@@ -19,7 +19,7 @@ var ardamap = (function () {
     var center = [width / 2, height / 2];
     var zoombuttonScale, zoombuttonTranslate;
     var centered;
-    var is4testing = false;
+    var is4testing = true;
 
     $(document).on('scroll', function () {
         $(document).scrollLeft(0);
