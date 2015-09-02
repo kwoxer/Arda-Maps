@@ -202,26 +202,26 @@ var orientdb = (function() {
             $("#infoCreature").show();
             $("#infoLocation").hide();
             $("#infoEvent").hide();
-            var res = result.result;
-            $("#infoCreature > .infoheader").html(res[0].name);
-            $("#infoCreature > .infosubname").html(res[0].altname[0]);
-            if(res[0].altname[0] == null) {
+            var res = result.result[0];
+            $("#infoCreature > .infoheader").html(res.name);
+            $("#infoCreature > .infosubname").html(res.altname[0]);
+            if(res.altname[0] == null) {
                 $("#infoCreature > .infosubname").html("");
             }
-            $("#infoCreature > .infopicture img").attr("src", "/pics/arda/creature/" + res[0].uniquename + ".jpg ");
+            $("#infoCreature > .infopicture img").attr("src", "/pics/arda/creature/" + res.uniquename + ".jpg ");
             $(".infopictureSource span").text("");
-            if(res[0].illustrator[0] != null) {
-                $("#infoCreature > .infopictureSource span").html("&#169; " + res[0].illustrator);
+            if(res.illustrator[0] != null) {
+                $("#infoCreature > .infopictureSource span").html("&#169; " + res.illustrator);
             }
-            if(res[0].altname[0] == null) {
+            if(res.altname[0] == null) {
                 $("#infoCreature > .infoothernames > .infosubtext").html("-");
             } else {
                 $("#infoCreature > .infoothernames > .infosubtext").html("<ul></ul>");
-                for(var i = 0; i < res[0].altname.length; i++) {
-                    $("#infoCreature > .infoothernames > .infosubtext ul").append("<li>" + res[0].altname[i] + "</li>");
+                for(var i = 0; i < res.altname.length; i++) {
+                    $("#infoCreature > .infoothernames > .infosubtext ul").append("<li>" + res.altname[i] + "</li>");
                 }
             }
-            switch(res[0].gender) {
+            switch(res.gender) {
                 case "male":
                     $('.infosex img').attr("src", "/pics/male.png");
                     $('.infosex img').attr("title", "male");
@@ -235,12 +235,12 @@ var orientdb = (function() {
                     $('.infosex img').attr("title", "sex unclear or mixed");
                     break;
             }
-            $('#infoCreature > .inforace > .infosubtext').html(res[0].race);
+            $('#infoCreature > .inforace > .infosubtext').html(res.race);
 
-            var birth = res[0].born == "" ? "unknown" : res[0].born;
-            var death = res[0].died == "" ? "unknown" : res[0].died;
+            var birth = res.born == "" ? "unknown" : res.born;
+            var death = res.died == "" ? "unknown" : res.died;
             $('#infoCreature > .infolife > .infosubtext').html(
-                "<img src='/pics/lifetime_death.png'>" + birth + "<br>" + "<img src='/pics/lifetime_death.png'>" + death
+                "<img title='Birth' src='/pics/lifetime_birth.png'>" + birth + "<br>" + "<img title='Death' src='/pics/lifetime_death.png'>" + death
             );
 
             var rel = d3.select("#infoCreature > .inforelations > .infosubtext");
@@ -251,9 +251,9 @@ var orientdb = (function() {
 
             var loc = d3.select("#infoCreature > .infolocation > .infosubtext");
             loc.selectAll("ul").data([[""]]).exit().remove();
-            list(loc.node(), res[0].location);
+            list(loc.node(), res.location);
 
-            $('#infoCreature > .infolink').html("<a href=" + res[0].gatewaylink + ">More infos on TolkienGateway</a>");
+            $('#infoCreature > .infolink').html("<a href=" + res.gatewaylink + ">More infos on TolkienGateway</a>");
         },
         getInfo4EventByUName       : function(uname) {
             $.ajax({
@@ -268,14 +268,14 @@ var orientdb = (function() {
                     $("#infoCreature").hide();
                     $("#infoLocation").hide();
                     $("#infoEvent").show();
-                    var res = result.result;
-                    $("#infoEvent > .infoheader").html(res[0].name);
-                    $("#infoEvent > .infopicture img").attr("src", "/pics/arda/event/" + res[0].uniquename + ".jpg");
+                    var res = result.result[0];
+                    $("#infoEvent > .infoheader").html(res.name);
+                    $("#infoEvent > .infopicture img").attr("src", "/pics/arda/event/" + res.uniquename + ".jpg");
                     $(".infopictureSource span").text("");
-                    if(res[0].illustrator[0] != null) {
-                        $("#infoEvent > .infopictureSource span").html("&#169; " + res[0].illustrator);
+                    if(res.illustrator[0] != null) {
+                        $("#infoEvent > .infopictureSource span").html("&#169; " + res.illustrator);
                     }
-                    $('#infoEvent > .infodescription > .infosubtext').html(res[0].description);
+                    $('#infoEvent > .infodescription > .infosubtext').html(res.description);
                 }
             });
         },
@@ -308,34 +308,34 @@ var orientdb = (function() {
             $("#infoCreature").hide();
             $("#infoLocation").show();
             $("#infoEvent").hide();
-            var res = result.result;
-            $("#infoLocation > .infoheader").html(res[0].name);
-            $("#infoLocation > .infosubname").html(res[0].altname[0]);
-            if(res[0].altname[0] == null) {
+            var res = result.result[0];
+            $("#infoLocation > .infoheader").html(res.name);
+            $("#infoLocation > .infosubname").html(res.altname[0]);
+            if(res.altname[0] == null) {
                 $("#infoLocation > .infosubname").html("");
             }
-            $("#infoLocation > .infopicture img").attr("src", "/pics/arda/location/" + res[0].uniquename + ".jpg ");
+            $("#infoLocation > .infopicture img").attr("src", "/pics/arda/location/" + res.uniquename + ".jpg ");
             $(".infopictureSource span").text("");
-            if(res[0].illustrator[0] != null) {
-                $("#infoLocation > .infopictureSource span").html("&#169; " + res[0].illustrator);
+            if(res.illustrator[0] != null) {
+                $("#infoLocation > .infopictureSource span").html("&#169; " + res.illustrator);
             }
-            if(res[0].altname[0] == null) {
+            if(res.altname[0] == null) {
                 $("#infoLocation > .infoothernames > .infosubtext").html("-");
             } else {
                 $("#infoLocation > .infoothernames > .infosubtext").html("<ul></ul>");
-                for(var i = 0; i < res[0].altname.length; i++) {
-                    $("#infoLocation > .infoothernames > .infosubtext ul").append("<li>" + res[0].altname[i] + "</li>");
+                for(var i = 0; i < res.altname.length; i++) {
+                    $("#infoLocation > .infoothernames > .infosubtext ul").append("<li>" + res.altname[i] + "</li>");
                 }
             }
-            $("#infoLocation > .infotype img").attr("src", "/pics/other/" + res[0].type + ".png ");
-            $("#infoLocation > .infotype img").attr("title", res[0].type);
-            $("#infoLocation > .infoage img").attr("src", "/pics/other/" + res[0].age + ".png ");
-            $("#infoLocation > .infoage img").attr("title", res[0].age);
+            $("#infoLocation > .infotype img").attr("src", "/pics/other/" + res.type + ".png ");
+            $("#infoLocation > .infotype img").attr("title", res.type);
+            $("#infoLocation > .infoage img").attr("src", "/pics/other/" + res.age + ".png ");
+            $("#infoLocation > .infoage img").attr("title", res.age);
             $("#infoLocation > .infoarea > .infosubtext").html("<ul></ul>");
-            for(var i = 0; i < res[0].area.length; i++) {
-                $("#infoLocation > .infoarea > .infosubtext ul").append("<li>" + res[0].area[i] + "</li>");
+            for(var i = 0; i < res.area.length; i++) {
+                $("#infoLocation > .infoarea > .infosubtext ul").append("<li>" + res.area[i] + "</li>");
             }
-            $('#infoLocation > .infolink').html("<a href=" + res[0].gatewaylink + ">More infos on TolkienGateway</a>");
+            $('#infoLocation > .infolink').html("<a href=" + res.gatewaylink + ">More infos on TolkienGateway</a>");
         },
         search4Creature            : function(inputField, suggField) {
             var searchName = $(inputField).val();
