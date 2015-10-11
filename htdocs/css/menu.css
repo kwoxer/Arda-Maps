@@ -1,11 +1,11 @@
-#menu {
+nav {
     top: 15px;
     left: 15px;
     position: absolute;
     z-index: 20;
 }
 
-ul.sdt_menu {
+nav ul.sdt_menu {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,12 +13,12 @@ ul.sdt_menu {
     width: 510px;
 }
 
-ul.sdt_menu a {
+nav ul.sdt_menu a {
     text-decoration: none;
     outline: none;
 }
 
-ul.sdt_menu li {
+nav ul.sdt_menu li {
     float: left;
     width: 170px;
     height: 85px;
@@ -26,7 +26,7 @@ ul.sdt_menu li {
     cursor: pointer;
 }
 
-ul.sdt_menu li > a {
+nav ul.sdt_menu li > a {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -39,7 +39,7 @@ ul.sdt_menu li > a {
     box-shadow: 0px 0px 2px #000;
 }
 
-ul.sdt_menu li a img {
+nav ul.sdt_menu li a img {
     border: none;
     position: absolute;
     width: 0px;
@@ -52,7 +52,7 @@ ul.sdt_menu li a img {
     box-shadow: 0px 0px 4px #000;
 }
 
-ul.sdt_menu li span.sdt_wrap {
+nav ul.sdt_menu li span.sdt_wrap {
     position: absolute;
     top: 25px;
     left: 0px;
@@ -61,7 +61,7 @@ ul.sdt_menu li span.sdt_wrap {
     z-index: 20;
 }
 
-ul.sdt_menu li span.sdt_active {
+nav ul.sdt_menu li span.sdt_active {
     position: absolute;
     background: #111;
     top: 85px;
@@ -74,24 +74,24 @@ ul.sdt_menu li span.sdt_active {
     box-shadow: 0px 0px 4px #000 inset;
 }
 
-ul.sdt_menu li span span.sdt_link, ul.sdt_menu li span span.sdt_descr, ul.sdt_menu li div.sdt_box a {
+nav ul.sdt_menu li span span.sdt_link, nav ul.sdt_menu li span span.sdt_descr, nav ul.sdt_menu li div.sdt_box a {
     margin-left: 15px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
 }
 
-html, html a {
+nav a {
     -webkit-font-smoothing: antialiased !important;
 }
 
-ul.sdt_menu li span span.sdt_link {
+nav ul.sdt_menu li span span.sdt_link {
     color: #fff;
     font-size: 20px;
     float: left;
     clear: both;
 }
 
-ul.sdt_menu li span span.sdt_descr {
+nav ul.sdt_menu li span span.sdt_descr {
     font-family: "coelac", "Myriad Pro", sans-serif;
     color: #F9D276;
     float: left;
@@ -101,7 +101,7 @@ ul.sdt_menu li span span.sdt_descr {
     letter-spacing: 1px;
 }
 
-ul.sdt_menu li div.sdt_box {
+nav ul.sdt_menu li div.sdt_box {
     display: block;
     position: absolute;
     width: 170px;
@@ -113,7 +113,7 @@ ul.sdt_menu li div.sdt_box {
     background: #333;
 }
 
-ul.sdt_menu li div.sdt_box a {
+nav ul.sdt_menu li div.sdt_box a {
     font-family: "coelac", "Myriad Pro", sans-serif;
     float: left;
     clear: both;
@@ -122,10 +122,10 @@ ul.sdt_menu li div.sdt_box a {
     font-size: 13px;
 }
 
-ul.sdt_menu li div.sdt_box a:first-child {
+nav ul.sdt_menu li div.sdt_box a:first-child {
     margin-top: 10px;
 }
 
-ul.sdt_menu li div.sdt_box a:hover {
+nav ul.sdt_menu li div.sdt_box a:hover {
     color: #fff;
 }

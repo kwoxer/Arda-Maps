@@ -11,11 +11,6 @@
     overflow-x: hidden;
 }
 
-.popupcontentheader {
-    padding: 15px 0px;
-    text-align: center;
-}
-
 #popupcontentclose {
     position: absolute;
     right: 10px;
@@ -44,11 +39,20 @@
 }
 
 .popupcontentext img {
-     float: right;
-     margin-left: 10px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-     -webkit-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
-     -moz-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
-     box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
+    float: right;
+    margin-left: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.61);
+    width: 50%;
+    height: 50%;
+    max-width: 300px;
+}
+
+#ccimage{
+    width: 20%;
+    height: 20%;
+    max-width: 130px;
 }

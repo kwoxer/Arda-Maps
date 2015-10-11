@@ -1,6 +1,7 @@
 #arda {
     background-image: url("../pics/map/bg.png");
-
+    background-size: cover;
+    height: 2000px;
 }
 
 path {

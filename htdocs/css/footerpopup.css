@@ -1,4 +1,4 @@
-#footerpopup {
+footer #footerpopup {
     position: absolute;
     top: 150px;
     left: 20%;
@@ -11,12 +11,7 @@
     overflow-x: hidden;
 }
 
-.footerpopupcontentheader {
-    padding: 15px 0px;
-    text-align: center;
-}
-
-#footerpopupcontentclose {
+footer #footerpopupcontentclose {
     position: absolute;
     right: 10px;
     top: 0px;
@@ -26,15 +21,15 @@
     z-index: 10;
 }
 
-#footerpopupcontentclose:hover {
+footer #footerpopupcontentclose:hover {
     opacity: 0.5;
 }
 
-#footerpopupcontentclose a{
+footer #footerpopupcontentclose a{
     cursor: pointer;
 }
 
-.footerpopupcontentext {
+footer .footerpopupcontentext {
     margin: 10px;
     color: #eee;
     font-family: 'coelac', "Open Sans", sans-serif;
@@ -43,29 +38,29 @@
     font-size: 18px;
 }
 
-.footerpopupcontentext p{
+footer .footerpopupcontentext p{
     margin-left: 15px;
 }
 
-#forum{
+footer #forum{
     right: 148px;
     text-shadow: -1px 1px 4px #000;
     text-decoration: none;
 }
 
-#disclaimer{
+footer #disclaimer{
     right: 90px;
     text-shadow: -1px 1px 4px #000;
     text-decoration: none;
 }
 
-#reportissue{
+footer #reportissue{
     right: 7px;
     text-shadow: -1px 1px 4px #000;
     text-decoration: none;
 }
 
-.footerpopupbutton{
+footer .footerpopupbutton{
     text-decoration: none;
     position: fixed;
     right: 98px;
@@ -77,6 +72,6 @@
     line-height: 14px;
     vertical-align: bottom;
 }
-.footerpopupbutton:hover{
+footer .footerpopupbutton:hover{
     text-decoration: underline;
 }

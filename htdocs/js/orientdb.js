@@ -244,12 +244,15 @@ var orientdb = (function() {
             );
 
             var rel = d3.select("#infoCreature > .inforelations > .infosubtext");
+            rel.text("");
             rel.selectAll("ul").data([[""]]).exit().remove();
             orientdb.stageFamilytreeSingle(result.rid, function() {
+                console.log(relationships(this.fetchedSingle));
                 list(rel.node(), relationships(this.fetchedSingle));
             });
 
             var loc = d3.select("#infoCreature > .infolocation > .infosubtext");
+            loc.text("");
             loc.selectAll("ul").data([[""]]).exit().remove();
             list(loc.node(), res.location);
 
