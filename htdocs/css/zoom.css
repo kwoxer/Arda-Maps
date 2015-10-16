@@ -1,22 +1,29 @@
-#zoomresetbutton {
-    position: absolute;
-    left: 18px;
-    width: 60px;
+#zoombuttoncontainer{
+    position: relative;
+    width: 18px;
+    height: 32px;
+    display: inline-block;
+    margin-right: -4px;
 }
 
 #zoomplusbutton {
-    left: 15px;
-    bottom: 34px;
+    margin-bottom: -5px;
 }
 
 #zoomminusbutton {
-    left: 15px;
-    bottom: 15px;
+    margin-bottom: 1px;
 }
 
 .buttonzoom {
-    position: fixed;
-    width: 8px;
-    height: 8px;
+    position: relative;
+    width: 18px;
+    height: 18px;
     text-align: center;
+}
+
+#zoomresetbutton {
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: -3px;
 }

@@ -31,14 +31,19 @@ text#names {
     src: url("../font/UncialAntiqua-Regular.ttf");
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .defaultButton {
     cursor: pointer;
     color: #fff;
     font-family: "Open Sans", sans-serif;
-    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
     overflow: hidden;
-    display: block;
-    float: left;
+    display: inline-block;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 .imageButton {
@@ -47,8 +52,8 @@ text#names {
 }
 
 .defaultButton:hover {
-    background-color: #F9D276 !important;
     color: #222 !important;
+    background: #F9D276;
 }
 
 .buttonlarge {
@@ -56,7 +61,7 @@ text#names {
     margin: 0px 0.5px 0.5px 0.5px;
     font-size: 12px;
     line-height: 14px;
-    height: 15px;
+    height: 36px;
 }
 
 .buttonsmall {
@@ -90,11 +95,9 @@ text#names {
 }
 
 .buttonActive {
-    background-color: #eee !important;
-    color: #222 !important;
-    border-color: #ccc;
-    border-style: solid;
-    border-width: 1px;
+    background-color: #eee;
+    color: #222;
+    border-width: 0px;
 }
 
 h1 {
@@ -128,6 +131,8 @@ h3 {
 
 a{
     color: #F9D276;
+    -webkit-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
 }
 
 a:hover{
@@ -156,8 +161,8 @@ div.center {
 }
 
 #bottomButtons {
+    bottom: 12px;
     left: 15px;
-    bottom: 52px;
     position: absolute;
 }
 

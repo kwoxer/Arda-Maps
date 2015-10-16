@@ -25,6 +25,8 @@
     background: none repeat scroll 0 0 #000;
     line-height: 14px;
     z-index: 10;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 #welcomecontentclose:hover {
@@ -36,7 +38,7 @@
 }
 
 .welcomecontentext {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     color: #eee;
     font-family: 'coelac', "Open Sans", sans-serif;
     font-size: 18px;
@@ -69,6 +71,7 @@
 
 #threeages{
     width: 1000px;
+    height: 170px;
     margin: auto;
 }
 
@@ -86,6 +89,7 @@
 
 #otherfunctionality{
     width: 1000px;
+    height: 170px;
     margin: auto;
 }
 
@@ -95,21 +99,21 @@
     }
     .welcomeBackgroundimage{
         width: 150px;
-        height: 150px;
-        background-size: 150px 150px;
+        height: 120px;
+        background-size: 150px 120px;
     }
     #threeages{
         width: 550px;
+        height: 120px;
     }
     #otherfunctionality{
         width: 550px;
+        height: 120px;
     }
     .welcomecontentext span{
-        line-height: 150px;
+        line-height: 120px;
     }
 }
-
-
 
 #welcomeJourney{
     background-image: url("/pics/welcome/journey.png");

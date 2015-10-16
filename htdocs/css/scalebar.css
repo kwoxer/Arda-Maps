@@ -1,15 +1,15 @@
 #scalebar {
-    position: fixed;
-    left: 117px;
+    position: relative;
     width: 180px;
-    height: 37px;
-    bottom: 15px;
+    height: 36px;
     color: #fff;
     font-family: "Open Sans", sans-serif;
-    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
     overflow: hidden;
     font-size: 10px;
     line-height: 14px;
+    display: inline-block;
+    margin-right: -3px;
 }
 
 #scalebarheader {

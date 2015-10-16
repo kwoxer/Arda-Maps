@@ -1,8 +1,6 @@
 #arda-bg {
-    position: fixed;
-    left: 492px;
-    bottom: 15px;
-    height: 37px;
+    position: relative;
+    height: 36px;
     width: 36px;
     color: #fff;
     font-family: "Open Sans", sans-serif;
@@ -10,6 +8,8 @@
     overflow: hidden;
     font-size: 10px;
     line-height: 14px;
+    display: inline-block;
+    margin-top: 2px;
 }
 #arda-bg:hover {
     background: #F9D276 !important;

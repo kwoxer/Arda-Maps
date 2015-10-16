@@ -1,7 +1,7 @@
 #regionbutton {
-    position: fixed;
-    left: 362px;
-    bottom: 15px;
+    position: relative;
+    display: inline-block;
+    margin-right: -3px;
 }
 #regionbutton:hover {
     background: #F9D276 !important;
