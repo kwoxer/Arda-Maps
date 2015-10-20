@@ -112,7 +112,7 @@
 	left:0px;
 	width:100%;
 	padding-top:4px;
-	height:24px;
+	height:30px;
 	background-color:#2f2c28;
 	z-index:5000;
 	overflow:hidden;
@@ -392,7 +392,7 @@
 .timeglider-zoomlevel-display {
   font-size:.8em;
   color:#83A0C5;
-  width:20px;
+  width:25px;
   text-align:center;
   background-color:#FFF;
   -moz-border-radius:4px;
