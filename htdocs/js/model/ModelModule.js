@@ -1,0 +1,5 @@
+var app = angular.module('ardamaps', ["ardamaps.ctrl"])
+        .run(function(){
+            console.log(22);
+        })
+    ;

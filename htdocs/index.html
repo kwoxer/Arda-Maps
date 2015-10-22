@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ardamaps">
 <title>Arda Maps - Interactive Tolkien Maps</title>
 <meta name="description" content="Arda Maps is a complete new interactive experience. It is visualizing the most important Tolkien ages all on one site. Driven by the community!">
 <meta charset="utf-8">
@@ -22,6 +22,9 @@
 <script src="js/libs/topojson.min.js" type="text/javascript"></script>
 <script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
 <script src="js/libs/pace.min.js" type="text/javascript"></script>
+<script src="js/libs/angular.min.js" type="text/javascript"></script>
+<script src="js/model/ModelModule.js" type="text/javascript"></script>
+<script src="js/ctrl/IllustratorCtrl.js" type="text/javascript"></script>
 <body>
 <div id="fb-root"></div>
 <script type="text/javascript">(function(d, s, id) {
@@ -236,450 +239,28 @@
     </div>
 </section>
 <section id="illustrator">
-    <div id="illustratorinner">
+    <div id="illustratorinner" ng-controller="Illustrator">
         <a href="#">
             <img id="illustratorcontentclose" src="pics/popup/close.png" alt="Close Button">
         </a>
-        <div id="illustratorcontent">
-        <article id="illustratorcontentAdlpictures">
-            <header>
-                <h3>Adlpictures</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Adlpictures</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.></p>
-                <p>Details of the copyright holder: </p>
-                <ul class="listplacing">
-                    <li>Name: Adlpictures</li>
-                    <li>Website: <a href="http://adlpictures.deviantart.com/">Adlpictures's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentAlais">
-            <header>
-                <h3>Alaïs</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Alaïs</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.></p>
-                <p>Details of the copyright holder: </p>
-                <ul class="listplacing">
-                    <li>Name: Alaïs</li>
-                    <li>Website: <a href="http://alaisl.deviantart.com/">Alaïs's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentAnkeEissmann">
-            <header>
-                <h3>Anke Eissmann</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Anke Eissmann</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Anke Eissmann</li>
-                    <li>Website: <a href="http://www.anke.edoras-art.de">Anke Eissmann's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentAnnaKulisz">
-            <header>
-                <h3>Anna Kulisz</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Anna Kulisz</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Anna Kulisz</li>
-                    <li>Website: <a href="http://alasseaearello.deviantart.com/">Anna Kulisz's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentEbeKastein">
-            <header>
-                <h3>Ebe Kastein</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Ebe Kastein</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Ebe Kastein</li>
-                    <li>Website: <a href="http://ebe-kastein.deviantart.com/">Ebe Kastein's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentFrancescoAmadio">
-            <header>
-                <h3>Francesco Amadio</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Francesco Amadio</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Francesco Amadio</li>
-                    <li>Website: <a href="http://tolmancotton.deviantart.com/">Francesco Amadio's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentGrantGould">
-            <header>
-                <h3>Grant Gould</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Grant Gould</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Grant Gould</li>
-                    <li>Website: <a href="http://www.grantgould.com">Grant Gould's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentJacekKopalski">
-            <header>
-                <h3>Jacek Kopalski</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Jacek Kopalski</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Jacek Kopalski</li>
-                    <li>Website: <a href="http://www.jacekkopalski.com">Jacek Kopalski's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentJankaLateckova">
-            <header>
-                <h3>Janka Latečková</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Janka Latečková</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Janka Latečková</li>
-                    <li>Website: <a href="http://jankolas.deviantart.com/">Janka Latečková's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentJanPospisil">
-            <header>
-                <h3>Jan Pospíšil</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Jan Pospíšil</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Jan Pospíšil</li>
-                    <li>Website: <a href="http://merlkir.deviantart.com/">Jan Pospíšil's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentJennyDolfen">
-            <header>
-                <h3>Jenny Dolfen</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Jenny Dolfen</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Jenny Dolfen</li>
-                    <li>Website: <a href="http://www.goldseven.de">Jenny Dolfen's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentJoonaKujanen">
-            <header>
-                <h3>Joona Kujanen</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Joona Kujanen</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Joona Kujanen</li>
-                    <li>Website: <a href="http://tulikoura.deviantart.com/">Joona Kujanen's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentKasiopea">
-            <header>
-                <h3>Katarzyna Karina Chmiel-Gugulska (Kasiopea)</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Katarzyna Karina Chmiel-Gugulska</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Katarzyna Karina Chmiel-Gugulska</li>
-                    <li>Website: <a href="http://www.kasiopea.art.pl">Katarzyna Karina Chmiel-Gugulska's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentKarolinaWegrzyn">
-            <header>
-                <h3>Karolina Węgrzyn</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Karolina Węgrzyn</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Karolina Węgrzyn</li>
-                    <li>Website: <a href="http://www.sirielle.com">Karolina Węgrzyn's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentLeoneFabio">
-            <header>
-                <h3>Leone Fabio</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Leone Fabio</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Leone Fabio</li>
-                    <li>Website: <a href="https://www.facebook.com/IllustratorFabioLeone">Leone Fabio's facebook page</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentLigaKlavina">
-            <header>
-                <h3>Līga Kļaviņa</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Līga Kļaviņa</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Līga Kļaviņa</li>
-                    <li>Website: <a href="http://liga-marta.deviantart.com/">Līga Kļaviņa's facebook page</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentLorraineBrevig">
-            <header>
-                <h3>Lorraine Brevig</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Lorraine Brevig</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Lorraine Brevig</li>
-                    <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Lorraine_Brevig">Lorraine Brevig's TG images</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentLuisFBejarano">
-            <header>
-                <h3>Luis F. Bejarano</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Luis F. Bejarano</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Luis F. Bejarano</li>
-                    <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Luis_F._Bejarano">Luis F. Bejarano's TG images</a></li>
-                    <li>Website: <a href="http://tolkien.luisbejarano.com/">Luis F. Bejarano's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentMareishon">
-            <header>
-                <h3>Mareishon</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Mareishon</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Mareishon</li>
-                    <li>Website: <a href="http://mareishon.deviantart.com/">Mareishon's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentMaryaFilatova">
-            <header>
-                <h3>Marya Filatova</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Marya Filatova</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Marya Filatova</li>
-                    <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Marya_Filatova">Marya Filatova's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentMatejCadil">
-            <header>
-                <h3>Matěj Čadil</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Matěj Čadil</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <p>Matěj Čadil is a graphic designer and illustrator from the Czech Republic who loves to depict lesser-known parts of Tolkien's world.</p>
-                <ul class="listplacing">
-                    <li>Name: Matěj Čadil</li>
-                    <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Mat%C4%9Bj_%C4%8Cadil">Matěj Čadil's TG website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentMattStewart">
-            <header>
-                <h3>Matt Stewart</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Matt Stewart</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Matt Stewart</li>
-                    <li>Website: <a href="http://www.matthew-stewart.com">Matt Stewart's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentNolanos">
-            <header>
-                <h3>Nolanos</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Nolanos</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Nolanos</li>
-                    <li>Website: <a href="http://nolanos.deviantart.com/">Nolanos's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentOlandaFongSurdenas">
-            <header>
-                <h3>Olanda Fong-Surdenas</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Olanda Fong-Surdenas</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Olanda Fong-Surdenas</li>
-                    <li>Website: <a href="http://wynahiros.deviantart.com/">Olanda Fong-Surdenas's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentPeterXavierPrice">
-            <header>
-                <h3>Peter Xavier Price</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Peter Xavier Price</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Peter Xavier Price</li>
-                    <li>Website: <a href="http://tolkiengateway.net/wiki/Category:Images_by_Peter_Xavier_Price">Peter Xavier Price's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentRalphDamiani">
-            <header>
-                <h3>Ralph Damiani</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Ralph Damiani</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Ralph Damiani</li>
-                    <li>Website: <a href="http://www.ralphdamiani.com">Ralph_Damiani's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentRichardSvensson">
-            <header>
-                <h3>Richard Svensson</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Richard Svensson</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Richard Svensson</li>
-                    <li>Website: <a href="http://loneanimator.deviantart.com">Richard Svensson's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentSarkaSkorpikova">
-            <header>
-                <h3>Šárka Škorpíková</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Šárka Škorpíková</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <p> My name is Šárka Škorpíková, born in 1994 and I am a biology student and hobbyist illustrator from the Czech Republic.</p>
-                <ul class="listplacing">
-                    <li>Name: Šárka Škorpíková</li>
-                    <li>Website: <a href="http://robleskazeppelin.deviantart.com/">Šárka Škorpíková's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentShyangell">
-            <header>
-                <h3>Shyangell</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Shyangell</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Shyangell</li>
-                    <li>Website: <a href="http://shyangell.deviantart.com/">Shyangell's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentSimonaBrunildeJero">
-            <header>
-                <h3>Simona Brunilde Jero</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <p>This work is copyrighted and owned by <strong>Simona Brunilde Jero</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <ul class="listplacing">
-                    <li>Name: Simona Brunilde Jero</li>
-                    <li>Website: <a href="http://brunild.deviantart.com/">Simona Brunilde Jero's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
-        <article id="illustratorcontentSoniAlcornHender">
-            <header>
-                <h3>Soni Alcorn-Hender</h3>
-            </header>
-            <div class="illustratorcontentext">
-                <img src="pics/arda/illustrator/sonialcornhender.png" width="170" height="200" alt="Soni Alcorn-Hender">
-                <p>This work is copyrighted and owned by <strong>Soni Alcorn-Hender</strong> (Bohemian Weasel). However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
-                <p>Details of the copyright holder:</p>
-                <p>Soni is an English artist living and working in Portugal, with a degree in illustration from the Glasgow School of Art.</p>
-                <ul class="listplacing">
-                    <li>Name: Soni Alcorn-Hender</li>
-                    <li>Website: <a href="http://bohemianweasel.com">Soni Alcorn-Hender's website</a></li>
-                    <li>Permission for use on Arda Maps</li>
-                </ul>
-            </div>
-        </article>
+        <div id="illustratorcontent" ng-repeat="illustrator in illustrators">
+            <article id="illustratorcontent{{illustrator.ID}}">
+                <header>
+                    <h3>{{illustrator.name}}</h3>
+                </header>
+                <div class="illustratorcontentext">
+                    <img ng-if="showImage(illustrator)" src="pics/arda/illustrator/{{illustrator.imgName}}.png" width="170" height="200" alt="{{illustrator.name}}">
+                    <p>This work is copyrighted and owned by <strong>{{illustrator.name}}</strong>. However, permission has kindly been granted, by the copyright holder, to use this file on the not-for-profit Arda Maps website.</p>
+                    <p>Details of the copyright holder: </p>
+                    <p ng-if="showXtraInfo(illustrator)"> </p>
+                    <ul class="listplacing">
+                        <li>Name: {{illustrator.name}}</li>
+                        <li>Website: <a href="{{illustrator.website}}">{{illustrator.name}}'s website</a></li>
+                        <li ng-if="show2WebLink(illustrator)">Website: <a href="{{illustrator.website2url}}">{{illustrator.name}}'s {{illustrator.website2text}}</a></li>
+                        <li>Permission for use on Arda Maps</li>
+                    </ul>
+                </div>
+            </article>
         <article id="illustratorcontentTedNasmith">
             <header>
                 <h3>Ted Nasmith</h3>
@@ -1040,7 +621,7 @@
         Region
     </div>
     <div id='arda-bg' class="clickable defaultButton imagebutton">
-        <span style="margin-top: 20px; position: absolute; margin-left: 5px;" title="Show Earth" alt="Switching views">Earth</span>
+        <span title="Show Earth">Earth</span>
         <img src="pics/Earth.png" title="Show Earth" alt="Switching views">
     </div>
 </section>
