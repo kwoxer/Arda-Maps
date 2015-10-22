@@ -1005,6 +1005,10 @@ span[class^="timelinecreature"] {
   margin-top: 2px;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out; }
+  #arda-bg span {
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 5px; }
 
 #arda-bg:hover {
   opacity: .5; }
