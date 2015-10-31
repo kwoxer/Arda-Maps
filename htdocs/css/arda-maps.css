@@ -1184,9 +1184,6 @@ path {
   text-align: center; }
 
 #zoomresetbutton {
-  position: relative;
-  white-space: nowrap;
-  display: inline-block;
   margin-right: -3px; }
 
 #scalebar {
@@ -1338,7 +1335,6 @@ section #journeycontainer {
   color: #F9D276; }
 
 #journeybutton {
-  position: relative;
   margin-right: -3px; }
 
 .journeyelements {
@@ -1357,8 +1353,6 @@ section #journeycontainer {
   color: #F9D276; }
 
 #regionbutton {
-  position: relative;
-  display: inline-block;
   margin-right: -3px; }
 
 #regionbutton:hover {
@@ -1395,9 +1389,12 @@ footer .footerpopupcontentext {
   footer .footerpopupcontentext p {
     margin-left: 15px; }
 
-footer #forum, footer #disclaimer, footer #reportissue {
+footer #tour, footer #forum, footer #disclaimer, footer #reportissue {
   text-shadow: -1px 1px 4px #000;
   text-decoration: none; }
+
+footer #tour {
+  right: 188px; }
 
 footer #forum {
   right: 148px; }

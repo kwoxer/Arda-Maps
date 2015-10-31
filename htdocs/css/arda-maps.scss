@@ -1400,9 +1400,6 @@ path {
 }
 
 #zoomresetbutton {
-  position: relative;
-  white-space: nowrap;
-  display: inline-block;
   margin-right: -3px;
 }
 
@@ -1587,7 +1584,6 @@ section #journeycontainer {
 }
 
 #journeybutton {
-  position: relative;
   margin-right: -3px;
 }
 
@@ -1611,8 +1607,6 @@ section #journeycontainer {
 }
 
 #regionbutton {
-  position: relative;
-  display: inline-block;
   margin-right: -3px;
 }
 
@@ -1658,9 +1652,13 @@ footer .footerpopupcontentext {
   }
 }
 
-footer #forum, footer #disclaimer, footer #reportissue {
+footer #tour, footer #forum, footer #disclaimer, footer #reportissue {
   text-shadow: -1px 1px 4px #000;
   text-decoration: none;
+}
+
+footer #tour{
+  right: 188px;
 }
 
 footer #forum{

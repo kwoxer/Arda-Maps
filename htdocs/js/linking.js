@@ -58,7 +58,7 @@ function pushingState(href){
 }
 
 function invokePageClick(pathname) {
-    if (pathname == "//localhost/" || pathname == "//arda-maps.org/") {
+    if (pathname == "//localhost/" || pathname == "//localhost/#" || pathname == "//arda-maps.org/" || pathname == "//arda-maps.org/#") {
         $('#menu_main').click();
     }
     if (pathname == "/about" || pathname == "/about/") {
