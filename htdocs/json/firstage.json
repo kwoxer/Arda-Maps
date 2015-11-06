@@ -3190,18 +3190,6 @@
         "link":"http://tolkiengateway.net/wiki/First_Age_507"
     },
     {
-        "id": "507-3",
-        "title": "Eluréd and Elurín",
-        "startdate": "507",
-        "date_display": "year",
-        "description": "Deaths of <span class=\"timelinecreature-elured\">Eluréd</span> and <span class=\"timelinecreature-elurin\">Elurín</span>",
-        "icon": "death.png",
-        "low_threshold": "1",
-        "high_threshold": "60",
-        "importance": "44",
-        "link":"http://tolkiengateway.net/wiki/First_Age_507"
-    },
-    {
         "id": "509-1",
         "title": "Maeglin captured",
         "startdate": "509",
