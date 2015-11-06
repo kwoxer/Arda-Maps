@@ -142,6 +142,6 @@ function Illustrator ($scope){
     };
 }
 
-var ctrl = angular.module('ardamaps.ctrl', [])
-        .controller("Illustrator", Illustrator)
-    ;
+angular.module('ardamaps.ctrl', [])
+    .controller("Illustrator", Illustrator)
+;
