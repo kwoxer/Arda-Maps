@@ -152,6 +152,7 @@ text#names {
 h1 {
   @extend h2;
   margin: -5px;
+  text-align: center;
 }
 
 h2 {
@@ -160,6 +161,7 @@ h2 {
   color: $gold;
   font-weight: 100;
   font-family: $uncialantiqua;
+  text-align: center;
 }
 
 h3 {
@@ -279,7 +281,6 @@ div.center {
 
 header {
   padding: 15px 0;
-  text-align: center;
 }
 
 .pace {
@@ -1193,7 +1194,7 @@ span[class^="timelinecreature"] {
 }
 
 #arda {
-  background-image: url("../pics/map/bg.png");
+  background: url("../pics/map/bg.png");
   background-size: cover;
   height: 2000px;
 }
@@ -1544,7 +1545,7 @@ path {
   @include opacity(.4);
 }
 
-section #journeycontainer {
+section#journeycontainer {
   position: relative;
   display: inline-block;
 }
