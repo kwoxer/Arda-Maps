@@ -1,5 +1,5 @@
 var ardamap = (function () {
-    var width = 7850, height = 6200;
+    var width = 7850, height = 11200;
     var svg = d3.select("#arda").append("svg").attr("id", "arda-map").attr("viewBox", "-300 0 " + width + " " + height);
     var g = svg.append("g");
     var maximumZoom = 54;
