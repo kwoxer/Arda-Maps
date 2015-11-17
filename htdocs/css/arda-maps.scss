@@ -551,24 +551,6 @@ nav ul.sdt_menu li div.sdt_box a:hover {
   background-image: url("/pics/welcome/thirdage.png");
 }
 
-@media screen and (max-width: 1300px) {
-  #welcome {
-    overflow-x: auto;
-  }
-  .welcomeBackgroundimage {
-    width: 150px;
-    height: 120px;
-    background-size: 150px 120px;
-  }
-  #threeages, #otherfunctionality {
-    width: 550px;
-    height: 120px;
-  }
-  .welcomecontentext span {
-    line-height: 4;
-  }
-}
-
 #welcomeJourney {
   background-image: url("/pics/welcome/journey.png");
   @include opacity(.5);
@@ -1704,25 +1686,4 @@ footer .footerlinks {
 
 footer .footerpopupbutton:hover {
   text-decoration: underline;
-}
-
-@media screen and (max-width: 900px) {
-  #copyright::after {
-    content: "© 2015 Arda Maps";
-  }
-  #copyright span {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #scalebar {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  #copyright::after {
-    content: "";
-  }
 }
