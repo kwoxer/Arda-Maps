@@ -120,6 +120,7 @@
     font-size: 21px;
     font-family: "Playfair Display",serif;
     margin-left: 0;
+    display: initial;
 }
 
 .guiders_content p {
