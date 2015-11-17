@@ -13,12 +13,23 @@
     <meta name="type" content="science fiction">
     <meta name="robots" content="index, follow">
     <meta name="language" content="english">
+    <link rel="stylesheet" href="css/normalize.css.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/arda-maps.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="timeglider/Timeglider.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="timeglider/timeglider.datepicker.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/guiders.css" media="screen" type="text/css">
     <link rel="icon" href="http://arda-maps.org/favicon.ico" type="image/x-icon">
+    <script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/libs/d3.min.js" type="text/javascript"></script>
+    <script src="js/libs/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/topojson.min.js" type="text/javascript"></script>
+    <script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/libs/pace.min.js" type="text/javascript"></script>
+    <script src="js/libs/angular.min.js" type="text/javascript"></script>
+    <script src="js/model/ModelModule.js" type="text/javascript"></script>
+    <script src="js/ctrl/IllustratorCtrl.js" type="text/javascript"></script>
+    <script src="js/libs/guiders.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -37,52 +48,54 @@
     ga('create', 'UA-64043649-1', 'auto');
     ga('send', 'pageview');
 </script>
-<nav role="navigation" class="unselectable">
-    <ul id="sdt_menu" class="sdt_menu">
-        <li>
-            <a id="menu_main" href="/">
-                <img src="pics/menu/1.png" style="width: 0px; height: 0px;" alt="Menu Main">
-                <span class="sdt_active"></span>
+<header>
+    <nav role="navigation" class="unselectable">
+        <ul id="sdt_menu" class="sdt_menu">
+            <li>
+                <a id="menu_main" href="/">
+                    <img src="pics/menu/1.png" style="width: 0px; height: 0px;" alt="Menu Main">
+                    <span class="sdt_active"></span>
                     <span class="sdt_wrap">
                         <span class="sdt_link">Arda Maps</span>
                         <span class="sdt_descr">Version 1.2</span>
                     </span>
-            </a>
-            <div class="sdt_box">
-                <a id="menu1about" href="/about/">About</a>
-                <a id="menu1creator" href="/creator/">The Creator</a>
-                <a id="menu1delimitation" href="/delimitation/">Delimitation</a>
-                <a id="menu1opensource" href="/opensource/">Open Source</a>
-                <a id="menu1donateshare" href="/donate/">Donate &amp; Share</a>
-            </div>
-        </li>
-        <li>
-            <a id="menu2ages" href="/ages/">
-                <img src="pics/menu/2.png" style="width: 0px; height: 0px;" alt="Menu Ages">
-                <span class="sdt_active"></span>
+                </a>
+                <div class="sdt_box">
+                    <a id="menu1about" href="/about/">About</a>
+                    <a id="menu1creator" href="/creator/">The Creator</a>
+                    <a id="menu1delimitation" href="/delimitation/">Delimitation</a>
+                    <a id="menu1opensource" href="/opensource/">Open Source</a>
+                    <a id="menu1donateshare" href="/donate/">Donate &amp; Share</a>
+                </div>
+            </li>
+            <li>
+                <a id="menu2ages" href="/ages/">
+                    <img src="pics/menu/2.png" style="width: 0px; height: 0px;" alt="Menu Ages">
+                    <span class="sdt_active"></span>
                     <span class="sdt_wrap">
                         <span class="sdt_link">Ages</span>
                         <span class="sdt_descr">Ages of Arda</span>
                     </span>
-            </a>
-            <div class="sdt_box">
-                <a id="menu2firstage" href="/ages/first/">First Age</a>
-                <a id="menu2secondage" href="/ages/second/">Second Age</a>
-                <a id="menu2thirdage" href="/ages/third/">Third Age</a>
-            </div>
-        </li>
-        <li>
-            <a id="menu4familytree" href="/familytree/">
-                <img src="pics/menu/4.png" style="width: 0px; height: 0px;" alt="Menu Familytree">
-                <span class="sdt_active"></span>
+                </a>
+                <div class="sdt_box">
+                    <a id="menu2firstage" href="/ages/first/">First Age</a>
+                    <a id="menu2secondage" href="/ages/second/">Second Age</a>
+                    <a id="menu2thirdage" href="/ages/third/">Third Age</a>
+                </div>
+            </li>
+            <li>
+                <a id="menu4familytree" href="/familytree/">
+                    <img src="pics/menu/4.png" style="width: 0px; height: 0px;" alt="Menu Familytree">
+                    <span class="sdt_active"></span>
                     <span class="sdt_wrap">
                         <span class="sdt_link">Ancestry</span>
                         <span class="sdt_descr">Family Tree</span>
                     </span>
-            </a>
-        </li>
-    </ul>
-</nav>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <div id="welcome">
     <div id="welcomeinner">
         <a href="#">
@@ -203,7 +216,7 @@
                     <p>We have the intention to help readers so that those can find the information they need. Keeping this website alive costs some bucks. We really appreciate if you like Arda Maps, please consider a <a href="/go/donate/">donation</a>. This ONLY helps to improve the server and paying costs.</p>
                     <p>Also feel free to share this project anywhere you like (<a href="https://www.facebook.com/ardamaps">Facebook</a>).</p>
                     <p>On our Facebook site you can also see when we update something. Stay tuned!</p>
-                    <div style="position: absolute !important; left: 25%;" class="fb-page" data-href="https://www.facebook.com/ardamaps" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ardamaps"><a href="https://www.facebook.com/ardamaps">Arda Maps</a></blockquote></div></div>
+                    <div style="position: absolute !important; left: 0%; right: 0%; text-align: center;" class="fb-page" data-href="https://www.facebook.com/ardamaps" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ardamaps"><a href="https://www.facebook.com/ardamaps">Arda Maps</a></blockquote></div></div>
                 </div>
             </article>
             <article id="popupcontentAges">
@@ -356,7 +369,7 @@
         </div>
     </div>
 </article>
-<aside>
+<aside role="complementary">
     <div id="info">
         <article id="infoinner">
             <div id="infocontent" class="unselectable">
@@ -685,16 +698,6 @@
         </div>
     </div>
 </article>
-<script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
-<script src="js/libs/d3.min.js" type="text/javascript"></script>
-<script src="js/libs/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/topojson.min.js" type="text/javascript"></script>
-<script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
-<script src="js/libs/pace.min.js" type="text/javascript"></script>
-<script src="js/libs/angular.min.js" type="text/javascript"></script>
-<script src="js/model/ModelModule.js" type="text/javascript"></script>
-<script src="js/ctrl/IllustratorCtrl.js" type="text/javascript"></script>
-<script src="js/libs/guiders.js" type="text/javascript"></script>
 <script src="js/clear.js" type="text/javascript"></script>
 <script src="js/libs/json2.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/libs/jquery-ui-1.10.3.custom.min.js" type="text/javascript" charset="utf-8"></script>
