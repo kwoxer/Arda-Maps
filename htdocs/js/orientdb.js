@@ -359,7 +359,7 @@ var orientdb = (function() {
                                 var imageURL = "<img src=/pics/arda/creature/" + res[i].uniquename
                                     + "_familytree.png onerror=this.src='" + fallbackURL + "' width='30' height='30'> ";
                                 $("ul" + suggField).append("<li id=" + res[i].rid + '|' + res[i].class
-                                    + " class='creature'> " + imageURL + "<span>" + res[i].name + "</span>" + "</li>");
+                                    + " class='is-creature'> " + imageURL + "<span>" + res[i].name + "</span>" + "</li>");
                             }
                         } else {
                             $("ul" + suggField).empty();

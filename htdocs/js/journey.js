@@ -19,12 +19,12 @@ $("#journeybutton").click(function () {
         var targetHeight = $('#journeyinner').css("height") == "210px" ? "0px" : "210px";
         if (!$("#journeyinner").is(":visible")) {
             $("#journeyinner").show();
-            $("#journeybutton").addClass("buttonActive");
+            $("#journeybutton").addClass("btn-active");
         }
         $('#journeyinner').animate({height: targetHeight}, duration, function () {
             if ($(this).css("height") == "0px") {
                 $(this).hide();
-                $("#journeybutton").removeClass("buttonActive");
+                $("#journeybutton").removeClass("btn-active");
             }
         });
     }

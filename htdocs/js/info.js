@@ -18,9 +18,9 @@ infoState = (function() {
             $("#illustrator").css("z-index", "24");
         }
         $('#infoinner').animate({width: targetWidth}, duration, function() {
-            $("#infobutton").addClass("buttonActive");
+            $("#infobutton").addClass("btn-active");
             if($(this).css("width") == "0px") {
-                $("#infobutton").removeClass("buttonActive");
+                $("#infobutton").removeClass("btn-active");
                 $(this).hide();
                 $("#infobuttons").css("z-index", "8");
                 $("#infobutton").css("z-index", "8");
@@ -64,7 +64,7 @@ infoState = (function() {
     });
 
     $(".infopicture").on('mouseenter mouseleave', '', function() {
-        $(".infopictureSource span").toggleClass("menuelementhighlight");
+        $(".infopictureSource span").toggleClass("is-highlighted--element");
     });
 
     $(".infopicture").click(function() {
@@ -85,11 +85,11 @@ infoState = (function() {
 
     $(infosearchsuggestions + " ul").on('click', 'li', function() {
         orientdb.getInfo4CreatureGenRID(this.id);
-        $(this).addClass("active");
+        $(this).addClass("is-highlighted--element");
     });
 
     $(infosearchsuggestions + " ul").on('mouseenter mouseleave', 'li', function() {
-        $(this).toggleClass("highlight");
+        $(this).toggleClass("is-focused");
     });
 
     $("#infoClosebutton").click(function() {

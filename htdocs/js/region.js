@@ -6,11 +6,11 @@ $("#regionbutton").click(function () {
         if (showregions){
             $("#region").show();
             $("#region-mesh").show();
-            $("#regionbutton").addClass("regionbuttonactive");
+            $("#regionbutton").addClass("btn-active");
         }else{
             $("#region").hide();
             $("#region-mesh").hide();
-            $("#regionbutton").removeClass("regionbuttonactive");
+            $("#regionbutton").removeClass("btn-active");
         }
     }
 });

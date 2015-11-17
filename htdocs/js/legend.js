@@ -134,11 +134,11 @@ $("#legendbutton").click(function () {
         var targetHeight = $('#legendinner').css("height") == "175px" ? "0px" : "175px";
         if (!$("#legendinner").is(":visible")) {
             $("#legendinner").show();
-            $("#legendbutton").addClass("buttonActive");
+            $("#legendbutton").addClass("btn-active");
         }
         $('#legendinner').animate({height: targetHeight}, duration, function () {
             if ($(this).css("height") == "0px") {
-                $("#legendbutton").removeClass("buttonActive");
+                $("#legendbutton").removeClass("btn-active");
                 $(this).hide();
                 $("#legendnames_EN").hide();
                 $("#legendnames_DE").hide();

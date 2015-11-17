@@ -233,7 +233,7 @@ var familytree = (function() {
                             return this;
                         },
                         blur     : function() {
-                            if(_trans) _trans.each("end.highlight", function() {
+                            if(_trans) _trans.each("end.is-focused", function() {
                                 blur(_n, _t)
                             });
                             else blur(_n);

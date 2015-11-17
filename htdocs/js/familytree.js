@@ -56,7 +56,7 @@ var familytreeController = (function() {
                 })
             }
         });
-        $(this).addClass("active");
+        $(this).addClass("is-highlighted--element");
     });
 
     familytree.on("node_dblclick", function(d) {
@@ -76,7 +76,7 @@ var familytreeController = (function() {
     });
 
     $("ul" + suggestionsFamily).on('mouseenter mouseleave', 'li', function() {
-        $(this).toggleClass("highlight");
+        $(this).toggleClass("is-focused");
     });
 
     $("#familytreesearch").attr('autocomplete', 'off');

@@ -84,10 +84,10 @@ $("#timelinebutton").click(function () {
             }
         }
         $('#timelinecontent').animate({height: targetHeight}, duration, function () {
-            $("#timelinebutton").addClass("buttonActive");
+            $("#timelinebutton").addClass("btn-active");
             if ($(this).css("height") == "0px") {
                 $("#timelinearea").hide();
-                $("#timelinebutton").removeClass("buttonActive");
+                $("#timelinebutton").removeClass("btn-active");
             }
         });
     } else {

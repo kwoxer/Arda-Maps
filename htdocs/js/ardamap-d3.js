@@ -20,6 +20,7 @@ var ardamap = (function () {
     var zoombuttonScale, zoombuttonTranslate;
     var centered;
     var is4testing = true;
+    var str4clickable = "is-clickable"
 
     $(document).on('scroll', function () {
         $(document).scrollLeft(0);
@@ -168,18 +169,19 @@ var ardamap = (function () {
                     $(".maptimeline-"+classtext).show();
                     $(".maptimeline-"+classtext).d3Click();
                 });
+                var str4highlightedElement = "map_is-highlighted--element";
                 $("[class*='event']").mouseenter(function () {
                     var object = $(this);
                     var currentClass = object.attr("class").match(/(event-.*?)(?:\s+|$)/)[1];
                     $("." + currentClass).attr("class", function (_, val) {
-                        return (val.indexOf("highlightElement") + 1) ? val.replace(" highlightElement", "") : val + " highlightElement";
+                        return (val.indexOf(str4highlightedElement) + 1) ? val.replace(" " + str4highlightedElement, "") : val + " " + str4highlightedElement;
                     });
                 });
                 $("[class*='event']").mouseleave(function () {
                     var object = $(this);
                     var currentClass = object.attr("class").match(/(event-.*?)(?:\s+|$)/)[1];
                     $("." + currentClass).attr("class", function (_, val) {
-                        return (val.indexOf("highlightElement") + 1) ? val.replace(" highlightElement", "") : val + " highlightElement";
+                        return (val.indexOf(str4highlightedElement) + 1) ? val.replace(" " + str4highlightedElement, "") : val + " " + str4highlightedElement;
                     });
                 });
                 $("[class*='waypoint-']").mouseenter(function () {
@@ -332,7 +334,7 @@ var ardamap = (function () {
                 .attr("class", function (d) {
                     var classes = "";
                     if (d.properties.eventname != null) {
-                        classes = "clickable " + " event-" + d.properties.eventname;
+                        classes = str4clickable + " " + " event-" + d.properties.eventname;
                     }
                     return classes;
                 })
@@ -409,7 +411,7 @@ var ardamap = (function () {
                         case 3: classes = "riverbig"; break;
                     }
                     if (d.properties.eventname != null) {
-                        classes = classes + " clickable " + " event-" + d.properties.eventname;
+                        classes = classes + " " + str4clickable + " " + " event-" + d.properties.eventname;
                     }
                     return classes;
                 })
@@ -431,7 +433,7 @@ var ardamap = (function () {
                             case 3: classes = "roadbig"; break;
                         }
                         if (d.properties.eventname != null) {
-                            classes = classes + " clickable " + " event-" + d.properties.eventname;
+                            classes = classes + " " + str4clickable + " " + " event-" + d.properties.eventname;
                         }
                         return classes;
                     })
@@ -462,7 +464,7 @@ var ardamap = (function () {
                     return "#text" + d.properties.id
                 })
                 .attr("class", function (d) {
-                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable" + " colorof" + d.properties.colorof
+                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable + " " + " colorof" + d.properties.colorof
                 });
             namingpolicy.append("tspan")
                 .attr("class", "names_EN")
@@ -502,7 +504,7 @@ var ardamap = (function () {
                     .data(featureCollection.features)
                     .enter().append("path")
                     .attr("class", function (d) {
-                        return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable"
+                        return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable
                     })
                     .attr("d", path.pointRadius(0.75))
                     .attr("fill", "url(#pattern_bridge)");
@@ -558,7 +560,7 @@ var ardamap = (function () {
                 .data(featureCollection.features)
                 .enter().append("path")
                 .attr("class", function (d) {
-                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable"
+                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable
                 })
                 .attr("d", path.pointRadius(function (d) {
                     switch (d.properties.size) {
@@ -617,7 +619,7 @@ var ardamap = (function () {
                 .data(featureCollection.features)
                 .enter().append("path")
                 .attr("class", function (d) {
-                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable"
+                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable
                 })
                 .attr("d", path.pointRadius(function (d) {
                     switch (d.properties.size) {
@@ -655,7 +657,7 @@ var ardamap = (function () {
                     .data(featureCollection.features)
                     .enter().append("path")
                     .attr("class", function (d) {
-                        return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable"
+                        return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable
                     })
                     .attr("d", path.pointRadius(1.5))
                     .attr("fill", "url(#pattern_ford)");
@@ -701,7 +703,7 @@ var ardamap = (function () {
                 .data(featureCollection.features)
                 .enter().append("path")
                 .attr("class", function (d) {
-                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable"
+                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable
                 })
                 .attr("d", path.pointRadius(function (d) {
                     switch (d.properties.size) {
@@ -738,7 +740,7 @@ var ardamap = (function () {
                 .data(featureCollection.features)
                 .enter().append("path")
                 .attr("class", function (d) {
-                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable"
+                    return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable
                 })
                 .attr("d", path.pointRadius(1))
                 .attr("fill", "url(#pattern_place)");
@@ -764,7 +766,7 @@ var ardamap = (function () {
                     .data(featureCollection.features)
                     .enter().append("path")
                     .attr("class", function (d) {
-                        return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " clickable"
+                        return "zoom" + d.properties.zoom + " event-" + d.properties.eventname + " " + str4clickable
                     })
                     .attr("d", path.pointRadius(1.5))
                     .attr("fill", "url(#pattern_waterfall)");
@@ -791,7 +793,7 @@ var ardamap = (function () {
                     .data(featureCollection.features)
                     .enter().append("path")
                     .attr("class", function (d) {
-                        return "maptimeline-" + d.properties.eventname + " clickable"
+                        return "maptimeline-" + d.properties.eventname + " " + str4clickable
                     })
                     .attr("d", path.pointRadius(15))
                     .attr("transform", "translate(6,-10)")
@@ -826,7 +828,7 @@ var ardamap = (function () {
                         if (d.properties.picture == null){
                             clickable = "";
                         } else {
-                            clickable = " clickable picture";
+                            clickable = " " + str4clickable + " picture";
                         }
                         return d.properties.eventname + " waypath waypath-" + d.properties.id + clickable + " wppicture-" + d.properties.picture;
                     });
@@ -911,7 +913,7 @@ var ardamap = (function () {
                     if (d.properties.picture == null){
                         clickable = "";
                     } else {
-                        clickable = "clickable ";
+                        clickable = str4clickable + " ";
                     }
                     return clickable + d.properties.eventname + " waypoint waypoint-" + d.properties.id + " wppicture-" + d.properties.picture;
                 })
@@ -955,7 +957,7 @@ var ardamap = (function () {
                     .data(featureCollection.features)
                     .enter().append("path")
                     .attr("class", function (d) {
-                        return "event-" + d.properties.eventname + " clickable"
+                        return "event-" + d.properties.eventname + " " + str4clickable
                     })
                     .attr("d", path)
                     .on("click", ardamap.clickedRegion);

@@ -27,7 +27,7 @@ $("#menu1about").click(function () {
 
 function triggerClickAbout(){
     highlightsRemoveFromMain();
-    $("#menu1about").addClass("menuelementhighlight");
+    $("#menu1about").addClass("is-highlighted--element");
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentAbout").show();
@@ -41,7 +41,7 @@ $("#menu1creator").click(function () {
 
 function triggerClickCreator(){
     highlightsRemoveFromMain();
-    $("#menu1creator").addClass("menuelementhighlight");
+    $("#menu1creator").addClass("is-highlighted--element");
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentCreator").show();
@@ -55,7 +55,7 @@ $("#menu1delimitation").click(function () {
 function triggerClickDelimitation(){
     closeOtherWindows();
     highlightsRemoveFromMain();
-    $("#menu1delimitation").addClass("menuelementhighlight");
+    $("#menu1delimitation").addClass("is-highlighted--element");
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentDelimitation").show();
@@ -68,7 +68,7 @@ $("#menu1opensource").click(function () {
 function triggerClickOpensource(){
     closeOtherWindows();
     highlightsRemoveFromMain();
-    $("#menu1opensource").addClass("menuelementhighlight");
+    $("#menu1opensource").addClass("is-highlighted--element");
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentOpensource").show();
@@ -82,7 +82,7 @@ $("#menu1donateshare").click(function () {
 function triggerClickDonate(){
     closeOtherWindows();
     highlightsRemoveFromMain();
-    $("#menu1donateshare").addClass("menuelementhighlight");
+    $("#menu1donateshare").addClass("is-highlighted--element");
     $("#popup").show();
     $("#popupcontent").children().hide();
     $("#popupcontentDonateshare").show();
@@ -99,11 +99,11 @@ function trigger404(){
 }
 
 function highlightsRemoveFromMain() {
-    $("#menu1about").removeClass("menuelementhighlight");
-    $("#menu1creator").removeClass("menuelementhighlight");
-    $("#menu1delimitation").removeClass("menuelementhighlight");
-    $("#menu1opensource").removeClass("menuelementhighlight");
-    $("#menu1donateshare").removeClass("menuelementhighlight");
+    $("#menu1about").removeClass("is-highlighted--element");
+    $("#menu1creator").removeClass("is-highlighted--element");
+    $("#menu1delimitation").removeClass("is-highlighted--element");
+    $("#menu1opensource").removeClass("is-highlighted--element");
+    $("#menu1donateshare").removeClass("is-highlighted--element");
 }
 
 $("#menu2ages").click(function () {
@@ -123,7 +123,7 @@ function triggerClickFirstage(){
     highlightsRemoveFromMain();
     highlightsRemoveFromAges();
     $("#popup").hide();
-    $("#menu2firstage").addClass("menuelementhighlight");
+    $("#menu2firstage").addClass("is-highlighted--element");
     ardamap.setAgeName("first");
     ardamap.clearMap();
     $("#preloader").show();
@@ -142,7 +142,7 @@ function triggerClickSecondage(){
     highlightsRemoveFromMain();
     highlightsRemoveFromAges();
     $("#popup").hide();
-    $("#menu2secondage").addClass("menuelementhighlight");
+    $("#menu2secondage").addClass("is-highlighted--element");
     ardamap.setAgeName("second");
     ardamap.clearMap();
     $("#preloader").show();
@@ -161,7 +161,7 @@ function triggerClickThirdage(){
     highlightsRemoveFromMain();
     highlightsRemoveFromAges();
     $("#popup").hide();
-    $("#menu2thirdage").addClass("menuelementhighlight");
+    $("#menu2thirdage").addClass("is-highlighted--element");
     ardamap.setAgeName("third");
     ardamap.clearMap();
     $("#preloader").show();
@@ -172,9 +172,9 @@ function triggerClickThirdage(){
 }
 
 function highlightsRemoveFromAges() {
-    $("#menu2firstage").removeClass("menuelementhighlight");
-    $("#menu2secondage").removeClass("menuelementhighlight");
-    $("#menu2thirdage").removeClass("menuelementhighlight");
+    $("#menu2firstage").removeClass("is-highlighted--element");
+    $("#menu2secondage").removeClass("is-highlighted--element");
+    $("#menu2thirdage").removeClass("is-highlighted--element");
 }
 $("#menu4familytree").click(function () {
     closeOtherWindows();
