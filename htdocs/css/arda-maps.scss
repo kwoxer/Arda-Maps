@@ -179,6 +179,14 @@ a:hover {
   color: #359AF4;
 }
 
+input{
+  color: #888;
+  background-color: #555;
+  border-color: #333;
+  border-top-color: #888;
+  border-left-color: #888;
+}
+
 @font-face {
   font-family: nipcens;
   src: url("../font/NipCens%20Handwriting%20Light.ttf");
@@ -321,6 +329,9 @@ header h1,h2{
   position: fixed;
   top: 35px;
   right: 8px;
+  :hover{
+    opacity: 0.8;
+  }
 }
 
 .fb_iframe_widget_lift {
@@ -665,10 +676,9 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 #infobuttons {
   position: absolute;
   font-weight: bold;
-  width: 80px;
-  height: 80px;
-  bottom: 11px;
-  margin-left: -70px;
+  height: 76px;
+  bottom: 15px;
+  margin-left: -76px;
   ul {
     list-style-type: none;
     margin: 0;
@@ -677,13 +687,13 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 }
 
 #infobutton, #timelinebutton {
-  width: 70px;
+  width: 76px;
   height: 36px;
-  position: relative;
 }
 
 #infobutton {
-  top: -4px;
+  margin-top: -3px;
+  position: absolute;
 }
 
 #searchbutton {
@@ -692,9 +702,7 @@ nav ul.sdt_menu li div.sdt_box a:hover {
   width: 20px;
   height: 20px;
   z-index: 3;
-  text-align: center;
-  margin-right: -28px;
-  right: 45px;
+  right: 10px;
   top: 45px;
   img {
     margin-bottom: 2px;
@@ -721,8 +729,9 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 
 #infoCreature .infosubname, #infoLocation .infosubname, #infoEvent .infosubname {
   text-align: center;
-  margin-top: -5px;
+  margin-top: -3px;
   min-height: 10px;
+  font-family: serif;
 }
 
 .infoelement {
@@ -738,19 +747,18 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 
 .infosubtext {
   margin-left: 10px;
+  font-family: serif;
 }
 
 .infopicture img {
   width: 350px;
   height: 250px;
   background: none repeat scroll 0 0 #EEE;
-  @include box-shadow(2px 2px 8px 1 rgba(10, 10, 10, 0.8));
-  min-height: 100%;
+  @include box-shadow(2px 2px 8px 1px rgba(10, 10, 10, 0.8));
 }
 
 .infopicture {
-  text-align: center;
-  margin-top: 0;
+  width: 350px;
   margin-left: -15px;
   cursor: pointer;
 }
@@ -820,7 +828,7 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 #infoClosebutton {
   position: absolute;
   right: 4px;
-  top: 4px;
+  top: 7px;
 }
 
 #infoClosebutton:hover {
@@ -972,7 +980,12 @@ span[class^="timelinecreature"] {
 
 #familytreecontentheader {
   position: absolute;
-  margin: -20px 0 0 10px;
+  left: 10px;
+  top: 25px;
+  h2{
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #familytreecontentclose {
@@ -1025,6 +1038,13 @@ span[class^="timelinecreature"] {
   ul .active {
     color: $gold;
   }
+  span{
+    vertical-align: middle;
+  }
+}
+
+#familytreesearch{
+
 }
 
 #familytreeShowallbutton {
@@ -1402,7 +1422,7 @@ path {
 }
 
 #zoomresetbutton {
-  margin-right: -3px;
+  margin-right: -4px;
 }
 
 #scalebar {
@@ -1495,7 +1515,7 @@ path {
     border: 0;
   }
   tr {
-    line-height: 1.3;
+    line-height: 1.5;
   }
   td:hover {
     color: $gold;
@@ -1503,7 +1523,7 @@ path {
 }
 
 #legendbutton {
-  margin-right: -2px;
+  margin-right: -3px;
 }
 
 .legendelements {
@@ -1572,6 +1592,7 @@ section#journeycontainer {
     height: 90%;
     border-collapse: collapse;
     border: 0;
+    margin-top: 10px;
   }
   p {
     color: #ddd;
@@ -1579,6 +1600,9 @@ section#journeycontainer {
     font-family: $opensans;
     margin-left: 15px;
     margin-top: 0;
+  }
+  tr{
+    line-height: 1.7;
   }
   td:hover {
     color: $gold;
@@ -1609,7 +1633,7 @@ section#journeycontainer {
 }
 
 #regionbutton {
-  margin-right: -3px;
+  margin-right: -4px;
 }
 
 #regionbutton:hover {

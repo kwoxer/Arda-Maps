@@ -123,6 +123,13 @@ a {
 a:hover {
   color: #359AF4; }
 
+input {
+  color: #888;
+  background-color: #555;
+  border-color: #333;
+  border-top-color: #888;
+  border-left-color: #888; }
+
 @font-face {
   font-family: nipcens;
   src: url("../font/NipCens%20Handwriting%20Light.ttf"); }
@@ -241,6 +248,8 @@ header h1, h2, h1, h3 {
   position: fixed;
   top: 35px;
   right: 8px; }
+  #donate :hover {
+    opacity: 0.8; }
 
 .fb_iframe_widget_lift {
   right: 0; }
@@ -552,22 +561,21 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 #infobuttons {
   position: absolute;
   font-weight: bold;
-  width: 80px;
-  height: 80px;
-  bottom: 11px;
-  margin-left: -70px; }
+  height: 76px;
+  bottom: 15px;
+  margin-left: -76px; }
   #infobuttons ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
 
 #infobutton, #timelinebutton {
-  width: 70px;
-  height: 36px;
-  position: relative; }
+  width: 76px;
+  height: 36px; }
 
 #infobutton {
-  top: -4px; }
+  margin-top: -3px;
+  position: absolute; }
 
 #searchbutton {
   position: absolute;
@@ -575,9 +583,7 @@ nav ul.sdt_menu li div.sdt_box a:hover {
   width: 20px;
   height: 20px;
   z-index: 3;
-  text-align: center;
-  margin-right: -28px;
-  right: 45px;
+  right: 10px;
   top: 45px; }
   #searchbutton img {
     margin-bottom: 2px; }
@@ -599,8 +605,9 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 
 #infoCreature .infosubname, #infoLocation .infosubname, #infoEvent .infosubname {
   text-align: center;
-  margin-top: -5px;
-  min-height: 10px; }
+  margin-top: -3px;
+  min-height: 10px;
+  font-family: serif; }
 
 .infoelement {
   margin-top: 10px; }
@@ -612,20 +619,19 @@ nav ul.sdt_menu li div.sdt_box a:hover {
   margin-left: -5px; }
 
 .infosubtext {
-  margin-left: 10px; }
+  margin-left: 10px;
+  font-family: serif; }
 
 .infopicture img {
   width: 350px;
   height: 250px;
   background: none repeat scroll 0 0 #EEE;
-  -webkit-box-shadow: 2px 2px 8px 1 rgba(10, 10, 10, 0.8);
-  -moz-box-shadow: 2px 2px 8px 1 rgba(10, 10, 10, 0.8);
-  box-shadow: 2px 2px 8px 1 rgba(10, 10, 10, 0.8);
-  min-height: 100%; }
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(10, 10, 10, 0.8);
+  -moz-box-shadow: 2px 2px 8px 1px rgba(10, 10, 10, 0.8);
+  box-shadow: 2px 2px 8px 1px rgba(10, 10, 10, 0.8); }
 
 .infopicture {
-  text-align: center;
-  margin-top: 0;
+  width: 350px;
   margin-left: -15px;
   cursor: pointer; }
 
@@ -683,7 +689,7 @@ nav ul.sdt_menu li div.sdt_box a:hover {
 #infoClosebutton {
   position: absolute;
   right: 4px;
-  top: 4px; }
+  top: 7px; }
 
 #infoClosebutton:hover {
   background-color: #bbb; }
@@ -821,7 +827,11 @@ span[class^="timelinecreature"] {
 
 #familytreecontentheader {
   position: absolute;
-  margin: -20px 0 0 10px; }
+  left: 10px;
+  top: 25px; }
+  #familytreecontentheader h2, #familytreecontentheader h1, #familytreecontentheader h3 {
+    margin: 0;
+    padding: 0; }
 
 #familytreecontentraces, #familytreecontentsearch {
   position: fixed;
@@ -867,6 +877,8 @@ span[class^="timelinecreature"] {
     cursor: pointer; }
   #familytreesearchsuggestions ul .active {
     color: #F9D276; }
+  #familytreesearchsuggestions span {
+    vertical-align: middle; }
 
 #familytreeShowallbutton {
   position: fixed;
@@ -1185,7 +1197,7 @@ path {
   text-align: center; }
 
 #zoomresetbutton {
-  margin-right: -3px; }
+  margin-right: -4px; }
 
 #scalebar {
   position: relative;
@@ -1263,12 +1275,12 @@ path {
   border-collapse: collapse;
   border: 0; }
 #legendinnerinner tr {
-  line-height: 1.3; }
+  line-height: 1.5; }
 #legendinnerinner td:hover {
   color: #F9D276; }
 
 #legendbutton {
-  margin-right: -2px; }
+  margin-right: -3px; }
 
 .legendelements {
   list-style-type: none; }
@@ -1325,13 +1337,16 @@ section#journeycontainer {
   font-family: "Open Sans", sans-serif;
   height: 90%;
   border-collapse: collapse;
-  border: 0; }
+  border: 0;
+  margin-top: 10px; }
 #journeyinnerinner p {
   color: #ddd;
   font-size: 9px;
   font-family: "Open Sans", sans-serif;
   margin-left: 15px;
   margin-top: 0; }
+#journeyinnerinner tr {
+  line-height: 1.7; }
 #journeyinnerinner td:hover {
   color: #F9D276; }
 
@@ -1354,7 +1369,7 @@ section#journeycontainer {
   color: #F9D276; }
 
 #regionbutton {
-  margin-right: -3px; }
+  margin-right: -4px; }
 
 #regionbutton:hover {
   background: #F9D276; }
