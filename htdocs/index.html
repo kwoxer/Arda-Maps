@@ -49,7 +49,7 @@
     ga('send', 'pageview');
 </script>
 <header>
-    <nav role="navigation" class="unselectable">
+    <nav role="navigation" class="is-unselectable">
         <ul id="sdt_menu" class="sdt_menu">
             <li>
                 <a id="menu_main" href="/">
@@ -109,21 +109,21 @@
                         <p>Welcome to Arda Maps. This project comes up with the 3 most important ages of J.R.R. Tolkien's works.</p>
                         <section id="threeages">
                             <a href="/ages/first/" title="Show the map of the first age">
-                                <span id="welcomeFirstage" class="welcomeBackgroundimage unselectable">First Age</span>
+                                <span id="welcomeFirstage" class="welcomeBackgroundimage is-unselectable">First Age</span>
                             </a>
                             <a href="/ages/second/" title="Show the map of the second age">
-                                <span id="welcomeSecondage" class="welcomeBackgroundimage unselectable">Second Age</span>
+                                <span id="welcomeSecondage" class="welcomeBackgroundimage is-unselectable">Second Age</span>
                             </a>
                             <a href="/ages/third/" title="Show the map of the third age">
-                                <span id="welcomeThirdage" class="welcomeBackgroundimage unselectable">Third Age</span>
+                                <span id="welcomeThirdage" class="welcomeBackgroundimage is-unselectable">Third Age</span>
                             </a>
                         </section>
                         <p style="position: relative;">But there is even much more on top of these high-detailed maps.</p>
                         <section id="otherfunctionality">
-                            <span id="welcomeJourney" class="welcomeBackgroundimage unselectable defaultcursor" title="No direct link available">Journeys</span>
-                            <span id="welcomeTimeline" class="welcomeBackgroundimage unselectable defaultcursor" title="No direct link available">Timelines</span>
+                            <span id="welcomeJourney" class="welcomeBackgroundimage is-unselectable defaultcursor" title="No direct link available">Journeys</span>
+                            <span id="welcomeTimeline" class="welcomeBackgroundimage is-unselectable defaultcursor" title="No direct link available">Timelines</span>
                             <a href="/familytree/" title="Show the family tree">
-                                <span id="welcomeAncestry" class="welcomeBackgroundimage unselectable">Family Tree</span>
+                                <span id="welcomeAncestry" class="welcomeBackgroundimage is-unselectable">Family Tree</span>
                             </a>
                         </section>
                         <p>Thanks for anyone who was involved in this project. For more ideas and feedback check out our <a href="/forum/">Forum</a>.</p>
@@ -357,13 +357,13 @@
             </div>
             <div id="familytreecontentsvg">
             </div>
-            <div id='familytreeShowallbutton' class="clickable defaultButton buttonlarge unselectable">
+            <div id='familytreeShowallbutton' class="is-clickable btn_arda btn_arda-large is-unselectable">
                 Show All
             </div>
-            <div id='familytreeHideallbutton' class="clickable defaultButton buttonlarge unselectable">
+            <div id='familytreeHideallbutton' class="is-clickable btn_arda btn_arda-large is-unselectable">
                 Hide All
             </div>
-            <div id='familytreeUnfixallbutton' class="clickable defaultButton buttonlarge unselectable">
+            <div id='familytreeUnfixallbutton' class="is-clickable btn_arda btn_arda-large is-unselectable">
                 Unfix All
             </div>
         </div>
@@ -372,7 +372,7 @@
 <aside role="complementary">
     <div id="info">
         <article id="infoinner">
-            <div id="infocontent" class="unselectable">
+            <div id="infocontent" class="is-unselectable">
                 <section id="infoContentSearch">
                     <input id="infoSearch" type="text" placeholder="Creature,Location..." value="" name="what-input">
                     <img id="infoClosebutton" src="pics/popup/close_search.png" title="Close search" alt="Close button">
@@ -441,13 +441,13 @@
         </article>
         <article id="infobuttons">
             <ul>
-                <li id="timelinebutton" class="defaultButton buttonlarge unselectable">
+                <li id="timelinebutton" class="btn_arda btn_arda-large is-unselectable">
                     TIMELINE
                 </li>
-                <li id="searchbutton" class="defaultButton buttonlarge unselectable">
+                <li id="searchbutton" class="btn_arda btn_arda-large is-unselectable">
                     <img src="pics/search.png" alt="search" width="10" height="10">
                 </li>
-                <li id="infobutton" class="defaultButton buttonlarge unselectable">
+                <li id="infobutton" class="btn_arda btn_arda-large is-unselectable">
                     INFO
                 </li>
             </ul>
@@ -467,17 +467,17 @@
 <div id="arda"></div>
 <article id="bottomButtons">
     <section id='zoombuttoncontainer'>
-        <div id='zoomplusbutton' class="clickable defaultButton buttonsmall buttonzoom unselectable">
+        <div id='zoomplusbutton' class="is-clickable btn_arda btb_arda-small buttonzoom is-unselectable">
             +
         </div>
-        <div id='zoomminusbutton' class="clickable defaultButton buttonsmall buttonzoom unselectable">
+        <div id='zoomminusbutton' class="is-clickable btn_arda btb_arda-small buttonzoom is-unselectable">
             -
         </div>
     </section>
-    <section id='zoomresetbutton' class="clickable defaultButton buttonlarge unselectable">
+    <section id='zoomresetbutton' class="is-clickable btn_arda btn_arda-large is-unselectable">
         Reset Map
     </section>
-    <section id='scalebar' class="unselectable">
+    <section id='scalebar' class="is-unselectable">
         <div id="scalebarslider" style="height: 9px; padding:1px; margin:0 5px 0 5px;"></div>
         <div id='scalebarheader'>Scalebar (miles)</div>
         <div id='scalebarsmooth' title="smooth has bad effects on slow machines!">smooth</div>
@@ -486,62 +486,62 @@
         <div id='scalebarright'></div>
     </section>
     <section id="legendcontainer">
-        <div id='legendbutton' class="clickable defaultButton buttonlarge unselectable">
+        <div id='legendbutton' class="is-clickable btn_arda btn_arda-large is-unselectable">
             Legend
         </div>
         <div id="legends">
             <div id='legendinner'>
-                <img id="legendnames_EN" class="clickable" src="pics/en.png">
-                <img id="legendnames_DE" class="clickable" src="pics/de.png">
-                <div id='legendinnerinner' class="unselectable">
+                <img id="legendnames_EN" class="is-clickable" src="pics/en.png">
+                <img id="legendnames_DE" class="is-clickable" src="pics/de.png">
+                <div id='legendinnerinner' class="is-unselectable">
                     <table>
                         <colgroup>
                             <col width="100">
                             <col width="60">
                         </colgroup>
                         <tr>
-                            <td id="legendoutline" class="clickable"><span class=" legendicon"></span>Outline</td>
-                            <td></td>
+                            <td id="legendoutline"><span class=" legendicon"></span>Outline</td>
+                            <td class="is-not-clickable"></td>
                         </tr>
                         <tr>
-                            <td id="legendocean" class="clickable"><span class=" legendicon"></span>Ocean</td>
-                            <td></td>
+                            <td id="legendocean"><span class=" legendicon"></span>Ocean</td>
+                            <td class="is-not-clickable"></td>
                         </tr>
                         <tr>
-                            <td id="legendforest" class="clickable"><span class=" legendicon"></span>Forest</td>
-                            <td></td>
+                            <td id="legendforest"><span class=" legendicon"></span>Forest</td>
+                            <td class="is-not-clickable"></td>
                         </tr>
                         <tr>
-                            <td id="legendnames" class="clickable"><span class=" legendicon"></span>Label</td>
-                            <td></td>
+                            <td id="legendnames"><span class=" legendicon"></span>Label</td>
+                            <td class="is-not-clickable"></td>
                         </tr>
                         <tr>
-                            <td id="legendmountainhigh" class="clickable"><span class=" legendicon"></span>Peaks</td>
-                            <td id="legendcastletower" class="clickable"><span class=" legendicon"></span>Tower</td>
+                            <td id="legendmountainhigh"><span class=" legendicon"></span>Peaks</td>
+                            <td id="legendcastletower"><span class=" legendicon"></span>Tower</td>
                         </tr>
                         <tr>
-                            <td id="legendmountainlow" class="clickable"><span class=" legendicon"></span>Mountain Range</td>
-                            <td id="legendcity" class="clickable"><span class=" legendicon"></span>City</td>
+                            <td id="legendmountainlow"><span class=" legendicon"></span>Mountain Range</td>
+                            <td id="legendcity"><span class=" legendicon"></span>City</td>
                         </tr>
                         <tr>
-                            <td id="legendhighland" class="clickable"><span class=" legendicon"></span>Highland</td>
-                            <td id="legendplace" class="clickable"><span class=" legendicon"></span>Place</td>
+                            <td id="legendhighland"><span class=" legendicon"></span>Highland</td>
+                            <td id="legendplace"><span class=" legendicon"></span>Place</td>
                         </tr>
                         <tr>
-                            <td id="legendlake" class="clickable"><span class=" legendicon"></span>Lake</td>
-                            <td id="legendbridge" class="clickable"><span class=" legendicon"></span>Bridge</td>
+                            <td id="legendlake"><span class=" legendicon"></span>Lake</td>
+                            <td id="legendbridge"><span class=" legendicon"></span>Bridge</td>
                         </tr>
                         <tr>
-                            <td id="legendroad" class="clickable"><span class=" legendicon"></span>Road</td>
-                            <td id="legendmount" class="clickable"><span class=" legendicon"></span>Mount</td>
+                            <td id="legendroad"><span class=" legendicon"></span>Road</td>
+                            <td id="legendmount"><span class=" legendicon"></span>Mount</td>
                         </tr>
                         <tr>
-                            <td id="legendriver" class="clickable"><span class=" legendicon"></span>River</td>
-                            <td id="legendford" class="clickable"><span class=" legendicon"></span>Ford</td>
+                            <td id="legendriver"><span class=" legendicon"></span>River</td>
+                            <td id="legendford"><span class=" legendicon"></span>Ford</td>
                         </tr>
                         <tr>
-                            <td id="legendmoor" class="clickable"><span class=" legendicon"></span>Moor</td>
-                            <td id="legendwaterfall" class="clickable"><span class=" legendicon"></span>Waterfall</td>
+                            <td id="legendmoor"><span class=" legendicon"></span>Moor</td>
+                            <td id="legendwaterfall"><span class=" legendicon"></span>Waterfall</td>
                         </tr>
                     </table>
                 </div>
@@ -549,39 +549,39 @@
         </div>
     </section>
     <section id='journeycontainer'>
-        <div id='journeybutton' class="clickable defaultButton buttonlarge unselectable">
+        <div id='journeybutton' class="is-clickable btn_arda btn_arda-large is-unselectable">
             Journey
         </div>
         <div id="journey">
             <div id='journeyinner'>
-                <div id='journeyinnerinner' class="unselectable">
-                    <div id='journeyFirstAge' class="unselectable">
+                <div id='journeyinnerinner' class="is-unselectable">
+                    <div id='journeyFirstAge' class="is-unselectable">
                         <table>
                             <colgroup>
                                 <col width="160">
                             </colgroup>
                             <tr>
-                                <td id="journey-tuor" class="clickable"><span class=" journeyicon"></span>Tuor</td>
+                                <td id="journey-tuor"><span class=" journeyicon"></span>Tuor</td>
                             </tr>
                             <tr>
-                                <td id="journey-beren1" class="clickable"><span class=" journeyicon"></span>Beren (460-465)</td>
+                                <td id="journey-beren1"><span class=" journeyicon"></span>Beren (460-465)</td>
                             </tr>
                             <tr>
-                                <td id="journey-beren2" class="clickable"><span class=" journeyicon"></span>Beren (465-466)</td>
+                                <td id="journey-beren2"><span class=" journeyicon"></span>Beren (465-466)</td>
                             </tr>
                             <tr>
-                                <td id="journey-turin1" class="clickable"><span class=" journeyicon"></span>Túrin (473-495)</td>
+                                <td id="journey-turin1"><span class=" journeyicon"></span>Túrin (473-495)</td>
                             </tr>
                             <tr>
-                                <td id="journey-turin2" class="clickable"><span class=" journeyicon"></span>Túrin (495-499)</td>
+                                <td id="journey-turin2"><span class=" journeyicon"></span>Túrin (495-499)</td>
                             </tr>
                         </table>
                         <p>*coloured green offer more info</p>
                     </div>
-                    <div id='journeySecondAge' class="unselectable">
+                    <div id='journeySecondAge' class="is-unselectable">
                         No journey till now...
                     </div>
-                    <div id='journeyThirdAge' class="unselectable">
+                    <div id='journeyThirdAge' class="is-unselectable">
                         <table>
                             <colgroup>
                                 <col width="90">
@@ -594,32 +594,32 @@
                             </tr>
                             </thead>
                             <tr>
-                                <td id="journey-bilbo" class="clickable"><span class=" journeyicon"></span>Bilbo</td>
-                                <td id="journey-frodo" class="clickable"><span class=" journeyicon"></span>Frodo &amp; Sam</td>
+                                <td id="journey-bilbo"><span class=" journeyicon"></span>Bilbo</td>
+                                <td id="journey-frodo"><span class=" journeyicon"></span>Frodo &amp; Sam</td>
                             </tr>
                             <tr>
-                                <td id="journey-thorin" class="clickable"><span class=" journeyicon"></span>Thorin</td>
-                                <td id="journey-aragorn" class="clickable"><span class=" journeyicon"></span>Aragon</td>
+                                <td id="journey-thorin"><span class=" journeyicon"></span>Thorin</td>
+                                <td id="journey-aragorn"><span class=" journeyicon"></span>Aragon</td>
                             </tr>
                             <tr>
-                                <td id="journey-dwarfs" class="clickable"><span class=" journeyicon"></span>Other Dwarfs</td>
-                                <td id="journey-gandalf-lotr" class="clickable"><span class=" journeyicon"></span>Gandalf</td>
+                                <td id="journey-dwarfs"><span class=" journeyicon"></span>Other Dwarfs</td>
+                                <td id="journey-gandalf-lotr"><span class=" journeyicon"></span>Gandalf</td>
                             </tr>
                             <tr>
-                                <td id="journey-gandalf-hobbit" class="clickable"><span class=" journeyicon"></span>Gandalf</td>
-                                <td id="journey-legogimli" class="clickable"><span class=" journeyicon"></span>Legolas &amp; Gimli</td>
+                                <td id="journey-gandalf-hobbit"><span class=" journeyicon"></span>Gandalf</td>
+                                <td id="journey-legogimli"><span class=" journeyicon"></span>Legolas &amp; Gimli</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td id="journey-merry" class="clickable"><span class=" journeyicon"></span>Merry</td>
+                                <td class="is-not-clickable"></td>
+                                <td id="journey-merry"><span class=" journeyicon"></span>Merry</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td id="journey-pippin" class="clickable"><span class=" journeyicon"></span>Pippin</td>
+                                <td class="is-not-clickable"></td>
+                                <td id="journey-pippin"><span class=" journeyicon"></span>Pippin</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td id="journey-boromir" class="clickable"><span class=" journeyicon"></span>Boromir</td>
+                                <td class="is-not-clickable"></td>
+                                <td id="journey-boromir"><span class=" journeyicon"></span>Boromir</td>
                             </tr>
                         </table>
                         <p>*coloured green offer more info</p>
@@ -628,16 +628,16 @@
             </div>
         </div>
     </section>
-    <section id='regionbutton' class="clickable defaultButton buttonlarge unselectable">
+    <section id='regionbutton' class="is-clickable btn_arda btn_arda-large is-unselectable">
         Region
     </section>
-    <section id='arda-bg' class="clickable defaultButton imagebutton">
+    <section id='arda-bg' class="is-clickable btn_arda btn_arda-image">
         <span title="Show Earth">Earth</span>
         <img src="pics/Earth.png" title="Show Earth" alt="Switching views">
     </section>
 </article>
 <footer>
-    <section id='copyright' class="unselectable defaultcursor">
+    <section id='copyright' class="is-unselectable defaultcursor">
         <span>Copyright © 2015 Arda Maps. All rights reserved. Arda Maps is not associated with Middle-earth Enterprises nor the Tolkien Estates.</span>
     </section>
     <section>
