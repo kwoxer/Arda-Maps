@@ -13,7 +13,7 @@
     <meta name="type" content="science fiction">
     <meta name="robots" content="index, follow">
     <meta name="language" content="english">
-    <link rel="stylesheet" href="css/normalize.css.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/arda-maps.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="timeglider/Timeglider.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -251,8 +251,8 @@
         <a href="#">
             <img id="illustratorcontentclose" src="pics/popup/close.png" alt="Close Button">
         </a>
-        <article id="illustratorcontent" ng-repeat="illustrator in illustrators">
-            <section id="illustratorcontent{{illustrator.ID}}">
+        <article id="illustratorcontent">
+            <section id="illustratorcontent{{illustrator.ID}}" ng-repeat="illustrator in illustrators">
                 <header>
                     <h3>{{illustrator.name}}</h3>
                     <div class="illustratorcontentext">
@@ -384,8 +384,8 @@
                 <section id="infoCreature">
                     <div class="infoheader"></div>
                     <div class="infosubname"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/creature/UnknownPicture.jpg'" alt="Picture"></div>
-                    <div class="infopictureSource"><a href="#"><span></span></a></div>
+                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/creature/UnknownPicture.jpg'" title="Show info about the illustrator" alt="Picture"></div>
+                    <div class="infopictureSource"><a href="#" title="Show info about the illustrator"><span></span></a></div>
                     <div class="infosex"><img src="" onerror="this.src='/pics/unclear.png'" alt="Sex"></div>
                     <div class="infoothernames infoelement">
                         <div class="infosubheader">Other names</div>
@@ -413,8 +413,8 @@
                 <section id="infoLocation">
                     <div class="infoheader"></div>
                     <div class="infosubname"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/location/UnknownPicture.jpg'" alt="Picture"></div>
-                    <div class="infopictureSource"><a href="#"><span></span></a></div>
+                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/location/UnknownPicture.jpg'" title="Show info about the illustrator" alt="Picture"></div>
+                    <div class="infopictureSource"><a href="#" title="Show info about the illustrator"><span></span></a></div>
                     <div class="infotype"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Type"></div>
                     <div class="infoage"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Age"></div>
                     <div class="infoothernames infoelement">
@@ -430,8 +430,8 @@
                 </section>
                 <section id="infoEvent">
                     <div class="infoheader"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/event/UnknownPicture.jpg'" alt="Picture"></div>
-                    <div class="infopictureSource"><a href="#"><span></span></a></div>
+                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/event/UnknownPicture.jpg'" title="Show info about the illustrator" alt="Picture"></div>
+                    <div class="infopictureSource"><a href="#" title="Show info about the illustrator"><span></span></a></div>
                     <div class="infodescription infoelement">
                         <div class="infosubheader">Description</div>
                         <div class="infosubtext"></div>
