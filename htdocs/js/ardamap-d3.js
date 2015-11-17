@@ -991,8 +991,11 @@ var ardamap = (function () {
                 var centroid = path.centroid(d);
                 var x = centroid[0];
                 var y = centroid[1];
-                var k = 12;
-                y = y + 50;
+                var k = 6;
+                var height = $("#arda-map").height();
+                var width = $("#arda-map").width();
+                x = x - (width / 7);
+                y = y - (height / 7);
                 var helperZoom = d3.transform("translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
                 zoom.scale(helperZoom.scale[0]);
                 zoom.translate(helperZoom.translate);
@@ -1018,6 +1021,10 @@ var ardamap = (function () {
                 x = centroid[0];
                 y = centroid[1];
                 k = 6;
+                var height = $("#arda-map").height();
+                var width = $("#arda-map").width();
+                x = x - (width / 7);
+                y = y - (height / 5);
                 var helperZoom = d3.transform("translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
                 zoom.scale(helperZoom.scale[0]);
                 zoom.translate(helperZoom.translate);
