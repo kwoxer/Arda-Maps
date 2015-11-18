@@ -1,4 +1,4 @@
-$('#tour').click(function(){
+$('.site_footer-tour').click(function(){
     guiders.createGuider({
         attachTo: "nav",
         title: "Navigation",

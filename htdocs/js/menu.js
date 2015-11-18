@@ -16,7 +16,7 @@ function closeOtherWindows(){
     $("#popupcontent").children().hide();
     $("#illustrator").hide();
     $("#illustratorcontent").children().hide();
-    $("#footerpopup").hide();
+    $(".site_footer-disclaimer_popup").hide();
     $("#footerpopupcontent").children().hide();
 }
 

@@ -1,11 +1,11 @@
-$("#disclaimer").click(function () {
+$(".site_footer-disclaimer").click(function () {
     closeOtherWindows();
-    $("#footerpopup").show();
+    $(".site_footer-disclaimer_popup").show();
     $("#footerpopupcontent").children().hide();
-    $("#footerpopupcontentDisclaimer").show();
+    $(".site_footer-disclaimer_popup-content-inner").show();
 });
 
-$("#footerpopupcontentclose").click(function () {
-    $("#footerpopup").hide();
+$(".site_footer-disclaimer_popup-close").click(function () {
+    $(".site_footer-disclaimer_popup").hide();
     $("#footerpopupcontent").children().hide();
 });
