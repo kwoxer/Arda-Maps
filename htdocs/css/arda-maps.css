@@ -60,7 +60,7 @@
 /*
     Helper Classes
 */
-.contentclose, #welcomecontentclose, #popupcontentclose, #familytreecontentclose, #illustratorcontentclose, footer #footerpopupcontentclose {
+.contentclose, #welcomecontentclose, #popupcontentclose, #familytreecontentclose, #illustratorcontentclose, .site_footer-disclaimer_popup-close {
   position: absolute;
   right: 10px;
   top: 0;
@@ -69,10 +69,10 @@
   z-index: 10;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out; }
-  .contentclose a, #welcomecontentclose a, #popupcontentclose a, #familytreecontentclose a, #illustratorcontentclose a, footer #footerpopupcontentclose a {
+  .contentclose a, #welcomecontentclose a, #popupcontentclose a, #familytreecontentclose a, #illustratorcontentclose a, .site_footer-disclaimer_popup-close a {
     cursor: pointer; }
 
-.contentclose:hover, #welcomecontentclose:hover, #popupcontentclose:hover, #familytreecontentclose:hover, #illustratorcontentclose:hover, footer #footerpopupcontentclose:hover {
+.contentclose:hover, #welcomecontentclose:hover, #popupcontentclose:hover, #familytreecontentclose:hover, #illustratorcontentclose:hover, .site_footer-disclaimer_popup-close:hover {
   opacity: 0.5;
   filter: 50; }
 
@@ -196,16 +196,6 @@ input {
 .is-focused {
   color: #359AF4;
   cursor: pointer; }
-
-#copyright {
-  position: fixed;
-  left: 15px;
-  bottom: 4px;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  overflow: hidden;
-  font-size: 10px;
-  text-shadow: -1px 1px 4px #000; }
 
 div.center {
   margin: 0 auto;
@@ -1361,7 +1351,34 @@ section#journeycontainer {
 /*
     Footer
 */
-footer #footerpopup {
+.site_footer-copyright {
+  left: 15px;
+  bottom: 4px;
+  color: white;
+  font-size: 10px; }
+.site_footer-tour {
+  right: 188px; }
+.site_footer-forum {
+  right: 148px; }
+.site_footer-disclaimer {
+  right: 90px; }
+.site_footer-reportissue {
+  right: 7px; }
+.site_footer-copyright, .site_footer-tour, .site_footer-forum, .site_footer-disclaimer, .site_footer-reportissue {
+  text-shadow: -1px 1px 4px #000;
+  position: fixed;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden; }
+.site_footer-links {
+  text-decoration: none;
+  height: 14px;
+  bottom: 1px;
+  font-size: 11px;
+  line-height: 1.1;
+  vertical-align: bottom; }
+.site_footer-links:hover {
+  text-decoration: underline !important; }
+.site_footer-disclaimer_popup {
   position: absolute;
   top: 150px;
   left: 20%;
@@ -1374,46 +1391,14 @@ footer #footerpopup {
   z-index: 16;
   overflow-y: auto;
   overflow-x: hidden; }
-
-footer .footerpopupcontentext {
-  margin: 10px;
-  color: #eee;
-  font-family: "coelac", "Myriad Pro", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 18px; }
-  footer .footerpopupcontentext p {
-    margin-left: 15px; }
-
-footer #tour, footer #forum, footer #disclaimer, footer #reportissue {
-  text-shadow: -1px 1px 4px #000;
-  text-decoration: none; }
-
-footer #tour {
-  right: 188px; }
-
-footer #forum {
-  right: 148px; }
-
-footer #disclaimer {
-  right: 90px; }
-
-footer #reportissue {
-  right: 7px; }
-
-footer .footerlinks {
-  text-decoration: none;
-  position: fixed;
-  right: 98px;
-  height: 14px;
-  bottom: 1px;
-  font-family: "Open Sans", sans-serif;
-  overflow: hidden;
-  font-size: 11px;
-  line-height: 1.1;
-  vertical-align: bottom; }
-
-footer .footerpopupbutton:hover {
-  text-decoration: underline; }
+  .site_footer-disclaimer_popup-content-inner--text {
+    margin: 10px;
+    color: #eee;
+    font-family: "coelac", "Myriad Pro", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px; }
+    .site_footer-disclaimer_popup-content-inner--text p {
+      margin-left: 15px; }
 
 /*# sourceMappingURL=arda-maps.css.map */
