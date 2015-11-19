@@ -603,7 +603,7 @@ nav ul.sdt_menu li div.sdt_box a:hover {
   margin-left: 15px;
 }
 
-#preloader {
+#preloader, #zoomingLocation {
   position: absolute;
   margin-left: -115px;
   margin-bottom: -30px;
@@ -616,7 +616,7 @@ nav ul.sdt_menu li div.sdt_box a:hover {
   @include box-shadow(-3px 0 14px 0 rgba(10, 10, 10, 0.5));
 }
 
-#preloadercontent {
+#preloadercontent, #zoomingLocationcontent {
   font-family: $coelac;
   font-size: 24px;
   z-index: 22;
@@ -1619,7 +1619,7 @@ section#journeycontainer {
 .site_footer{
   &-copyright {
     left: 15px;
-    bottom: 4px;
+    bottom: 2px;
     color: white;
     font-size: 10px;
   }

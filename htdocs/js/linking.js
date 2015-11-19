@@ -89,6 +89,7 @@ function invokePageClick(pathname) {
         $('#menu2firstage').click();
         setURL(pathname);
         window.setTimeout(showLocationMarker, 3000, pathname);
+        $("#zoomingLocation").show();
     }
     if (pathname == "/ages/second" || pathname == "/ages/second/") {
         $('#menu2secondage').click();
@@ -96,7 +97,8 @@ function invokePageClick(pathname) {
     if (pathname.startsWith('/ages/second#') || pathname.startsWith('/ages/second/#')) {
         $('#menu2secondage').click();
         setURL(pathname);
-        window.setTimeout(showLocationMarker, 1000, pathname);
+        window.setTimeout(showLocationMarker, 3000, pathname);
+        $("#zoomingLocation").show();
     }
     if (pathname == "/ages/third" || pathname == "/ages/third/") {
         $('#menu2thirdage').click();
@@ -104,7 +106,8 @@ function invokePageClick(pathname) {
     if (pathname.startsWith('/ages/third#') || pathname.startsWith('/ages/third/#')) {
         $('#menu2thirdage').click();
         setURL(pathname);
-        window.setTimeout(showLocationMarker, 1000, pathname);
+        window.setTimeout(showLocationMarker, 3000, pathname);
+        $("#zoomingLocation").show();
     }
     if (pathname.startsWith('/illustrator#')) {
         var n = pathname.indexOf("#");
@@ -128,8 +131,8 @@ function showLocationMarker(pathname){
     var n = pathname.indexOf("#");
     var finalString = pathname.substring(n+1, pathname.length);
     $(".maptimeline-"+finalString).show();
-    //d3.select(".maptimeline-"+finalString).on("click")();
     $(".maptimeline-"+finalString).d3Click();
+    $("#zoomingLocation").hide();
 }
 
 if (typeof String.prototype.startsWith != 'function') {

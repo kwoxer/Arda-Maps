@@ -13,4 +13,5 @@ $("#infoLocation").hide();
 $("#infoEvent").hide();
 $("#legendinner").hide();
 $("#preloader").hide();
+$("#zoomingLocation").hide();
 $("#journeyinnerinner").children().hide();
