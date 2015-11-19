@@ -10,7 +10,7 @@ We come up with **3** Tolkien ages, **882** characters, **796** places over **16
 
 The aim is that Tolkien readers can use this website to explore the fictive universe, Tolkien lovely filled with life. So we created the maps of the most important ages. These maps can be zoomed, dragged and each one shows some of the most important journeys, timeline events and much more!
 
-Ages
+Three Ages in high quality
 ---
 We support the most important ages in a pretty high resolution (54x zoom). You just need to load it once and you have all the data you need. There is no need of downloading any map source later:
 
@@ -27,6 +27,12 @@ We support the most important ages in a pretty high resolution (54x zoom). You j
 ![Third Age](http://arda-maps.org/pics/welcome/thirdage.png)
 
 To see the satellite view of the specific Age, simply click the *Earth* image on the bottom.
+
+Location links for any map
+---
+Next to exploring the map you can as well create direct links for a map like this one: http://arda-maps.org/ages/third/#MinasTirith
+
+For this simply click on a location on any of the three maps. This will create a new URL in your browsers adress bar. Just pick it and send it to your friends. So easy :)
 
 Family Tree
 ---
