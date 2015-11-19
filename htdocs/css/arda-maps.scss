@@ -5,6 +5,7 @@
 */
 
 $gold: #F9D276;
+$blue: #359AF4;
 $uncialantiqua: "uncialantiqua", "Myriad Pro", sans-serif;
 $coelac: "coelac", "Myriad Pro", sans-serif;
 $opensans: "Open Sans", sans-serif;
@@ -176,7 +177,7 @@ a {
 }
 
 a:hover {
-  color: #359AF4;
+  color: $blue;
 }
 
 input{
@@ -254,6 +255,11 @@ input{
 .is-clickable {
   cursor: pointer;
 }
+
+.is-clickable--map {
+  cursor: url("../pics/ring.png") 10 8, auto;
+}
+
 .is-not-clickable {
   cursor: default !important;
 }
@@ -267,11 +273,9 @@ input{
 }
 
 .is-focused {
-  color: #359AF4;
+  color: $blue;
   cursor: pointer;
 }
-
-
 
 div.center {
   margin: 0 auto;
@@ -461,7 +465,7 @@ nav ul.sdt_menu li div.sdt_box a:first-child {
 }
 
 nav ul.sdt_menu li div.sdt_box a:hover {
-  color: #fff;
+  color: $blue;
 }
 
 /*
@@ -1066,7 +1070,7 @@ span[class^="timelinecreature"] {
 }
 
 #familytreecontentsvg .node .linkcountercircle {
-  fill: #359AF4;
+  fill: $blue;
   stroke: white;
   stroke-width: 1.0px;
 }

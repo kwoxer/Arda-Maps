@@ -184,6 +184,9 @@ input {
 .is-clickable {
   cursor: pointer; }
 
+.is-clickable--map {
+  cursor: url("../pics/ring.png") 10 8, auto; }
+
 .is-not-clickable {
   cursor: default !important; }
 
@@ -364,7 +367,7 @@ nav ul.sdt_menu li div.sdt_box a:first-child {
   margin-top: 10px; }
 
 nav ul.sdt_menu li div.sdt_box a:hover {
-  color: #fff; }
+  color: #359AF4; }
 
 /*
     Welcome

@@ -20,7 +20,7 @@ var ardamap = (function () {
     var zoombuttonScale, zoombuttonTranslate;
     var centered;
     var is4testing = true;
-    var str4clickable = "is-clickable"
+    var str4clickable = "is-clickable--map"
 
     $(document).on('scroll', function () {
         $(document).scrollLeft(0);
