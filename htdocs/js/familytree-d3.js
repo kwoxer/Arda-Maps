@@ -401,16 +401,20 @@ var familytree = (function() {
             // zoom translate and scale are initially [0,0] and 1
             // this needs to be aligned with the container to stop
             // jump back to zero before first jump transition
-            var t = d3.transform(container.attr("transform"));
-            zoom.translate(t.translate); zoom.scale(t.scale[0]);
+			if(container != undefined) {
+				var t = d3.transform(container.attr("transform"));
+				zoom.translate(t.translate); zoom.scale(t.scale[0]);
+			}
         }
 
         function onZoom(){
-            var e = d3.event.sourceEvent,
-                isWheel = e && ((e.type == "mousewheel") || (e.type == "wheel")),
-                t = d3.transform(container.attr("transform"));
-            t.translate = d3.event.translate; t.scale = [d3.event.scale, d3.event.scale];
-            return isWheel ? zoomWheel.call(this, t) : zoomInst.call(this, t)
+			if(container != undefined) {
+				var e = d3.event.sourceEvent,
+					isWheel = e && ((e.type == "mousewheel") || (e.type == "wheel")),
+					t = d3.transform(container.attr("transform"));
+				t.translate = d3.event.translate; t.scale = [d3.event.scale, d3.event.scale];
+				return isWheel ? zoomWheel.call(this, t) : zoomInst.call(this, t)
+			}
         }
         function zoomInst(t){
             container.attr("transform", t.toString());
