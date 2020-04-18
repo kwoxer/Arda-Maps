@@ -247,7 +247,7 @@ var orientdb = (function() {
             rel.text("");
             rel.selectAll("ul").data([[""]]).exit().remove();
             orientdb.stageFamilytreeSingle(result.rid, function() {
-                //console.log(relationships(this.fetchedSingle));
+                console.log(relationships(this.fetchedSingle));
                 list(rel.node(), relationships(this.fetchedSingle));
             });
 
