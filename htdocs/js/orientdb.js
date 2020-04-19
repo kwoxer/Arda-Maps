@@ -52,7 +52,7 @@ var orientdb = (function() {
         }
 
         return {
-            JSON        : function(j) {
+            fillJSON    : function(j) {
                 if(j) {
                     currentJSON = clone(j);
                     return this
@@ -141,7 +141,7 @@ var orientdb = (function() {
                     "Authorization": "Basic " + btoa("arda" + ":" + "arda")
                 },
                 success: function(result) {
-                    treeData.JSON(result.result).setAll().dataSet(onSuccess);
+                    treeData.fillJSON(result.result).setAll().dataSet(onSuccess);
                 }
             });
         },
@@ -247,7 +247,6 @@ var orientdb = (function() {
             rel.text("");
             rel.selectAll("ul").data([[""]]).exit().remove();
             orientdb.stageFamilytreeSingle(result.rid, function() {
-                //console.log(relationships(this.fetchedSingle));
                 list(rel.node(), relationships(this.fetchedSingle));
             });
 
@@ -355,7 +354,7 @@ var orientdb = (function() {
                             $(suggField).css('visibility', 'visible');
                             $(suggField).show();
                             for(var i = 0; i < res.length; i++) {
-                                var fallbackURL = "/pics/arda/creature/UnknownPicture_familytree.png";
+                                var fallbackURL = "/pics/arda/creature/UnknownCreature_familytree.png";
                                 var imageURL = "<img src=/pics/arda/creature/" + res[i].uniquename
                                     + "_familytree.png onerror=this.src='" + fallbackURL + "' width='30' height='30'> ";
                                 $("ul" + suggField).append("<li id=" + res[i].rid + '|' + res[i].class
@@ -384,7 +383,7 @@ var orientdb = (function() {
                             $(suggField).css('visibility', 'visible');
                             $(suggField).show();
                             for(var i = 0; i < res.length; i++) {
-                                var fallbackURL = "/pics/arda/location/UnknownPicture.png";
+                                var fallbackURL = "/pics/arda/location/UnknownLocation.jpg";
                                 var imageURL = "<img src=/pics/arda/location/" + res[i].uniquename
                                     + ".jpg onerror=this.src='" + fallbackURL + "' width='30' height='30'> ";
                                 $("ul" + suggField).append("<li id=" + res[i].rid + '|' + res[i].class
@@ -407,7 +406,7 @@ var orientdb = (function() {
                 success: function(result) {
                     var res = result.result;
                     for(var i = 0; i < res.length; i++) {
-                        var fallbackURL = "/pics/arda/creature/UnknownPicture.png";
+                        var fallbackURL = "/pics/arda/creature/UnknownCreature.jpg";
                         var imageURLRaw1 = "/pics/arda/creature/" + res[i].uniquename + ".jpg";
                         var imageURL1 = "<img title='" + res[i].name + "' src=" + imageURLRaw1 + " onerror=this.src='"
                             + fallbackURL + "' width='35' height='25'> ";
@@ -431,7 +430,7 @@ var orientdb = (function() {
                 success: function(result) {
                     var res = result.result;
                     for(var i = 0; i < res.length; i++) {
-                        var fallbackURL = "/pics/arda/location/UnknownPicture.png";
+                        var fallbackURL = "/pics/arda/location/UnknownLocation.jpg";
                         var imageURLRaw = "/pics/arda/location/" + res[i].uniquename + ".jpg";
                         var imageURL = "<img title='" + res[i].name + "' src=" + imageURLRaw + " onerror=this.src='"
                             + fallbackURL + "' width='35' height='25'> ";
@@ -450,7 +449,7 @@ var orientdb = (function() {
                 success: function(result) {
                     var res = result.result;
                     for(var i = 0; i < res.length; i++) {
-                        var fallbackURL = "/pics/arda/event/UnknownPicture.png";
+                        var fallbackURL = "/pics/arda/event/UnknownEvent.jpg";
                         var imageURLRaw = "/pics/arda/event/" + res[i].uniquename + ".jpg";
                         var imageURL = "<img title='" + res[i].name + "' src=" + imageURLRaw + " onerror=this.src='"
                             + fallbackURL + "' width='35' height='25'> ";
@@ -469,9 +468,9 @@ var orientdb = (function() {
 
     function relationshipColor(rel){
         return {
-            "BEGETS"            : "<img title='begets' src='/pics/relations_BEGETS.png'>",
+            "BEGETS"            : "<img title='parent of' src='/pics/relations_BEGETS.png'>",
             "HASSIBLING"        : "<img title='has sibling' src='/pics/relations_HASSIBLING.png'>",
-            "LOVES"             : "<img title='loves' src='/pics/relations_LOVES.png'>"
+            "LOVES"             : "<img title='correlated' src='/pics/relations_LOVES.png'>"
         }[rel] || "[unknown relation]";
     }
 

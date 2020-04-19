@@ -7,7 +7,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="description" content="Arda Maps is a complete new interactive experience. It is visualizing the most important Tolkien ages all on one site. Driven by the community!">
-    <meta name="keywords" content="Arda Maps is a complete new interactive experience. It is visualizing the most important Tolkien ages all on one site. Driven by the community!">
+    <meta name="keywords" content="Tolkien, Arda Maps, Lord of the Rings">
     <meta name="author" content="Curtis Mosters">
     <meta name="site_name" content="Arda Maps">
     <meta name="type" content="science fiction">
@@ -19,39 +19,28 @@
     <link rel="stylesheet" href="css/arda-maps-900.css" type="text/css" media="screen and (max-width: 900px)">
     <link rel="stylesheet" href="css/arda-maps-600.css" type="text/css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="css/arda-maps-350.css" type="text/css" media="screen and (max-width: 350px)">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="timeglider/Timeglider.css" type="text/css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="timeglider/timeglider.datepicker.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/guiders.css" media="screen" type="text/css">
     <link rel="icon" href="http://arda-maps.org/favicon.ico" type="image/x-icon">
-    <script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/libs/d3.min.js" type="text/javascript"></script>
-    <script src="js/libs/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/topojson.min.js" type="text/javascript"></script>
-    <script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="js/libs/pace.min.js" type="text/javascript"></script>
     <script src="js/libs/angular.min.js" type="text/javascript"></script>
-    <script src="js/model/ModelModule.js" type="text/javascript"></script>
-    <script src="js/ctrl/IllustratorCtrl.js" type="text/javascript"></script>
+    <script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/libs/d3.min.js" type="text/javascript"></script>
+    <script src="js/libs/topojson.min.js" type="text/javascript"></script>
+    <script src="js/model/modelmodule.js" type="text/javascript"></script>
+    <script src="js/ctrl/illustratorCtrl.js" type="text/javascript"></script>
     <script src="js/libs/guiders.js" type="text/javascript"></script>
 </head>
 <body>
-<div id="fb-root"></div>
-<script type="text/javascript">(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=151852984909033";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64043649-1"></script>
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-64043649-1', 'auto');
-    ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64043649-1');
 </script>
+
 <header>
     <nav role="navigation" class="is-unselectable">
         <ul id="sdt_menu" class="sdt_menu">
@@ -61,7 +50,7 @@
                     <span class="sdt_active"></span>
                     <span class="sdt_wrap">
                         <span class="sdt_link">Arda Maps</span>
-                        <span class="sdt_descr">Version 1.3</span>
+                        <span class="sdt_descr">Version 2.0</span>
                     </span>
                 </a>
                 <div class="sdt_box">
@@ -341,7 +330,7 @@
     </div>
 </section>
 <section id="version">
-    <div class="fb-like" data-href="https://www.facebook.com/ardamaps" data-width="60" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    <iframe class="fb-like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fardamaps%2F&width=78&layout=button_count&action=like&size=small&share=false&height=21&appId=151852984909033" width="78" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     <div id="donate"> <a href="https://www.paypal.me/kwoxer" target="_blank"><img src="pics/donate.png" title="Donate" alt="Donate"></a></div>
 </section>
 <article id="familytree">
@@ -353,9 +342,6 @@
             <div id="familytreecontentheader">
                 <h2>Family Tree</h2>
             </div>
-            <div style="top: 80px; position: absolute; margin-left: 10px; color: rgb(245, 82, 18);">
-                <p>currently not working due to some errors in Javascript, sorry for that... donations help to fix the issue much faster!</p>
-            </div>
             <div id="familytreecontentraces">
                 leftclick - more info about a node<br>
                 shift + leftclick - fixing a node<br>
@@ -363,7 +349,7 @@
                 rightclick - delete a node
             </div>
             <div id="familytreecontentsearch">
-                <input id="familytreesearch" type="text" placeholder="type in a name..." value="" name="who-input">
+                <input id="familytreesearch" type="text" placeholder="Type in any name..." value="" name="who-input">
                 <div id="familytreesearchsuggestions">
                     <ul id="familytreesearchsuggestionsFamilycreatures"><li></li></ul>
                 </div>
@@ -397,7 +383,7 @@
                 <section id="infoCreature">
                     <div class="infoheader"></div>
                     <div class="infosubname"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/creature/UnknownPicture.jpg'" title="Show info about the illustrator" alt="Picture"></div>
+                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/creature/UnknownCreature.jpg'" title="Show info about the illustrator" alt="Picture"></div>
                     <div class="infopictureSource"><a href="#" title="Show info about the illustrator"><span></span></a></div>
                     <div class="infosex"><img src="" onerror="this.src='/pics/unclear.png'" alt="Sex"></div>
                     <div class="infoothernames infoelement">
@@ -426,7 +412,7 @@
                 <section id="infoLocation">
                     <div class="infoheader"></div>
                     <div class="infosubname"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/location/UnknownPicture.jpg'" title="Show info about the illustrator" alt="Picture"></div>
+                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/location/UnknownLocation.jpg'" title="Show info about the illustrator" alt="Picture"></div>
                     <div class="infopictureSource"><a href="#" title="Show info about the illustrator"><span></span></a></div>
                     <div class="infotype"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Type"></div>
                     <div class="infoage"><img src="" onerror="this.src='/pics/other/qmark.png'" alt="Age"></div>
@@ -443,7 +429,7 @@
                 </section>
                 <section id="infoEvent">
                     <div class="infoheader"></div>
-                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/event/UnknownPicture.jpg'" title="Show info about the illustrator" alt="Picture"></div>
+                    <div class="infopicture"><img src="" onerror="this.src='/pics/arda/event/UnknownEvent.jpg'" title="Show info about the illustrator" alt="Picture"></div>
                     <div class="infopictureSource"><a href="#" title="Show info about the illustrator"><span></span></a></div>
                     <div class="infodescription infoelement">
                         <div class="infosubheader">Description</div>
@@ -710,18 +696,6 @@
     </div>
 </article>
 <script src="js/clear.js" type="text/javascript"></script>
-<script src="js/libs/json2.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/jquery-ui-1.10.3.custom.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/underscore-min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/backbone-min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/ba-debug.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/ba-tinyPubSub.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/jquery.mousewheel.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/jquery.ui.ipad.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/globalize.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/timeglider-1.0.3.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/libs/jquery.jscrollpane.min.js" type="text/javascript"></script>
 <script src="js/db.js" type="text/javascript"></script>
 <script src="js/welcome.js" type="text/javascript"></script>
 <script src="js/info.js" type="text/javascript"></script>
@@ -731,7 +705,6 @@
 <script src="js/illustrator.js" type="text/javascript"></script>
 <script src="js/legend.js" type="text/javascript"></script>
 <script src="js/journey.js" type="text/javascript"></script>
-<script src="js/timeline.js" type="text/javascript"></script>
 <script src="js/scalebar.js" type="text/javascript"></script>
 <script src="js/arda-bg.js" type="text/javascript"></script>
 <script src="js/region.js" type="text/javascript"></script>
@@ -742,6 +715,22 @@
 <script src="js/familytree.js" type="text/javascript"></script>
 <script src="js/loading.js" type="text/javascript"></script>
 <script src="js/guiders.js" type="text/javascript"></script>
+<script src="js/timeglider/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/timeglider/backbone-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/timeglider/json2.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/timeglider/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/timeglider/ba-tinyPubSub.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/timeglider/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/timeglider/jquery.ui.ipad.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/timeglider/globalize.js" type="text/javascript" charset="utf-8"></script>	
+<script src="js/timeglider/ba-debug.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/timeglider-1.0.3.min.js" type="text/javascript"></script>
+<script src="js/timeline.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="timeglider/Timeglider.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="timeglider/timeglider.datepicker.css" type="text/css" media="screen" charset="utf-8">
+
 <script type="text/javascript">
     $("body").on("contextmenu", "img", function(e) {
         return false;
