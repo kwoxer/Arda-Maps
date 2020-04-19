@@ -41,3 +41,12 @@ See all relations or just some Characters all in one view:
 [**Family Tree**](http://arda-maps.org/familytree/)
 
 ![Family Tree](http://i.imgur.com/xgV9W2C.png)
+
+Timeline
+---
+Get an overview about any happening in the world of Tolkien.
+
+First you need to choose one of the 3 Ages. Now you are able to select the Timeline button that will open a dropdown of all the events that have occured there.
+
+
+![3. Age Timeline](https://i.imgur.com/3Sx2gud.png)
