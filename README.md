@@ -1,4 +1,4 @@
-# Arda-Maps - interactive Tolkien maps
+# Arda-Maps - interactive Tolkien maps, Timelines and Family trees
 
 ![Satelite view of third age](http://i.imgur.com/hACQiOx.png)
 
